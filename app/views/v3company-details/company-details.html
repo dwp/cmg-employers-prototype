@@ -1,0 +1,136 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+<h2 class="govuk-heading-m">Company details</h2>
+<span class="govuk-hint">This is the latest information we have from HMRC. </span>
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Name
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Weatherspoons
+    </dd>
+    <dd class="govuk-summary-list__actions">
+     
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Employer reference number
+    </dt>
+    <dd class="govuk-summary-list__value">
+      50010085564323
+    </dd>
+    <dd class="govuk-summary-list__actions">
+    
+    </dd>
+  </div>
+
+</dl>
+  
+<h2 class="govuk-heading-m">Company contacts</h2>
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  
+  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Company contact 
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">{{ data['first-name'] }} {{data['last-name'] | default("John Smith")}}
+      </p>
+      
+      <p class="govuk-body">{{ data['contact-number'] | default("07789 666 398") }}</p>
+      <p class="govuk-body">{{ data['query-type'] | default("All queries") }}</p>
+
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="sarah-details.html">
+        Change<span class="govuk-visually-hidden"> contact details</span><br>
+        <br>
+        <a href="add-another-contact.html">
+          Add another contact
+          </a>
+      </a>
+    </dd>
+  </div>
+
+    
+
+<div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Contact preferences
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">Recieve letters online and by post</p>
+      <p class="govuk-body">{{ data ['contact-by-email'] | default("test@notreal.com") }}</p>
+
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="contact-preferencesv2.html">
+        Change<span class="govuk-visually-hidden">contact preferences</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Postal Address
+    </dt>
+    <dd class="govuk-summary-list__value">
+      {{ data['address-line-1'] | default("72")}}
+      
+      {{ data['where-do-you-live'] | default("Guild Street")}}<br>
+      London<br>
+      {{ data['address-postcode'] | default("SE23 6FH")}}<br>
+
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="postal-address.html">
+        Change<span class="govuk-visually-hidden"> address</span>
+      </a>
+    </dd>
+  </div>
+</dl>
+
+
+{% endblock %}

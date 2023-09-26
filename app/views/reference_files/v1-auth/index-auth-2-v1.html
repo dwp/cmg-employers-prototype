@@ -1,0 +1,185 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a href="/index-ref.html" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-l">Reference screens to support JIRA stories</h1>
+
+        <h1 class="govuk-heading-m">MVP service</h1>
+        <a href="existing-employer-old-user-no-contacts/portal-home.html" class="govuk-button govuk-button">View screens</a>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <!-- <h3 class="govuk-heading-s">User screen flows</h3>
+        <p class="govuk-body">Existing employer with migrated contact details</p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="/public/pdfs/existing-employer-account-set-up-first-time-sign-in.pdf" class="govuk-link">MVP screen flow</a></li>
+        </ul> -->
+
+        <p class="govuk-body">Existing employer with no migrated contact details</p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="/public/pdfs/existing-employer-no-contacts-migrated-first-time-sign-in.pdf" class="govuk-link">MVP screen flow</a></li>
+        </ul>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-m">Screens for reference - Exisitng employer first sign in, Existing Employer with no contacts migrated</h2>
+
+        <h2 class="govuk-heading-s">Portal home page</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user-no-contacts/portal-home.html">Old Portal sign in page</a> </li>
+        </ul>
+
+        <h2 class="govuk-heading-s">New sign in message (updated content)</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user-no-contacts/change-sign-in.html">We're changing the way you sign in (updated content)</a></li>
+        </ul>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <!-- <h2 class="govuk-heading-s">User details</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/name.html">Which user are you?</a>
+                <ul>
+                    <li><a href="existing-employer-old-user/name-validation.html">Validation message</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_1/admin-user-message.html">Admin user message</a>
+
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_1/check-user-1-details.html">Check your details</a>
+
+            </li>
+        </ul>
+
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_2/check-user-2-details.html">Check your details - no exisitng email address</a>
+                    
+            </li>
+        </ul>
+
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_1/change-details-user-1.html">Change your details</a>
+                <ul>
+                    <li><a href="/public/pdfs/change-details-screen-validation-errors-2.pdf">Validation messages</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+         <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_1/payroll-provider.html">Are you a third party that manages the payroll for this employer?</a>
+                <ul>
+                    <li><a href="existing-employer-old-user/user_1/payroll-provider-validation.html">Validation message</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_1/contact-reason.html">What can you help with?</a>
+                <ul>
+                    <li><a href="existing-employer-old-user/user_1/contact-reason-validation.html">Validation message</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+       
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-s">User name not displayed (None of these)</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_4/add-users-details-new.html">Add user details</a>
+                <ul>
+                    <li><a href="/public/pdfs/change-details-screen-validation-errors-3.pdf">Validation messages</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_4/payroll-provider-new.html">Are you a third party that manages the payroll for this employer?</a>
+                <ul>
+                    <li><a href="existing-employer-old-user/user_4/payroll-provider-validation.html">Validation message</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_4/contact-reason-new.html">What can you help with?</a>
+                <ul>
+                    <li><a href="existing-employer-old-user/user_4/contact-reason-new-validation.html">Validation message</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_4/admin-user-message.html">Admin user message</a>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_4/cya-new.html">Check your answers</a>
+            </li>
+        </ul>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-s">Existing Employer with no contacts migrated</h2> -->
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user-no-contacts/user_1/admin-user-message.html">Admin user messsage (updated contect)</a>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user-no-contacts/user_1/add-user-details.html">Add user details</a>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="/public/pdfs/change-details-screen-validation-errors-3.pdf">Validation messages</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user-no-contacts/user_1/payroll-provider.html">Are you a third party that manages the payroll for this employer?</a>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="existing-employer-old-user-no-contacts/user_1/payroll-provider-validation.html">Validation messages</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user-no-contacts/user_1/contact-reason.html">What we can contact you about? (updated content)</a>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="existing-employer-old-user-no-contacts/user_1/contact-reason-validation.html">Validation messages</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+         <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user-no-contacts/user_1/cya.html">Check your answers (updated content)</a>
+            </li>
+        </ul>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-s">Confirmation screen</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="existing-employer-old-user/user_1/account-done.html">Account set up complete</a>
+            </li>
+        </ul>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    </div> <!-- govuk-column-full-->
+</div> <!-- govuk-grid row -->
+{% endblock %}

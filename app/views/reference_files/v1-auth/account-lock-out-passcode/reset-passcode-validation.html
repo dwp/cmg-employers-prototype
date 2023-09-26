@@ -1,0 +1,137 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+Reset passcode
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#enter-email">Enter your email address</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="govuk-heading-l">Enter your email address</h1>
+
+        <p class="govuk-body">We'll send you a new one-time passcode.</p>
+        <div class="govuk-form-group govuk-form-group--error">
+          <label class="govuk-label" for="enter-email">
+            Email address
+          </label>
+          <p id="login-email-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Enter your email address
+          </p>
+          <input class="govuk-input govuk-input--error" id="enter-email" name="enter-email" type="password" spellcheck="false"
+            aria-describedby="enter-email-hint">
+        </div>
+
+        <a href="reset-sent.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Continue
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#enter-email-2">Enter your email address in the corrrect format, like name@email.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="govuk-heading-l">Enter your email address</h1>
+
+        <p class="govuk-body">We'll send you a new one-time passcode.</p>
+        <div class="govuk-form-group govuk-form-group--error">
+          <label class="govuk-label" for="enter-email">
+            Email address
+          </label>
+          <p id="login-email-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Enter your email address in the corrrect format, like name@email.com
+          </p>
+          <input class="govuk-input govuk-input--error" id="enter-email-2" name="enter-email" type="password" spellcheck="false"
+            aria-describedby="enter-email-hint">
+        </div>
+
+        <a href="reset-sent.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Continue
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#enter-email-3">Your email address is not recognised</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="govuk-heading-l">Enter your email address</h1>
+
+        <p class="govuk-body">We'll send you a new one-time passcode.</p>
+        <div class="govuk-form-group govuk-form-group--error">
+          <label class="govuk-label" for="enter-email">
+            Email address
+          </label>
+          <p id="login-email-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Your email address is not recognised
+          </p>
+          <input class="govuk-input govuk-input--error" id="enter-email-3" name="enter-email" type="password" spellcheck="false"
+            aria-describedby="enter-email-hint">
+        </div>
+
+        <a href="reset-sent.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Continue
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+</div>
+{% endblock %}

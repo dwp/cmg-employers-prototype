@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="confirmation-page.html" method="get">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  What is the reason for contact?
+                </h1>
+              </legend>
+              <div id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="user-1-contact-reason" name="user-1-contact-reason" type="checkbox"
+                    value="Deductions">
+                  <label class="govuk-label govuk-checkboxes__label" for="user-1-contact-reason">
+                    Deductions
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="user-1-contact-reason-2" name="user-1-contact-reason" type="checkbox"
+                    value="Payments">
+                  <label class="govuk-label govuk-checkboxes__label" for="user-1-contact-reason-2">
+                    Payments
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="user-1-contact-reason-3" name="user-1-contact-reason" type="checkbox"
+                    value="Employee details">
+                  <label class="govuk-label govuk-checkboxes__label" for="user-1-contact-reason-3">
+                    Employee details
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="user-1-contact-reason-4" name="user-1-contact-reason" type="checkbox"
+                    value="No contact">
+                  <label class="govuk-label govuk-checkboxes__label" for="user-1-contact-reason-4">
+                    No contact
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <a href="are-you-admin.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+            Continue
+          </a>
+          <br><a href="name.html">Cancel</a>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+{% endblock %}

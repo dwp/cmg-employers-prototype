@@ -1,0 +1,94 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a href="/index-ref" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-l">Reference screens to support JIRA stories</h1>
+
+        <h1 class="govuk-heading-m">MVP service</h1>
+        <a href="password-reset/log-in.html" class="govuk-button govuk-button">View screens</a>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h3 class="govuk-heading-s">User screen flows</h3>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="/public/pdfs/passowrd-reset-journey.pdf" class="govuk-link">Screen
+                    flow</a></li>
+        </ul>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-m">Screens for reference - Password reset journey</h2>
+
+        <h2 class="govuk-heading-s">Sign in</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="password-reset/log-in.html">Enter your email and password</a>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="password-reset/log-in-error.html">Validation messages</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+
+        <h2 class="govuk-heading-s">Forgotten password</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="password-reset/reset-password.html">Enter your email address (updated content)</a>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="password-reset/reset-password-validation.html">Validation messages</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="password-reset/password-reset-done.html">Confirmation password reset requested (updated content)</a>
+
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="password-reset/invite-email.html">Password reset email</a>
+
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="password-reset/log-in-passcode.html">Enter your email address and onetime passcode
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li><a href="password-reset/log-in-passcode-validation.html">Validation messages (updated content)</a>
+                        </li>
+                    </ul>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="password-reset/create-password.html">Create a password (updated content)
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li><a href="password-reset/create-password-validation.html">Validation messages</a>
+                        </li>
+                    </ul>
+            </li>
+        </ul>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="password-reset/password-reset-confirmed.html">Password reset confirmation</a>
+            </li>
+        </ul>
+<!-- 
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-s">Forgotten email</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="password-reset/reset-email.html">Contact the Employer Payments Team</a></li>
+        </ul>
+ -->
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    </div> <!-- govuk-column-full-->
+</div> <!-- govuk-grid row -->
+{% endblock %}

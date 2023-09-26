@@ -1,0 +1,62 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  
+    <div class="govuk-width-container">
+      
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+             
+              <form action ="query-type-uk-landline.html" method="get">
+               
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h1 class="govuk-fieldset__heading">
+                        Do you want to add another telephone number?
+                      </h1>
+                    </legend>
+                  
+                      
+                  
+                    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes~new-telephone-2.html">
+                        <label class="govuk-label govuk-radios__label" for="changed-name">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no~preferred-contact.html">
+                        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                
+                  </fieldset>
+                </div>
+                     
+               
+                <button class="govuk-button" data-module="govuk-button">
+                  Save and continue
+                </button>
+                  <br><a href="">Cancel</a>
+
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+  </div>  
+
+{% endblock %}

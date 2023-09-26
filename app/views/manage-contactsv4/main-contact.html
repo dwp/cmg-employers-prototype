@@ -1,0 +1,49 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+        <div class="govuk-form-group">
+            <form action ="cya-main-contact.html" method="get">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Who will be the admin user?
+                </h1>
+              </legend>
+             
+
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="main-contact-21" name="main-contact-2" type="radio" value= "">
+                  <label class="govuk-label govuk-radios__label" for="main-contact-21">
+                    John Stones
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="main-contact-23" name="main-contact-2" type="radio" value="">
+                  <label class="govuk-label govuk-radios__label" for="main-contact-2">
+                    Ben Raine
+                  </label>
+                </div>
+              </div>
+          
+            </fieldset>
+          </div>
+           
+  <button class="govuk-button" data-module="govuk-button">
+    Continue
+  </button>
+  <a href="test-manage-contacts.html">Cancel</a>
+
+</form>
+      </div>
+</div>
+{% endblock %}

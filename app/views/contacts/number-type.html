@@ -1,0 +1,65 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+        <div class="govuk-form-group">
+            <form action ="test-numbers-input.html" method="get">
+            <fieldset class="govuk-fieldset">
+           
+             
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h1 class="govuk-fieldset__heading">
+                          Where type of phone number do you need to add?
+                        </h1>
+                      </legend>
+                      <div class="govuk-radios" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="UK landline~uk-does-it-have-ext.html">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                            UK landline
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="UK mobile~change-uk-mobile">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                            UK mobile
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="Non UK landline~uk-does-it-have-ext.html">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                            Non UK landline
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="mobile~change-mobile">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                            Non UK mobile
+                          </label>
+                        </div>
+                      </div>
+                  
+                    </fieldset>
+                  </div>
+          
+            </fieldset>
+          </div>
+           
+  <button class="govuk-button" data-module="govuk-button">
+    Continue
+  </button>
+</form>
+      </div>
+</div>
+{% endblock %}

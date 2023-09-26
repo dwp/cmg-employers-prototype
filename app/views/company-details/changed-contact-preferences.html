@@ -1,0 +1,148 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="company-details-added-contact.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/employee-details/employee-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+<h2 class="govuk-heading-m">Company details</h2>
+<span class="govuk-hint">This is the latest information we have from HMRC. If these details are incorrect you need to <a href="what-did-you-expect.html">tell us</a>.</span>
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Name
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Weatherspoons
+    </dd>
+    <dd class="govuk-summary-list__actions">
+     
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Employer reference number
+    </dt>
+    <dd class="govuk-summary-list__value">
+      50010085564323
+    </dd>
+    <dd class="govuk-summary-list__actions">
+    
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Registered Address
+    </dt>
+    <dd class="govuk-summary-list__value">
+      72 Guild Street<br>London<br>SE23 6FH
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      
+    </dd>
+  </div>
+
+</dl>
+  
+<h2 class="govuk-heading-m">Contact details</h2>
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Company contact
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">Sarah Phillips</p>
+      <p class="govuk-body">07741288641</p>
+      <p class="govuk-body">sarah.phillips@example.com</p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="sarah-details.html">
+        Change<span class="govuk-visually-hidden"> contact details</span>
+      </a>
+    </dd>
+  </div>
+    <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Company contact
+        </dt>
+    <dd class="govuk-summary-list__value">
+        <p class="govuk-body">John Smith</p>
+        <p class="govuk-body">07960160216</p>
+        <p class="govuk-body">john.smith@example.com</p>
+      </dd>
+      <dd class="govuk-summary-list__actions">
+        <a class="govuk-link" href="email-confirmation.html">
+          Change<span class="govuk-visually-hidden"> contact details</span>
+        </a>
+      </dd>
+   
+  </div>
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Contact preferences
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">Recieve email notifications</p>
+      <p class="govuk-body">Recieve letters via post and online account</p>
+      <p class="govuk-body">Do not receive marketing emails</p>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="contact-preferences.html">
+        Change<span class="govuk-visually-hidden">contact preferences</span>
+      </a>
+    </dd>
+  </div>  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Postal Address
+    </dt>
+    <dd class="govuk-summary-list__value">
+      72 Guild Street<br>London<br>SE23 6FH
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="postal-address.html">
+        Change<span class="govuk-visually-hidden"> address</span>
+      </a>
+    </dd>
+  </div>
+</dl>
+
+
+{% endblock %}

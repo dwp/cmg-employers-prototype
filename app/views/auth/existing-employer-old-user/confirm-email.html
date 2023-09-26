@@ -1,0 +1,44 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <h1 class="govuk-heading-l">Enter code to confirm your email address
+
+        </h1>
+
+<p class="govuk-body">
+    We have sent a confirmation code to <span class="govuk-heading-s">email@email.com</span>
+</p>
+<p class="govuk-body">This code will expire in 30 minutes</p>
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="full-name">
+              Confirmation code
+            </label>
+            <Span class="govuk-hint">For example, D2LN88</Span>
+            <input class="govuk-input" id="full-name" name="full-name" type="text" spellcheck="false" autocomplete="name">
+          </div>
+        <form action="/form-handler" method="post" novalidate>
+
+            <a href="create-password.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+                Continue
+                  </a>
+      
+        </form>
+       
+
+
+      </div>
+    </div>
+  </main>
+</div>
+    {% endblock %}

@@ -1,0 +1,51 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form action="/form-handler" method="post" novalidate>
+
+<div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+          Do you need to add other users to this account?        </h1>
+      </legend>
+      <div id="changed-name-hint" class="govuk-hint">Other users will have their own account sign in details and can perform tasks online on behalf of your organisation.
+      </div>
+      <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes~authv2/new-employer/add-users-name">
+          <label class="govuk-label govuk-radios__label" for="changed-name">
+            Yes
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no~authv2/new-employer/account-done.html">
+          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+            No
+          </label>
+        </div>
+      </div>
+  
+    </fieldset>
+  </div>
+
+  <button class="govuk-button" data-module="govuk-button">
+   Continue
+  </button>
+  </form>
+</div>
+</div>
+</main>
+</div>
+{% endblock %}

@@ -1,0 +1,506 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+Change your deatils
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#ref1-first-name-new-emp">Enter your first name</a>
+                </li>
+                <li>
+                  <a href="#ref1-last-name-new-emp">Enter your last name</a>
+                </li>
+                <!-- <li>
+                  <a href="#ref1-email-new-emp">Enter your email address</a>
+                </li> -->
+                <li>
+                  <a href="#ref1-contact-1-new-emp">Enter a contact number</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <form action="#" method="get">
+
+          <h1 class="govuk-heading-l">Change your details</h1>
+          
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-first-name-new-emp">
+              First name
+            </label>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Enter your first name
+            </p>
+            <input class="govuk-input govuk-input--error" id="ref1-first-name-new-emp" name="ref1-first-name-new-emp" type="text"
+              spellcheck="false" autocomplete="name" aria-describedby="first-name-error"value="">
+          </div> <!-- govuk-form-group -->
+
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-last-name-new-emp">
+              Last name
+            </label>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Enter your last name
+            </p>
+            <input class="govuk-input govuk-input--error" id="ref1-last-name-new-emp" name="ref1-last-name-new-emp" type="text"
+              spellcheck="false" autocomplete="name" aria-describedby="last-name-error"value="">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-email-new-emp">
+              Email address
+            </label>
+             <input class="govuk-input" id="ref1-email-new-emp" name="ref1-email-new-emp" type="email" spellcheck="false"
+              aria-describedby="email-hint email-error" autocomplete="email" value="john.jones@gmail.com" disabled>
+          </div> <!-- govuk-form-group -->
+
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-1-new-emp">
+              Contact number
+            </label>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Enter a contact number
+            </p>
+            <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code.
+              For example, +91 8123 67894</div>
+            <input class="govuk-input govuk-input--width-20 govuk-input--error" id="ref1-contact-1-new-emp" name="ref1-contact-1-new-emp"
+              type="number" spellcheck="false" aria-describedby="contact-number-hint contact-number-error" autocomplete="number"
+              value="">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-2-new-emp">
+              Extension (optional)
+            </label>
+            <!-- <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code. For example, +353 8123 67894
+                   </div> -->
+            <input class="govuk-input govuk-input--width-20" id="ref1-contact-2-new-emp" name="ref1-contact-2-new-emp"
+              type="number" spellcheck="false" aria-describedby="extension-hint" autocomplete="number" value="6789">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-3-new-emp">
+             Alternative number (optional)
+            </label>
+            <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code.
+              For example, +353 8123 67894
+            </div>
+            <input class="govuk-input govuk-input--width-20" id="ref1-contact-3-new-emp" name="ref1-contact-3-new-emp" type="number"
+              spellcheck="false" aria-describedby="mobile-hint" autocomplete="number">
+          </div>
+          <!-- govuk-form-group -->
+          
+          <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+        </form>
+        <a href="#">Cancel</a>
+      </div>
+    </div>
+  </main>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#ref1-first-name-new-emp-3">Your first name should be 35 characters or less</a>
+                </li>
+                <li>
+                  <a href="#ref1-last-name-new-emp-3">Your last name should be 35 characters or less</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <form action="#" method="get">
+
+          <h1 class="govuk-heading-l">Change your details</h1>
+          
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-first-name-new-emp">
+              First name
+            </label>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Your first name should be 35 characters or less
+            </p>
+            <input class="govuk-input govuk-input--error" id="ref1-first-name-new-emp-3" name="ref1-first-name-new-emp" type="text"
+              spellcheck="false" autocomplete="name" aria-describedby="first-name-error"value="">
+          </div> <!-- govuk-form-group -->
+
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-last-name-new-emp">
+              Last name
+            </label>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Your last name should be 35 characters or less
+            </p>
+            <input class="govuk-input govuk-input--error" id="ref1-last-name-new-emp-3" name="ref1-last-name-new-emp" type="text"
+              spellcheck="false" autocomplete="name" aria-describedby="last-name-error"value="">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-email-new-emp">
+              Email address
+            </label>
+             <input class="govuk-input" id="ref1-email-new-emp" name="ref1-email-new-emp" type="email" spellcheck="false"
+              aria-describedby="email-hint email-error" autocomplete="email" value="john.jones@gmail.com" disabled>
+          </div> <!-- govuk-form-group -->
+
+          <div class="govuk-form-group ">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-1-new-emp">
+              Contact number
+            </label>
+            <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code.
+              For example, +91 8123 67894</div>
+            <input class="govuk-input govuk-input--width-20" id="ref1-contact-1-new-emp" name="ref1-contact-1-new-emp"
+              type="number" spellcheck="false" aria-describedby="contact-number-hint contact-number-error" autocomplete="number"
+              value="">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-2-new-emp">
+              Extension (optional)
+            </label>
+            <!-- <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code. For example, +353 8123 67894
+                   </div> -->
+            <input class="govuk-input govuk-input--width-20" id="ref1-contact-2-new-emp" name="ref1-contact-2-new-emp"
+              type="number" spellcheck="false" aria-describedby="extension-hint" autocomplete="number" value="6789">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-3-new-emp">
+             Alternative number (optional)
+            </label>
+            <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code.
+              For example, +353 8123 67894
+            </div>
+            <input class="govuk-input govuk-input--width-20" id="ref1-contact-3-new-emp" name="ref1-contact-3-new-emp" type="number"
+              spellcheck="false" aria-describedby="mobile-hint" autocomplete="number">
+          </div>
+          <!-- govuk-form-group -->
+          
+          <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+        </form>
+        <a href="#">Cancel</a>
+      </div>
+    </div>
+  </main>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#ref1-first-name-new-emp-4">Your first name is using chracters that are not allowed</a>
+                </li>
+                <li>
+                  <a href="#ref1-last-name-new-emp-4">Your last name is using chracters that are not allowed</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <form action="#" method="get">
+
+          <h1 class="govuk-heading-l">Change your details</h1>
+          
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-first-name-new-emp">
+              First name
+            </label>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Your first name is using chracters that are not allowed
+            </p>
+            <input class="govuk-input govuk-input--error" id="ref1-first-name-new-emp-4" name="ref1-first-name-new-emp" type="text"
+              spellcheck="false" autocomplete="name" aria-describedby="first-name-error"value="">
+          </div> <!-- govuk-form-group -->
+
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-last-name-new-emp">
+              Last name
+            </label>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Your last name is using chracters that are not allowed
+            </p>
+            <input class="govuk-input govuk-input--error" id="ref1-last-name-new-emp-4" name="ref1-last-name-new-emp" type="text"
+              spellcheck="false" autocomplete="name" aria-describedby="last-name-error"value="">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-email-new-emp">
+              Email address
+            </label>
+             <input class="govuk-input" id="ref1-email-new-emp" name="ref1-email-new-emp" type="email" spellcheck="false"
+              aria-describedby="email-hint email-error" autocomplete="email" value="john.jones@gmail.com" disabled>
+          </div> <!-- govuk-form-group -->
+
+          <div class="govuk-form-group ">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-1-new-emp">
+              Contact number
+            </label>
+            <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code.
+              For example, +91 8123 67894</div>
+            <input class="govuk-input govuk-input--width-20" id="ref1-contact-1-new-emp" name="ref1-contact-1-new-emp"
+              type="number" spellcheck="false" aria-describedby="contact-number-hint contact-number-error" autocomplete="number"
+              value="">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-2-new-emp">
+              Extension (optional)
+            </label>
+            <!-- <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code. For example, +353 8123 67894
+                   </div> -->
+            <input class="govuk-input govuk-input--width-20" id="ref1-contact-2-new-emp" name="ref1-contact-2-new-emp"
+              type="number" spellcheck="false" aria-describedby="extension-hint" autocomplete="number" value="6789">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-3-new-emp">
+             Alternative number (optional)
+            </label>
+            <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code.
+              For example, +353 8123 67894
+            </div>
+            <input class="govuk-input govuk-input--width-20" id="ref1-contact-3-new-emp" name="ref1-contact-3-new-emp" type="number"
+              spellcheck="false" aria-describedby="mobile-hint" autocomplete="number">
+          </div>
+          <!-- govuk-form-group -->
+          
+          <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+        </form>
+        <a href="#">Cancel</a>
+      </div>
+    </div>
+  </main>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#ref1-first-name-new-emp-5">Your first name must not include multiple spaces, full stops,
+                    hyphens and apostrophes next to each other</a>
+                </li>
+                <li>
+                  <a href="#ref1-last-name-new-emp-5">Your last name must not include multiple spaces, full stops,
+                    hyphens and apostrophes next to each other</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <form action="#" method="get">
+
+          <h1 class="govuk-heading-l">Change your details</h1>
+          
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-first-name-new-emp">
+              First name
+            </label>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Your first name must not include multiple spaces, full stops,
+              hyphens and apostrophes next to each other
+            </p>
+            <input class="govuk-input govuk-input--error" id="ref1-first-name-new-emp-5" name="ref1-first-name-new-emp" type="text"
+              spellcheck="false" autocomplete="name" aria-describedby="first-name-error"value="">
+          </div> <!-- govuk-form-group -->
+
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-last-name-new-emp">
+              Last name
+            </label>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Your last name must not include multiple spaces, full stops,
+              hyphens and apostrophes next to each other
+            </p>
+            <input class="govuk-input govuk-input--error" id="ref1-last-name-new-emp-5" name="ref1-last-name-new-emp" type="text"
+              spellcheck="false" autocomplete="name" aria-describedby="last-name-error"value="">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-email-new-emp">
+              Email address
+            </label>
+             <input class="govuk-input" id="ref1-email-new-emp" name="ref1-email-new-emp" type="email" spellcheck="false"
+              aria-describedby="email-hint email-error" autocomplete="email" value="john.jones@gmail.com" disabled>
+          </div> <!-- govuk-form-group -->
+
+          <div class="govuk-form-group ">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-1-new-emp">
+              Contact number
+            </label>
+            <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code.
+              For example, +91 8123 67894</div>
+            <input class="govuk-input govuk-input--width-20" id="ref1-contact-1-new-emp" name="ref1-contact-1-new-emp"
+              type="number" spellcheck="false" aria-describedby="contact-number-hint contact-number-error" autocomplete="number"
+              value="">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-2-new-emp">
+              Extension (optional)
+            </label>
+            <!-- <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code. For example, +353 8123 67894
+                   </div> -->
+            <input class="govuk-input govuk-input--width-20" id="ref1-contact-2-new-emp" name="ref1-contact-2-new-emp"
+              type="number" spellcheck="false" aria-describedby="extension-hint" autocomplete="number" value="6789">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-3-new-emp">
+             Alternative number (optional)
+            </label>
+            <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code.
+              For example, +353 8123 67894
+            </div>
+            <input class="govuk-input govuk-input--width-20" id="ref1-contact-3-new-emp" name="ref1-contact-3-new-emp" type="number"
+              spellcheck="false" aria-describedby="mobile-hint" autocomplete="number">
+          </div>
+          <!-- govuk-form-group -->
+          
+          <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+        </form>
+        <a href="#">Cancel</a>
+      </div>
+    </div>
+  </main>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <!-- <li>
+                  <a href="#ref1-email-new-emp-2">Enter your email address in the correct format, like name@email.com</a>
+                </li> -->
+                <li>
+                  <a href="#ref1-contact-1-new-emp-2">Enter a valid contact number</a>
+                </li>
+                <li>
+                  <a href="#ref1-contact-2-new-emp-2">Enter a valid extension number</a>
+                </li>
+                <li>
+                  <a href="#ref1-contact-3-new-emp-2">Enter a valid alternative number</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <form action="#" method="get">
+
+          <h1 class="govuk-heading-l">Change your details</h1>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-first-name-new-emp-2">
+              First name
+            </label>
+           <input class="govuk-input " id="ref1-first-name-new-emp-2" name="ref1-first-name-new-emp-2" type="text"
+              spellcheck="false" autocomplete="name" aria-describedby="first-name-hint"value="John">
+          </div> <!-- govuk-form-group -->
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-last-name-new-emp-2">
+              Last name
+            </label>
+             <input class="govuk-input" id="ref1-last-name-new-emp-2" name="ref1-last-name-new-emp-2" type="text"
+              spellcheck="false" autocomplete="name" aria-describedby="last-name-hint"value="Jones">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="ref1-email-new-emp-2">
+              Email address
+            </label>
+            <input class="govuk-input" id="ref1-email-new-emp-2" name="ref1-email-new-emp-2" type="email" spellcheck="false"
+              aria-describedby="email-hint email-error" autocomplete="email" value="john.jones@gmail.com" disabled>
+          </div> <!-- govuk-form-group -->
+
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-1-new-emp-2">
+              Contact number
+            </label>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Enter a valid contact number
+            </p>
+            <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code.
+              For example, +91 8123 67894</div>
+            <input class="govuk-input govuk-input--width-20 govuk-input--error" id="ref1-contact-1-new-emp-2" name="ref1-contact-1-new-emp-2"
+              type="text" spellcheck="false" aria-describedby="contact-number-hint contact-number-error" autocomplete="number"
+              value="1111111  1111111">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-2-new-emp-2">
+              Extension (optional)
+            </label>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Enter a valid extension number
+            </p>
+            <input class="govuk-input govuk-input--width-20 govuk-input--error" id="ref1-contact-2-new-emp-2" name="ref1-contact-2-new-emp-2"
+              type="text" spellcheck="false" aria-describedby="extension-hint extension-number-error" autocomplete="text" value="one three five">
+          </div> <!-- govuk-form-group -->
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label govuk-label--s" for="ref1-contact-3-new-emp-2">
+             Alternative number (optional)
+            </label>
+            <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code.
+              For example, +353 8123 67894
+            </div>
+            <p id="login-email-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Enter a valid alternative number
+            </p>
+            <input class="govuk-input govuk-input--width-20 govuk-input--error" id="ref1-contact-3-new-emp-2" name="ref1-contact-3-new-emp-2" type="text"
+              spellcheck="false" aria-describedby="alternative-hint alterntive-number-error" autocomplete="number" value="0 222222 22222222">
+          </div>
+          <!-- govuk-form-group -->
+          
+          <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+        </form>
+        <a href="#">Cancel</a>
+      </div>
+    </div>
+  </main>
+  
+</div>
+
+{% endblock %}

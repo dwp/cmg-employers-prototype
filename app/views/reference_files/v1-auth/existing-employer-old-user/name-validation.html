@@ -1,0 +1,79 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#ref1-which-user-are-you">Select one of the listed users. If you cannot see your name, select 'none of these'</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <form action="/form-handler" method="post" novalidate>
+
+          <div class="govuk-form-group govuk-form-group--error">
+            <fieldset class="govuk-fieldset" aria-describedby="which-user-are-you-error">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Which user are you?</h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ref1-which-user-are-you" name="ref1-which-user-are-you" type="radio"
+                    value="John Smith~reference_files/v1-auth/existing-employer-old-user/user_1/admin-user-message.html" >
+                  <label class="govuk-label govuk-radios__label" for="ref1-which-user-are-you">
+                    John Smith
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ref1-which-user-are-you-2" name="ref1-which-user-are-you" type="radio"
+                    value="Jane Doe~reference_files/v1-auth/existing-employer-old-user/user_2/admin-user-message.html">
+                  <label class="govuk-label govuk-radios__label" for="ref1-which-user-are-you-2">
+                    Jane Doe
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ref1-which-user-are-you-3" name="ref1-which-user-are-you" type="radio"
+                    value="Robert Jones~reference_files/v1-auth/existing-employer-old-user/user_3/admin-user-message.html">
+                  <label class="govuk-label govuk-radios__label" for="ref1-which-user-are-you-3">
+                    Robert Jones
+                  </label>
+                </div>
+                <div class="govuk-radios__divider">or</div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ref1-which-user-are-you-4" name="ref1-which-user-are-you" type="radio"
+                    value="None of these~reference_files/v1-auth/existing-employer-old-user/user_4/add-users-details-new.html">
+                  <label class="govuk-label govuk-radios__label" for="ref1-which-user-are-you-4">
+                    None of these
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">Save and continue </button>
+
+        </form>
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

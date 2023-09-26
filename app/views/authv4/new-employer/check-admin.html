@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <form action="add-users.html" method="get">
+
+            <h2 class="govuk-heading-l">Check your details</h2>
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Full name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">John Jones</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contact-details-user1.html">
+                    Change<span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">John.jones@gmail.com</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contact-details-user1.html">
+                    Change<span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">0113 2324567</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contact-details-user1.html">
+                    Change<span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  What can you help with
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">Deductions</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contact-reason.html">
+                    Change<span class="govuk-visually-hidden"> contact reason</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  User level
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">Admin</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-user-level.html">
+                    <span class="govuk-visually-hidden"> user level</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <div class="govuk-form-group">
+              <button class="govuk-button" data-module="govuk-button">
+                Confirm your details
+              </button>
+              <br>
+              <a href="test-manage-contacts.html">Cancel</a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}

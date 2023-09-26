@@ -1,0 +1,223 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  
+    <div class="govuk-width-container">
+      
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <h1 class="govuk-heading-l">Select your address</h1>
+              <p class="govuk-hint">15 addresses found for <br>{{ data['address-line-1']| default("36") }}<br>
+                {{ data['address-postcode']| default("LN14 GDB") }} <a href="postal-address.html">change</a></p>
+              <form action="/form-handler" method="post" novalidate>
+
+              <div class="govuk-form-group"></div>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Road Apartment 1<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Road Apartment 2<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 3<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 4<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 5<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 6<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 7<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 8<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 9<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 10<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 11<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 12<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 13<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 14<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE" name="WHERE-YOU-LIVE" type="radio" value="yes~address-multiple/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE">
+                  
+                
+                    {{ data['address-line-1']| default("36") }} Acacia Avenue Apartment 15<br>London<br>{{ data['address-postcode']| default("LN14 GDB") }}
+                      
+                  </label>
+                </div>
+              
+                  <div class="govuk-radios__divider">or</div>
+                  <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="WHERE-YOU-LIVE-2" name="WHERE-YOU-LIVE" type="radio" value="scotland~address-multiple/manual-address">
+                  <label class="govuk-label govuk-radios__label" for="WHERE-YOU-LIVE-2">
+                    Enter address manually
+                  </label>
+                </div>
+              </div>
+            <br>
+            <br>
+            </fieldset>
+                <button class="govuk-button" data-module="govuk-button">
+                    Save and continue
+                  </button>
+           
+          </form>
+         
+        
+            </div>
+           
+        
+        </div>
+    
+        </div>
+          </div>
+        </main>
+      </div>
+  </div>  
+
+{% endblock %}

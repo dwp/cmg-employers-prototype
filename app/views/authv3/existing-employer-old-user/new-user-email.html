@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+        <form action ="cya.html" method="get">
+
+        <h1 class="govuk-heading-l">What is their email address? </h1>
+<span class="govuk-hint">We will send instructions, on how to set up a user account, to this email address.</span>
+       
+
+
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="email-address">
+              Email address
+            </label>
+            <input class="govuk-input" id="email-address" name="email-address" type="text" spellcheck="false" autocomplete="name">
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+       
+
+
+      </div>
+    </div>
+  </main>
+</div>
+    {% endblock %}

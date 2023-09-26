@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form action="https://www.gov.uk/child-maintenance-service/contact.html" method="get" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              
+                <h1 class="govuk-heading-l">
+                  There needs to be an admin to able to use the CMG portal
+                </h1>
+                <h2 class="govuk-heading-m">
+                  Add sub title around what the Admin means
+                </h2>
+                <p class="govuk-body">Content to add about the admin role and why it is needed</p>
+                <h3 class="govuk-heading-m">
+                  If you still don't want to be an admin please contact the CMG EPT (content to agree)
+                </h3>
+                <p class="govuk-body">Content to add for contacting EPT and what happens if they click Finish (taken to GOV UK CMG pages)</p>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Finish
+          </button>
+          
+        </form>
+        <a href="/authv5/existing-employer-old-user-single-contact/name.html">Cancel</a>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

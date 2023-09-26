@@ -1,0 +1,44 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+          <form action="/form-handler" method="post" novalidate>
+            <h1 class="govuk-heading-l">Signing into the Child Maintenance service using your email and password</h1>
+  
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="login-email">Email address</label>
+              <input class="govuk-input" id="login-email" name="login-email" type="email" spellcheck="false"
+                aria-describedby="email-hint" autocomplete="email">
+            </div>
+  
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="login-password">Password</label>
+              <input class="govuk-input" id="login-password" name="login-password" type="text" spellcheck="false"
+                aria-describedby="email-hint" autocomplete="text">
+            </div>
+  
+            <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+              Sign in
+            </a>
+  
+          </form>
+  
+          <h2 class="govuk-heading-m">Problems signing in</h2>
+         
+            <p class="govuk-body"><a href="reset-password.html" class="govuk-link">Request a new password</a></p>
+            
+            <p class="govuk-body">You can also<a href="log-in-2.html"> sign in using your Employer Reference Number and PAYE</a></p>
+
+        </div>
+      </div>
+    </main>
+  </div>
+{% endblock %}

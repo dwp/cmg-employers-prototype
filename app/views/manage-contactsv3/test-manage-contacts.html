@@ -1,0 +1,333 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  
+    <div class="govuk-width-container">
+      
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              
+      
+              <form action="/form-handler" method="post" novalidate>
+
+                <h1 class="govuk-heading-xl">Manage company contacts</h1>
+        
+                <a href="add-a-contact.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+                  Add new contact
+                  </a>
+                  <h2 class="govuk-heading-m">Main contact</h2>
+                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                  <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                       John Stones
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        <p class="govuk-body">  
+                        </p>
+                        
+                      </dd>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="main-contact.html">
+                          Change<span class="govuk-visually-hidden"> contact details</span>
+                        </a>
+                      </dd>
+                    </div>
+                    
+              </dl>
+
+              <h2 class="govuk-heading-m">John Stones</h2>
+
+
+                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Name
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">John Stones</p>
+                    </dd>
+                
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-name.html">Change
+                       <span class="govuk-visually-hidden"> name</span>
+                      </a>
+                    </dd>
+                    
+                
+                  </div>
+                  
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Mobile number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">07988 2433 981</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-uk-or-not.html">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Telephone number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <a class="govuk-link" href="change-uk-or-not-landline.html">
+                        Add telephone number<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                     
+                    </dd>
+                  </div>
+
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact reason
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">Payroll queries</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-query-type.html">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+                 
+                  </dl>
+               
+                <h2 class="govuk-heading-m">Zoe Burns</h2>
+
+                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Name
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">Zoe Burns</p>
+                    </dd>
+                
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-name.html">Change
+                       <span class="govuk-visually-hidden"> name</span>
+                      </a>
+                    </dd>
+                    
+                
+                  </div>
+                  
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Mobile number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">07734 236 076</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-or-delete-uk-mobile.html">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Telephone number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">0191 544 768</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-or-delete-uk-landline.html">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Extension
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">77865</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-or-delete-ext.html">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact reason
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">HR queries</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-query-type.html">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+                <br>
+                 
+                  <a href="delete-contact.html" role="button" draggable="false" class="govuk-button govuk-button--warning" data-module="govuk-button">
+                    Remove Zoe Burns
+                  </a>
+                
+                </dl>
+                <h2 class="govuk-heading-m">Ben Raine</h2>
+
+                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Name
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">Ben Raine</p>
+                    </dd>
+                
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-name.html">Change
+                       <span class="govuk-visually-hidden"> name</span>
+                      </a>
+                    </dd>
+                    
+                
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Mobile number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <a class="govuk-link" href="change-uk-or-not.html">
+                        Add mobile number<span class="govuk-visually-hidden"> </span>
+                      </a>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      
+                    </dd>
+                  </div>
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Telephone number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">+66 741 282 751</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-uk-or-not-landline.html">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+
+                
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact reason
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">Payroll queries</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-query-type.html">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+                <br>
+                 
+                  <a href="delete-contact.html" role="button" draggable="false" class="govuk-button govuk-button--warning" data-module="govuk-button">
+                    Remove Ben Raine
+                  </a>
+               
+                </dl>
+
+                <nav class="moj-pagination" id="pagination-label">
+
+                  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+                
+                  <ul class="moj-pagination__list">
+                      <a class="moj-pagination__link" href=""><span class="govuk-visually-hidden"> set of pages</span></a>
+                    </li>
+                
+                    <li class="moj-pagination__item moj-pagination__item--active">1</li>
+                
+                    <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=1">2</a>
+                   
+                    <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=3">3</a></li>
+                
+                    <li class="moj-pagination__item moj-pagination__item--dots">...</li>
+                
+                    <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=5">5</a></li>
+                
+                    <li class="moj-pagination__item  moj-pagination__item--next">
+                      <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+                    </li>
+                  </ul>
+                </nav>
+                
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+  </div>  
+
+{% endblock %}

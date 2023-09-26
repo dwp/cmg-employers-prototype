@@ -1,0 +1,168 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  
+    <div class="govuk-width-container">
+      
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              
+      
+              <form action="#" method="post" novalidate>
+
+                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Name
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                     Zoe Burns
+                    </dd>  
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-name.html">
+                       <span class="govuk-visually-hidden"> name</span>
+                      </a>
+                    </dd>               
+                  </div>                 
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact number #1
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      0191 544 768
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-or-delete-uk-landline.html">
+                        <span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact number #2
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      77865
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-or-delete-ext.html">
+                        <span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Email
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      zoe.burns@company.co.uk
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#">
+                        <span class="govuk-visually-hidden"> email address</span>
+                      </a>
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact reason
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      No contact
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="change-query-type.html">
+                        <span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Admin user
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      No
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#">
+                        <span class="govuk-visually-hidden"> user status</span>
+                      </a>
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Portal user
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Yes
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#">
+                        <span class="govuk-visually-hidden"> portal user status</span>
+                      </a>
+                    </dd>
+                  </div>
+                <br>
+                <!-- <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+                 Resend invite email
+                </a>
+                 <br>
+                  <a href="delete-contact.html" role="button" draggable="false" class="govuk-button govuk-button--warning" data-module="govuk-button">
+                    Remove Zoe Burns
+                  </a>
+                 -->
+                </dl>
+                  
+                  <a href="test-manage-contacts-alt.html">Cancel</a>
+                
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+  </div>  
+
+{% endblock %}

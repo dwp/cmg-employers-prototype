@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+    <div class="moj-sub-navigation__container">
+
+        <div class="moj-sub-navigation__nav">
+
+            <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+                <ul class="moj-sub-navigation__list">
+                    <li class="moj-sub-navigation__item">
+                        <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+                    </li>
+
+                    <li class="moj-sub-navigation__item">
+                        <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span
+                                id="notifications" class="moj-notification-badge">3</span></a>
+                    </li>
+
+                    <li class="moj-sub-navigation__item">
+                        <a class="moj-sub-navigation__link" aria-current="page"
+                            href="/v3company-details/company-details.html">Company details</a>
+                    </li>
+                    <li class="moj-sub-navigation__item">
+                        <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+                    </li>
+                    <li class="moj-sub-navigation__item">
+                        <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee
+                            details</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </div>
+
+</div>
+    
+    <div class="govuk-width-container">
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+                    <form action="cya-new-user-alt.html" method="get">
+
+                        <div class="govuk-form-group">
+                            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                                    <h1 class="govuk-fieldset__heading">
+                                        Are they a Portal user?
+                                    </h1>
+                                </legend>
+
+                                <div class="govuk-radios govuk-radios">
+                                    <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="portal-user-new-1" name="portal-user-new"
+                                            type="radio" value="Yes">
+                                        <label class="govuk-label govuk-radios__label" for="portal-user-new-1">
+                                            Yes
+                                        </label>
+                                    </div>
+                                    <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="portal-user-new-2" name="portal-user-new"
+                                            type="radio" value="No">
+                                        <label class="govuk-label govuk-radios__label" for="portal-user-new-2">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <button class="govuk-button" data-module="govuk-button">
+                            Continue
+                        </button>
+                    </form>
+                    <a href="test-manage-contacts-alt.html">Cancel</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+{% endblock %}

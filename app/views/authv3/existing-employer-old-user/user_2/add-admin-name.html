@@ -1,0 +1,42 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+        <form action ="admin-email.html" method="get">
+
+        <h1 class="govuk-heading-l">What is their name?</h1>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="user-2-admin-first-name">
+            First name
+          </label>
+          <input class="govuk-input" id="user-2-admin-first-name" name="user-2-admin-first-name" type="text"
+            spellcheck="false" autocomplete="name">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="user-2-admin-last-name">
+            Last name
+          </label>
+          <input class="govuk-input" id="user-2-admin-last-name" name="user-2-admin-last-name" type="text"
+            spellcheck="false" autocomplete="name">
+        </div>
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+      
+        </form>
+
+      </div>
+    </div>
+  </main>
+</div>
+    {% endblock %}

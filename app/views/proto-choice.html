@@ -1,0 +1,59 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <a href="index.html" class="govuk-back-link">Back to main Home page</a>
+    <h1 class="govuk-heading-l">
+        Employer Deductions Service (EDS) Prototype
+    </h1>
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    
+    <div class="govuk-grid-column-two-thirds">
+        <form action="/form-handler" method="post" novalidate>
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        Which prototype do you want to view?
+                    </h1>
+                </legend>
+                <!-- <div id="sign-in-hint" class="govuk-hint">
+                You’ll need an account to prove your identity and complete your Self Assessment.
+              </div> -->
+                <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="prototype" name="prototype" type="radio"
+                            value="employers~index-proto.html" aria-describedby="sign-in-item-hint">
+                        <label class="govuk-label govuk-radios__label" for="prototype">
+                            Employers prototypes
+                        </label>
+                        <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                            View prototypes for employers who have accounts with Child Maintenance
+                        </div>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="prototype-2" name="prototype" type="radio"
+                            value="caseworkers~index-caseworkers-proto.html" aria-describedby="sign-in-2-item-hint">
+                        <label class="govuk-label govuk-radios__label" for="prototype-2">
+                            Child Maintenance caseworkers prototypes
+                        </label>
+                        <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                            View prototypes for Child Maintenance caseworkers
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <button class="govuk-button" data-module="govuk-button">Continue </button>
+        </form>
+    </div>
+
+
+</div>
+
+{% endblock %}

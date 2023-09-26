@@ -1,0 +1,51 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+        <form action ="cya-alt-admin-1" method="get">
+
+        <h1 class="govuk-heading-l">Enter the admin user's details details.</h1>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--s" for="u4-new-admin-user-first-name">
+            First name
+          </label>
+          <input class="govuk-input" id="u4-new-admin-user-first-name" name="u4-new-admin-user-first-name" type="text" spellcheck="false" autocomplete="name">
+        </div> <!-- govuk-form-group -->
+  
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--s" for="u4-new-admin-user-last-name">
+            Last name
+          </label>
+          <input class="govuk-input" id="u4-new-admin-user-last-name" name="u4-new-admin-user-last-name" type="text" spellcheck="false" autocomplete="name">
+        </div> <!-- govuk-form-group -->
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--s" for="u4-new-admin-email">
+            Email address
+          </label>
+          <input class="govuk-input" id="u4-new-admin-email" name="u4-new-admin-email" type="email" spellcheck="false" aria-describedby="email-hint"
+            autocomplete="email">
+        </div> <!-- govuk-form-group -->
+
+          <button class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+      
+        </form>
+       
+        <a href="/authv4/existing-employer-old-user/name.html">Cancel</a>
+
+      </div>
+    </div>
+  </main>
+</div>
+    {% endblock %}

@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  
+    <div class="govuk-width-container">
+      
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <h1 class="govuk-heading-l">We cannot find your address</h1>
+              <form action="/form-handler" method="post" novalidate>
+
+                  
+                  
+                          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                            <div class="govuk-summary-list__row">
+                              <dt class="govuk-summary-list__key">
+                               Building name or number
+                              </dt>
+                              <dd class="govuk-summary-list__value">
+                                72 
+                              </dd>
+                              <dd class="govuk-summary-list__actions">
+                                <a class="govuk-link" href="postal-address.html">
+                                  Change<span class="govuk-visually-hidden"> address</span>
+                                </a>
+                              </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                 Postcode
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                 SE23 6FH
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="postal-address.html">
+                                    Change<span class="govuk-visually-hidden"> address</span>
+                                  </a>
+                                </dd>
+                              </div>
+                           
+            </fieldset>
+           
+          </form>
+         
+        
+            </div>
+           
+        
+        </div>
+        <p class="govuk-body">If you are sure the information you gave is correct, you can <a href="manual-address">enter your address manually</a>.</p>
+
+        </div>
+          </div>
+        </main>
+      </div>
+  </div>  
+
+{% endblock %}

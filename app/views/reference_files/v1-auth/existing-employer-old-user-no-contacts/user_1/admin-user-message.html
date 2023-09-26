@@ -1,0 +1,55 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+You'll be set up as an admin user
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form action="add-user-details.html" method="get" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+
+              <h1 class="govuk-heading-l">
+                You'll be set up as an administrator
+              </h1>
+              <h2 class="govuk-heading-m">
+                What does this mean?
+              </h2>
+              <p class="govuk-body">Your employer does not have any contacts linked to their account. </p>
+
+              <p class="govuk-body"> As the first person to sign in to this account, you're automatically made an
+                administrator. </p>
+
+              <p class="govuk-body"> Each employer must have at least one administrator.</p>
+
+              <h3 class="govuk-heading-m">
+                 What can an administrator do?
+              </h3>
+              <p class="govuk-body">As an administrator you're able to:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>add other users to the employer account</li>
+                <li>choose whether they have administrator access</li>
+                <li>delete any contacts you do not need</li>
+              </ul>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+        </form>
+        <a href="/reference_files/v1-auth/existing-employer-old-user-no-contacts/change-sign-in.html">Cancel</a>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

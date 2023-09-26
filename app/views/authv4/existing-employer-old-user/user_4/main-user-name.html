@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+        <form action="main-user-email.html" method="get">
+          <h1 class="govuk-heading-l">What is the admin user's name? </h1>
+
+          <div class="govuk-form-group">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="user-4-main-user-first-name">
+                First name
+              </label>
+              <input class="govuk-input" id="user-4-main-user-first-name" name="user-4-main-user-first-name" type="text"
+                spellcheck="false" autocomplete="name">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="user-4-main-user-last-name">
+                Last name
+              </label>
+              <input class="govuk-input" id="user-4-main-user-last-name" name="user-4-main-user-last-name" type="text"
+                spellcheck="false" autocomplete="name">
+            </div>
+          </div>
+
+            <button class="govuk-button" data-module="govuk-button">
+              Continue
+            </button>
+          
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

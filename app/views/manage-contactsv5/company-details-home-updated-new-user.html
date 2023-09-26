@@ -1,0 +1,190 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+{% include "manage-contactsv5/_nav-header.html" %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+          <form action="/form-handler" method="post" novalidate>
+
+            <h2 class="govuk-heading-l">Company details</h2>
+            <span class="govuk-hint">This is the latest information we have from HMRC. </span>
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Weatherspoons
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Employer reference number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  50010085564323
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+            </dl>
+
+            <h1 class="govuk-heading-m">Manage company contacts</h1>
+
+            <a href="new_user_1/add-a-contact.html" role="button" draggable="false" class="govuk-button"
+              data-module="govuk-button">
+              Add new contact
+            </a>
+           
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  John Stones 
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p><strong class="govuk-tag app-task-list__tag"
+                    id="contact-details-status">Admin</strong></p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <!-- <a class="govuk-link" href="user-view-alt.html">View details
+                    <span class="govuk-visually-hidden"> view user details</span>
+                  </a> -->
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <!-- <a class="govuk-link" href="user-view-alt.html">View details
+                    <span class="govuk-visually-hidden"> view user details</span>
+                  </a> -->
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="user-view-alt.html">View details
+                    <span class="govuk-visually-hidden"> view user details</span>
+                  </a>
+                </dd>
+              </div>
+
+            </dl>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Zoe Burns 
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag"
+                  id="contact-details-status">standard</strong>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="delete-contact-1.html">Remove
+                    <span class="govuk-visually-hidden"> remove contact</span>
+                  </a>
+                </dd>               
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="user-view-alt-2.html">Resend OTP
+                    <span class="govuk-visually-hidden"> resend invitation email</span>
+                  </a>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="user-view-alt-2.html">View details
+                    <span class="govuk-visually-hidden"> view contact details</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  {{data['v5-first-name-new']}} {{data['v5-last-name-new']}}
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag"
+                  id="contact-details-status">standard</strong>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">Remove
+                    <span class="govuk-visually-hidden"> remove contact</span>
+                  </a>
+                </dd>               
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">Resend OTP
+                    <span class="govuk-visually-hidden"> resend invitation email</span>
+                  </a>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#l">View details
+                    <span class="govuk-visually-hidden"> view contact details</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Ben Raine
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag"
+                  id="contact-details-status">contact only</strong>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="delete-contact-2.html">Remove
+                    <span class="govuk-visually-hidden"> remove contact</span>
+                  </a>
+                </dd>               
+                <dd class="govuk-summary-list__actions">
+                  <!-- <a class="govuk-link" href="user-view-alt-2.html">Resend OTP
+                    <span class="govuk-visually-hidden"> resend invitation email</span>
+                  </a> -->
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="user-view-alt-3.html">View details
+                    <span class="govuk-visually-hidden"> view contact details</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+   
+            <nav class="moj-pagination" id="pagination-label">
+
+              <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+              <ul class="moj-pagination__list">
+                <a class="moj-pagination__link" href=""><span class="govuk-visually-hidden"> set of pages</span></a>
+                </li>
+
+                <li class="moj-pagination__item moj-pagination__item--active">1</li>
+
+                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=1">2</a>
+
+                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=3">3</a></li>
+
+                <li class="moj-pagination__item moj-pagination__item--dots">...</li>
+
+                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=5">5</a></li>
+
+                <li class="moj-pagination__item  moj-pagination__item--next">
+                  <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of
+                      pages</span></a>
+                </li>
+              </ul>
+            </nav>
+
+          </form>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}

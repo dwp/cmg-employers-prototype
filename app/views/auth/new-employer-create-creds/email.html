@@ -1,0 +1,47 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <h1 class="govuk-heading-l">Enter your email address
+
+        </h1>
+                    <p class="govuk-body">
+                        We will only use this address to send security updates or if you need to reset your details.
+                    </p>
+
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="password">
+              Email address
+            </label>
+            
+            <input class="govuk-input" id="password" name="password" type="text" spellcheck="false" aria-describedby="password-hint">
+          </div>
+
+         
+
+        <form action="/form-handler" method="post" novalidate>
+
+            <a href="confirm-email.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+               Continue
+                 </a>
+          
+      
+        </form>
+       
+
+
+      </div>
+    </div>
+  </main>
+</div>
+    {% endblock %}

@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form action="/form-handler" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Which user are they?</h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+                    value="Jane Doe~authv4/existing-employer-old-user/user_2/check-admin-details-1.html">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    John Smith
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="Jane Doe~authv4/existing-employer-old-user/user_2/check-admin-details-2.html">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                    Robert Jones
+                  </label>
+                </div>
+                <div class="govuk-radios__divider">or</div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio"
+                    value="None of these~authv4/existing-employer-old-user/user_2/add-admin-users-details.html">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                    None of these
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">Save and continue </button>
+
+        </form>
+        <a href="/authv4/existing-employer-old-user/name.html">Cancel</a>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

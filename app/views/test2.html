@@ -1,0 +1,78 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  
+    <div class="govuk-width-container">
+      
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <h1 class="govuk-heading-l">What do you need to do?</h1>
+              <form action="/form-handler" method="post" novalidate>
+
+              <div class="govuk-form-group"></div>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england~address/postcode-lookup-check">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                  
+                Update your details
+                      
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england~address/postcode-lookup-check">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    
+                  
+                Make a payment                        
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england~address/postcode-lookup-check">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    
+                  
+                        Check how much you need to pay                
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england~address/postcode-lookup-check">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    
+                  
+                Tell us an employee no longer works for you                        
+                    </label>
+                  </div>
+                 
+                
+                
+            <br>
+            <br>
+            </fieldset>
+                <button class="govuk-button" data-module="govuk-button">
+                    Continue
+                  </button>
+           
+          </form>
+         
+        
+            </div>
+           
+        
+        </div>
+    
+        </div>
+          </div>
+        </main>
+      </div>
+  </div>  
+
+{% endblock %}

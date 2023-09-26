@@ -1,0 +1,33 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <h1 class="govuk-heading-l">Enter your email address</h1>
+
+        <p class="govuk-body">We'll send a new one-time passcode to your email address.</p>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="password">
+            Email address
+          </label>
+          <input class="govuk-input" id="password" name="password" type="password" spellcheck="false"
+            aria-describedby="password-hint">
+        </div>
+
+       <a href="reset-sent.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Continue
+       </a>
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

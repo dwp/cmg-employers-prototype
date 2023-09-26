@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+<form action ="contact-preferencesv2.html" method="get">
+
+<h2 class="govuk-heading-l">How would you like to receive letters?
+</h2>
+<span class="govuk-hint">We may need to send some letters by post. We will always upload them to the employer online account if we can.</span>
+<div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+       
+      <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+        
+       
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="contact2" name="contact" type="radio" value="yes~confirm-email" data-aria-controls="conditional-contact-2">
+          <label class="govuk-label govuk-radios__label" for="contact2">
+           Online only
+          </label>
+          </div>
+        
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="contact3" name="contact" type="radio" value="no~confirm-email" data-aria-controls="conditional-contact-3">
+          <label class="govuk-label govuk-radios__label" for="contact3">
+            Online and by post
+          </label>        
+        </div>
+       
+     
+    </div>            
+      
+        </fieldset>
+      </div>
+  
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+        </form>
+        </div>
+        </div>
+{% endblock %}

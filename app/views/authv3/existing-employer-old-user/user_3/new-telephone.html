@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">What is the best number for contact?</h1>
+
+        <form action="contact-reason.html" method="get">
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="new-telephone-3">
+              Telephone number
+            </label>
+            <input class="govuk-input" id="new-telephone-3" name="new-telephone-3" value="" type="number"
+              spellcheck="false" aria-describedby="email-hint" autocomplete="new-telephone">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="new-telephone">
+              Addiotnal extension (optional)
+            </label>
+            <input class="govuk-input" id="new-telephone-opt" name="new-telephone-opt" value="" type="number"
+              spellcheck="false" aria-describedby="email-hint" autocomplete="new-telephone-opt">
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+          <br>
+          <a href="name.html">Cancel</a>
+
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}

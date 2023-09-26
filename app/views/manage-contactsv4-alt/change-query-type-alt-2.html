@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications"
+                class="moj-notification-badge">3</span></a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page"
+              href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <form action="cya-query-reason-alt-2.html" method="get">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="contact-reason">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                  <h1 class="govuk-fieldset__heading">
+                    What can they help with?
+                  </h1>
+                </legend>
+                <div id="contact-reason-hint" class="govuk-hint">
+                  Select all that apply.
+                </div>
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="query-type-alt" name="query-type-alt" type="checkbox" value="Deductions">
+                    <label class="govuk-label govuk-checkboxes__label" for="query-type-alt">
+                      Deductions
+                    </label>
+                    <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                      You can discuss deductions that have or should have been taken from employees pay.
+                    </div>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="query-type-alt-2" name="query-type-alt" type="checkbox" value="Payments">
+                    <label class="govuk-label govuk-checkboxes__label" for="query-type-alt-2">
+                      Payments
+                    </label>
+                    <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                      You can discuss Child Maintenance payments.
+                    </div>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="query-type-alt-3" name="query-type-alt" type="checkbox" value="Employee details">
+                    <label class="govuk-label govuk-checkboxes__label" for="query-type-alt-3">
+                      Employee details
+                    </label>
+                    <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                      You can discuss employee details.
+                    </div>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="query-type-alt-4" name="query-type-alt" type="checkbox" value="General enquiries">
+                    <label class="govuk-label govuk-checkboxes__label" for="query-type-alt-4">
+                      General enquiries
+                    </label>
+                    <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                      You can take general enquiries but are not able to discuss deductions, payments or employee details.
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <button class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+          </form>
+          <br><a href="user-view-alt-2.html">Cancel</a>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}

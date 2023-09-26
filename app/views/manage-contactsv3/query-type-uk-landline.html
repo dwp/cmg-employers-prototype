@@ -1,0 +1,108 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  
+    <div class="govuk-width-container">
+      
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+        
+      
+              <form action ="cya-full-landline.html" method="get">
+
+              
+                 <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h1 class="govuk-fieldset__heading">
+                        Why should we contact John Smith?
+                      </h1>
+                    </legend>
+                    <div id="changed-name-hint" class="govuk-hint">
+                    </div>
+                    <div class="govuk-radios govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="query-type2" name="query-type2" type="radio" value="Payroll queries">
+                        <label class="govuk-label govuk-radios__label" for="query-type2">
+                          Payroll queries
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="query-type2-2" name="query-type2" type="radio" value="HR queries">
+                        <label class="govuk-label govuk-radios__label" for="query-type2-2">
+                         HR queries
+                        </label>
+                      </div>
+                    
+
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="query-type2-3" name="query-type2" type="radio" value="All queries">
+                        <label class="govuk-label govuk-radios__label" for="query-type2-3">
+                          All queries
+                        </label>
+                      </div>
+                    </div>
+                
+               
+
+                </fieldset>
+            </div>
+
+
+                  <button class="govuk-button" data-module="govuk-button">
+                    Continue
+                  </button>
+                
+                  <br><a href="test-manage-contacts.html">Cancel</a>
+
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+  </div>  
+
+{% endblock %}

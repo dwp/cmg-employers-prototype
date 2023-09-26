@@ -1,0 +1,72 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/employee-details/employee-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+<a href="make-payment.html" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+   Make a payment
+   </a>
+
+<table class="govuk-table">
+    <caption class="govuk-table__caption govuk-table__caption--m">Payment History</caption>
+    
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">July 14 2021</th>
+        <td class="govuk-table__cell">£1765.98</td>
+        <td class="govuk-table__cell"><a href="">View payment</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">July 1 2021</th>
+        <td class="govuk-table__cell">£1765.98</td>
+        <td class="govuk-table__cell"><a href="">View payment</a></td>
+
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">June 17 2021</th>
+        <td class="govuk-table__cell">£1765.98</td>
+        <td class="govuk-table__cell"><a href="">View payment</a></td>
+
+      </tr>
+    </tbody>
+  </table>
+
+  
+
+{% endblock %}

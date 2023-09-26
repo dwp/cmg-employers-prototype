@@ -1,0 +1,78 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  
+    <div class="govuk-width-container">
+      
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+      
+              <form action="/form-handler" method="post" novalidate>
+               
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h1 class="govuk-fieldset__heading">
+                           We need a temporary administrator to set up this account
+          
+                        </h1>
+                      </legend>
+                    
+                <p class="govuk-body">In order to set up this account and any other users, we need a temporary administrator. This can be you or someone else you can nominate.
+                    
+                </p>
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h2 class="govuk-fieldset__heading">
+                          Who would you like to be temporary administrator?
+                        </h2>
+                      </legend>
+                      <div id="changed-name-hint" class="govuk-hint">
+                       
+                      </div>
+                      <div class="govuk-radios" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes~authv2/existing-employer-old-user/add-users.html">
+                          <label class="govuk-label govuk-radios__label" for="changed-name">
+                            Yourself
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no~authv2/existing-employer-old-user/add-admin-name.html">
+                          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                            Somone else
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    </fieldset>
+                  </div>
+
+
+
+
+                  <button class="govuk-button" data-module="govuk-button">
+                    Continue
+                  </button>
+                  <br><a href="preferred-contact">Cancel</a>
+
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+  </div>  
+
+{% endblock %}

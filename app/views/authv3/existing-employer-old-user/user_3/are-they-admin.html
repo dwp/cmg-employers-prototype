@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form action="cya.html" method="get">
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  What type of user will they be?
+                </h1>
+              </legend>
+              <div id="changed-name-hint" class="govuk-hint">
+                As the admin user you'll be in charge of adding and removing users. </div>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="user-3-admin-user-3" name="user-3-admin-user-3" type="radio" value="Admin">
+                  <label class="govuk-label govuk-radios__label" for="user-3-admin-user-3">
+                    Admin
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="user-3-admin-user-3-2" name="user-3-admin-user-3" type="radio"
+                    value="Standard">
+                  <label class="govuk-label govuk-radios__label" for="user-3-admin-user-3-2">
+                    Standard
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="user-3-admin-user-3-3" name="user-3-admin-user-3" type="radio"
+                    value="Contact only">
+                  <label class="govuk-label govuk-radios__label" for="user-3-admin-user-3-3">
+                    Contact only
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+        </form>
+        
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

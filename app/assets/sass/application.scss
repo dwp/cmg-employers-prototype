@@ -1,0 +1,81 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+$govuk-new-link-styles: true;
+
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import ".tmp/sass/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/contents-list";
+@import "patterns/mainstream-guide";
+@import "patterns/pagination";
+@import "patterns/related-items";
+@import "patterns/task-list";
+@import "node_modules/@ministryofjustice/frontend/moj/all";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.messages-pagination {
+  ul {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      margin-right: 15px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.message-summary {
+  .govuk-summary-list__key {
+    width: 75%;
+    font-weight: normal;
+  }
+}
+
+// child maintenance header
+
+.uk {
+  .cmg-logo {
+    margin-right: 10px;
+    display: inline-block;
+    min-height: 46.5px;
+    padding-left: 90px;
+    background-position: 2% 0%;
+    width: 85.33%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 0;
+  }
+  .en {
+    background-image: url('../../../public/images/cmg-logo-header-en.png');
+  }
+  .cy {
+    background-image: url('../images/cmg-logo-header-cy.png');
+  }
+  .govuk-header {
+    background: white;
+    border-bottom-color: #1BB6B8;
+  }
+  .govuk-header__link:link,
+  .govuk-header__link:visited {
+    color: black;
+  }
+  .govuk-header__container {
+    border-bottom: 5px solid #1BB6B8;
+  }
+}
+
+// portal home page
+
+.responsive {
+  width: auto;
+  height: auto;
+}

@@ -1,0 +1,182 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <form action="account-done.html" method="get">
+
+            <h2 class="govuk-heading-l">Check your answers</h2>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Full name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">Jane Doe</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-details-user-2.html">
+                    Change<span class="govuk-visually-hidden"> name</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">jane.doe@company.co.uk</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-details-user-2.html">
+                    Change<span class="govuk-visually-hidden"> email</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">01132327654</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-details-user-2.html">
+                    Change<span class="govuk-visually-hidden"> contact number</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Extension
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">1234</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-details-user-2.html">
+                    Change<span class="govuk-visually-hidden"> contact number</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  What can you help with?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v4-user-2-contact-reason']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contact-reason.html">
+                    Change<span class="govuk-visually-hidden"> contact reason</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  What level of user?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v4-user-2-admin-main']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="are-they-admin.html">
+                    Change<span class="govuk-visually-hidden"> user type</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Full name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v4-user-2-first-name']}} {{data['v4-user-2-last-name']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="add-users-details.html">
+                    Change<span class="govuk-visually-hidden"> name</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v4-user-2-email']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="add-users-details.html">
+                    Change<span class="govuk-visually-hidden"> email</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v4-user-2-contact-1']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="add-users-details.html">
+                    Change<span class="govuk-visually-hidden"> contact number</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  What can they help with?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v4-user-2-query-type']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contact-reason-2.html">
+                    Change<span class="govuk-visually-hidden"> contact reason</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  What level of user?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v4-user-2-admin-user-2']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="are-they-admin.html">
+                    Change<span class="govuk-visually-hidden"> user type</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <a href="#" role="button" draggable="false"
+              class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Add another user
+            </a>
+            <div class="govuk-form-group">
+              <button class="govuk-button" data-module="govuk-button">
+                Confirm and send
+              </button>
+              <br>
+              
+            </div>
+          </form>
+          <a href="/authv4/existing-employer-old-user/name.html">Cancel</a>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}

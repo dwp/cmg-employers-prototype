@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="account-done.html" method="get">
+
+          <h2 class="govuk-heading-l">Check your answers</h2>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <h3 class="govuk-heading-m">Added users</h3>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Full name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{data['first-name-new']}} {{data['last-name-new']}}</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="add-users-contact-details.html">
+                  Change<span class="govuk-visually-hidden"> contact details</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Email address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{data['email-new']}}</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="add-users-contact-details.html">
+                  Change<span class="govuk-visually-hidden"> contact details</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Full name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{data['first-name-new-2']}} {{data['last-name-new-2']}}</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="add-users-contact-details2.html">
+                  Change<span class="govuk-visually-hidden"> contact details</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Email address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{data['email-new-2']}}</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="uk-or-not.html">
+                  Change<span class="govuk-visually-hidden"> contact details</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+          <a href="#" role="button" draggable="false" class="govuk-button govuk-button--secondary"
+            data-module="govuk-button">
+            Add another user
+          </a>
+          <div class="govuk-form-group">
+
+            <button class="govuk-button" data-module="govuk-button">
+              Confirm and send
+            </button>
+            <br>
+            <a href="cya.html">Cancel</a>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

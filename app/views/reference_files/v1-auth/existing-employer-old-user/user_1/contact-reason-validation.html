@@ -1,0 +1,96 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#ref1-user-1-contact-reason">Select what you're able to help with</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <form action="check-user-1-details-updated.html" method="get">
+          <div class="govuk-form-group govuk-form-group--error">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  What can you help with?
+                </h1>
+              </legend>
+              <div id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <p id="login-email-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden">Error:</span> Select what you're able to help with
+              </p>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="ref1-user-1-contact-reason" name="ref1-user-1-contact-reason" type="checkbox"
+                    value="Deductions">
+                  <label class="govuk-label govuk-checkboxes__label" for="ref1-user-1-contact-reason">
+                    Deductions
+                  </label>
+                  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    You can discuss deductions that have or should have been taken from employees pay.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="ref1-user-1-contact-reason-2" name="ref1-user-1-contact-reason" type="checkbox"
+                    value="Payments">
+                  <label class="govuk-label govuk-checkboxes__label" for="ref1-user-1-contact-reason-2">
+                    Payments
+                  </label>
+                  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    You can discuss Child Maintenance payments.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="ref1-user-1-contact-reason-3" name="ref1-user-1-contact-reason" type="checkbox"
+                    value="Employee details">
+                  <label class="govuk-label govuk-checkboxes__label" for="ref1-user-1-contact-reason-3">
+                    Employee details
+                  </label>
+                  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    You can discuss employee details.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="ref1-user-1-contact-reason-4" name="ref1-user-1-contact-reason" type="checkbox"
+                    value="General enquiries">
+                  <label class="govuk-label govuk-checkboxes__label" for="ref1-user-1-contact-reason-4">
+                   General enquiries
+                  </label>
+                  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    You can take general enquiries but are not able to discuss deductions, payments or employee details.
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+        </form>
+        <a href="/authref1/existing-employer-old-user/user_1/check-user-1-details.html">Cancel</a>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+{% endblock %}

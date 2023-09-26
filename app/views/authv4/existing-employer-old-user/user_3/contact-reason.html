@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="confirmation-page.html" method="get">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  What can you help with?
+                </h1>
+              </legend>
+              <div id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="v4-user-3-contact-reason" name="v4-user-3-contact-reason" type="checkbox"
+                    value="Deductions">
+                  <label class="govuk-label govuk-checkboxes__label" for="v4-user-3-contact-reason">
+                    Deductions
+                  </label>
+                  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    You can discuss deductions that have or should have been taken from employees pay.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="v4-user-3-contact-reason-2" name="v4-user-3-contact-reason" type="checkbox"
+                    value="Payments">
+                  <label class="govuk-label govuk-checkboxes__label" for="user-3-contact-reason-2">
+                    Payments
+                  </label>
+                  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    You can discuss Child Maintenance payments.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="v4-user-3-contact-reason-3" name="v4-user-3-contact-reason" type="checkbox"
+                    value="Employee details">
+                  <label class="govuk-label govuk-checkboxes__label" for="v4-user-3-contact-reason-3">
+                    Employee details
+                  </label>
+                  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    You can discuss employee details.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="v4-user-3-contact-reason-4" name="v4-user-3-contact-reason" type="checkbox"
+                    value="General enquiries">
+                  <label class="govuk-label govuk-checkboxes__label" for="v4-user-3-contact-reason-4">
+                    General enquiries
+                  </label>
+                  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    You can take general enquiries but are not able to discuss deductions, payments or employee details.
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <a href="are-you-admin.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </a>
+          
+        </form>
+        <a href="/authv4/existing-employer-old-user/name.html">Cancel</a>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+{% endblock %}

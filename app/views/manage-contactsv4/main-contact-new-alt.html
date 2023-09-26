@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications"
+                class="moj-notification-badge">3</span></a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page"
+              href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+    <div class="govuk-form-group">
+      <form action="query-portal-user-new-alt.html" method="get">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Will they be an admin user?
+            </h1>
+          </legend>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="main-contact-new" name="main-contact-new" type="radio" value="Yes">
+              <label class="govuk-label govuk-radios__label" for="main-contact-new">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="main-contact-new-2" name="main-contact-new" type="radio" value="No">
+              <label class="govuk-label govuk-radios__label" for="main-contact-new-2">
+                No 
+              </label>
+            </div>
+          </div>
+        </fieldset>
+    </div>
+    <button class="govuk-button" data-module="govuk-button">
+      Continue
+    </button>
+    </form>
+    <div>
+      <a href="test-manage-contacts-alt.html">Cancel</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

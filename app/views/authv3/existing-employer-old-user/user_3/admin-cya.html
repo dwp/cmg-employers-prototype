@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <form action="account-done.html" method="get">
+
+            <h2 class="govuk-heading-l">Check your answers</h2>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Full name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['user-3-admin-first-name']}} {{data['user-3-admin-last-name']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="add-admin-name.html">
+                    Change<span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['user-3-admin-email-address']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="admin-email.html">
+                    Change<span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <div class="govuk-form-group">
+
+            </div>
+
+            <div class="govuk-form-group">
+              <button class="govuk-button" data-module="govuk-button">
+                Confirm and send
+              </button>
+              <br>
+              <a href="/authv3/existing-employer-old-user/name">Cancel</a>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+{% endblock %}

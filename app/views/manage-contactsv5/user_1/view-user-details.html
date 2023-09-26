@@ -1,0 +1,102 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+{% include "manage-contactsv5/_nav-header.html" %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="#" method="get">
+
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                John Stones
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-user-details.html">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Email
+              </dt>
+              <dd class="govuk-summary-list__value">
+                john.stones@company.co.uk
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-user-details.html">
+                  Change<span class="govuk-visually-hidden"> email address</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                07988433981
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-user-details.html">
+                  Change<span class="govuk-visually-hidden"> contact number</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Are you a third party that manages the Payroll for this employer?
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">No</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="payroll-provider.html">
+                  Change<span class="govuk-visually-hidden"> are you a payroll provider</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                What can you help with?
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Employee details
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="contact-reason.html">
+                  Change<span class="govuk-visually-hidden"> reason for contact</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Level of user
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Admin
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="user-level.html">
+                  Change<span class="govuk-visually-hidden"> user status</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </form>
+        <a href="/manage-contactsv5/company-details-home.html">Cancel</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

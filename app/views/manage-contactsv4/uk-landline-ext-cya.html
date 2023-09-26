@@ -1,0 +1,115 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  
+    <div class="govuk-width-container">
+      
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              
+      
+                <form action ="confirmation-page.html" method="get">
+
+
+                  <h2 class="govuk-heading-l">Check your answers</h2>
+        
+                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                 
+                     
+                         
+                  
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                       Telephone number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">0191 122 155</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="uk-or-not.html">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+                 
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                       Extension number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">887766</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="uk-or-not.html">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+                  
+                </dl>
+
+               
+                <div class="govuk-form-group">
+               
+                  
+</div>
+<div class="govuk-form-group">
+               
+    <button class="govuk-button" data-module="govuk-button">
+        Confirm and send 
+      </button>
+      <a href="test-manage-contacts.html">Cancel</a>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+  </div>  
+
+{% endblock %}

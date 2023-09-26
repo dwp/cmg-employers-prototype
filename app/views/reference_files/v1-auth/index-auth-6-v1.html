@@ -1,0 +1,70 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a href="/index-ref" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-l">Reference screens to support JIRA stories</h1>
+
+        <h1 class="govuk-heading-m">MVP service</h1>
+        <a href="account-lock-out-passcode/log-in-passcode.html" class="govuk-button govuk-button">View screens</a>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h3 class="govuk-heading-s">User screen flows</h3>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="/public/pdfs/account-locked-passcode.pdf" class="govuk-link">Screen flow</a></li>
+        </ul>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-m">Screens for reference - user acocunt locked with too many incorrect Passcode attempts</h2>
+
+        <h2 class="govuk-heading-s">Sign in</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="account-lock-out-passcode/log-in-passcode.html">Enter your email and passcode</a>
+                </li>
+        </ul>
+        
+        <h2 class="govuk-heading-s">Error entering details</h2>    
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="account-lock-out-passcode/log-in-passcode-error.html">There is a problem signing in</a>
+            </li>
+        </ul>
+       
+        <h2 class="govuk-heading-s">Account locked for passcode</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="account-lock-out-passcode/account-locked-passcode.html">Your one-time passcode has expired</a>
+            </li>
+        </ul>
+      
+        <h2 class="govuk-heading-s">Request a new one-time passcode</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="account-lock-out-passcode/reset-passcode.html">Enter email address to request a new one-time passcode</a>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="account-lock-out-passcode/reset-passcode-validation.html">Validation messages</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+       
+        <h2 class="govuk-heading-s">One-time passcode requested</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="account-lock-out-passcode/reset-sent.html">Confirmation screen</a>
+            </li>
+        </ul>
+        
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    </div> <!-- govuk-column-full-->
+</div> <!-- govuk-grid row -->
+{% endblock %}

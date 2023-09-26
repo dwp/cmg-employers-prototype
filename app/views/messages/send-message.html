@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  {% include "includes/account-menu.html" %}
+  <section class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Send a message</h1>
+
+      <p class="govuk-body">Before you send us a message, take a look through our
+        <a href="/onlinerevive-di/secure/help-employer" class="govuk-link">FAQs</a>
+        in case we've already answered your question.</p>
+      <p class="govuk-body">When you send us a secure message, we'll confirm we've received it, and then keep you up to date with the progress we're making.</p>
+      <p class="govuk-body">The more information you give us, the faster we'll be able to get back to you, so please provide as many details as possible. If your message is about a specific employee or a letter we've sent you, please include the details in your message.</p>
+      <p class="govuk-body govuk-!-font-weight-bold">Details marked with * must be completed.</p>
+      <p class="govuk-body">Use the drop down list to tell us what you want to talk to us about.</p>
+
+      <form action="" method="post">
+        <input type="hidden" name="_csrf" value="sCwR6ah0--muuKFzEkIISZsZsWi-u2NRKuIM">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-!-font-weight-bold govuk-fieldset__heading" for="messageSubject">
+            Message subject *
+          </label>
+
+          <div class="govuk-form-group">
+
+            <select class="govuk-select" id="messageSubject" name="messageSubject">
+
+              <option value="Select">Select</option>
+
+              <option value="Schedule query">Schedule query</option>
+
+              <option value="Payment query">Payment query</option>
+
+              <option value="Technical query">Technical query</option>
+
+              <option value="Provide a feedback">Provide a feedback</option>
+
+              <option value="Problem with the site">Problem with the site</option>
+
+              <option value="Other">Other</option>
+
+            </select>
+          </div>
+
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-!-font-weight-bold" for="messageLabel">
+            My message *
+          </label>
+
+          <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="600">
+
+            <div class="govuk-form-group">
+
+              <textarea class="govuk-textarea govuk-js-character-count" id="messageLabel" name="messageLabel" rows="5" aria-describedby="messageLabel-info"></textarea>
+              <div id="messageLabel-info" class="govuk-hint govuk-character-count__message" aria-live="polite">You have 600 characters remaining</div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <button type="submit" class="govuk-button">
+          Send
+        </button>
+      </form>
+    </div>
+  </section>
+{% endblock %}

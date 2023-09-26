@@ -1,0 +1,85 @@
+
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/employee-details/employee-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+<form action ="contact-preferencesv2.html" method="get">
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h1 class="govuk-fieldset__heading">
+              Do you want to recieve email notifications about your account?
+            </h1>
+          </legend>
+          <div id="contact-hint" class="govuk-hint">
+            Select one option.
+          </div>
+          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="notification" name="notification" type="radio" value="email" data-aria-controls="conditional-contact">
+              <label class="govuk-label govuk-radios__label" for="notification">
+                Yes
+              </label>
+            </div>
+           
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="notification-2" name="notification" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+              <label class="govuk-label govuk-radios__label" for="notification-2">
+                No
+              </label>
+            </div>
+           
+            </div>
+            
+      
+        </fieldset>
+      </div>
+    
+
+  
+      <button class="govuk-button" data-module="govuk-button">
+        Save
+      </button>
+        </form>
+{% endblock %}
+
+
+

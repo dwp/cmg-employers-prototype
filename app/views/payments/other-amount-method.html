@@ -1,0 +1,98 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+<div class="moj-sub-navigation">
+
+    <div class="moj-sub-navigation__container">
+  
+      <div class="moj-sub-navigation__nav">
+  
+        <nav class="moj-sub-navigation" aria-label="sub navigation">
+  
+          <ul class="moj-sub-navigation__list">
+            <li class="moj-sub-navigation__item">
+              <a class="moj-sub-navigation__link" href="home">Account Home</a>
+            </li>
+  
+            <li class="moj-sub-navigation__item">
+              <a class="moj-sub-navigation__link" href="messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+  
+  
+            </li>
+  
+            <li class="moj-sub-navigation__item">
+              <a class="moj-sub-navigation__link" href="company-details/company-details.html">Company details</a>
+            </li>
+            <li class="moj-sub-navigation__item">
+              <a class="moj-sub-navigation__link" href="payments/payments.html">Payments</a>
+            </li>
+            <li class="moj-sub-navigation__item">
+              <a class="moj-sub-navigation__link" href="employee-details/employee-details.html">Employee details</a>
+            </li>
+          </ul>
+  
+        </nav>
+  
+      </div>
+    </div>
+  
+  </div>
+  
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <form action="/form-handler" method="post" novalidate>
+  
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                  <h1 class="govuk-fieldset__heading">
+                    How do you want to pay?
+                  </h1>
+                </legend>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-do-you-want-to-pay-other" name="how-do-you-want-to-pay-other" type="radio" value="yes~payments/santiago-other-amount-card">
+                    <label class="govuk-label govuk-radios__label" for="how-do-you-want-to-pay">
+                      Card payment
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-do-you-want-to-pay-other-2" name="how-do-you-want-to-pay-other" type="radio" value="transfer">
+                    <label class="govuk-label govuk-radios__label" for="how-do-you-want-to-pay-2">
+                      Bank transfer
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-do-you-want-to-pay-other-3" name="how-do-you-want-to-pay-other" type="radio" value="cheque">
+                    <label class="govuk-label govuk-radios__label" for="how-do-you-want-to-pay-other-3">
+                      Pay by cheque
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-do-you-want-to-pay-other-4" name="how-do-you-want-to-pay-other" type="radio" value="pay-in">
+                    <label class="govuk-label govuk-radios__label" for="how-do-you-want-to-pay-other-4">
+                      Pay with a pay in slip at the bank or Post Office
+                    </label>
+                  </div>
+                </div>
+  
+              </fieldset>
+            </div>
+  
+            <button class="govuk-button" data-module="govuk-button">
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {% endblock %}

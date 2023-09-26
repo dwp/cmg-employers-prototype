@@ -1,0 +1,211 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+<div class="govuk-grid-row">
+
+<div class="govuk-grid-column-two-thirds">
+
+<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__header">
+      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+        Important
+      </h2>
+    </div>
+    <div class="govuk-notification-banner__content">
+      <p class="govuk-notification-banner__heading">
+        You need to update your contact preferences. 
+        <a class="govuk-notification-banner__link" href="add-email.html">Add an email address</a>.
+      </p>
+    </div>
+  </div>
+<h2 class="govuk-heading-m">Company details</h2>
+<span class="govuk-hint">This is the latest information we have from HMRC. </span>
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Name
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Weatherspoons
+    </dd>
+    <dd class="govuk-summary-list__actions">
+     
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Employer reference number
+    </dt>
+    <dd class="govuk-summary-list__value">
+      50010085564323
+    </dd>
+    <dd class="govuk-summary-list__actions">
+    
+    </dd>
+  </div>
+
+</dl>
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+<div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+    Contact preferences
+  </dt>
+  <dd class="govuk-summary-list__value">
+    <p class="govuk-body">Recieve letters by post</p>
+    <a href="add-email.html">
+     Add email address
+     </a>
+
+  <dd class="govuk-summary-list__actions">
+    <a class="govuk-link" href="add-email.html">
+      Change<span class="govuk-visually-hidden">contact preferences</span>
+    </a>
+  </dd>
+</div>
+<div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+    Postal Address
+  </dt>
+  <dd class="govuk-summary-list__value">
+    {{ data['address-line-1'] | default("72")}}
+    
+    {{ data['where-do-you-live'] | default("Guild Street")}}<br>
+    London<br>
+    {{ data['address-postcode'] | default("SE23 6FH")}}<br>
+
+  </dd>
+  <dd class="govuk-summary-list__actions">
+    <a class="govuk-link" href="postal-address.html">
+      Change<span class="govuk-visually-hidden"> address</span>
+    </a>
+  </dd>
+</div>
+</dl>
+
+
+
+<h2 class="govuk-heading-m">Company contact</h2>
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  
+  
+  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  
+  
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Name 
+      </dt>
+      <dd class="govuk-summary-list__value">
+        <p class="govuk-body">{{ data['first-name'] }} {{data['last-name'] | default("John Smith")}}
+        </p>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="postal-address.html">
+            Change<span class="govuk-visually-hidden"> address</span>
+          </a>
+        </dd>
+  
+     
+     
+    </div>
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Telephone number
+      </dt>
+      <dd class="govuk-summary-list__value">
+        0191 766 565
+      </dd>
+      <dd class="govuk-summary-list__actions">
+        <a class="govuk-link" href="postal-address.html">
+          Change<span class="govuk-visually-hidden"> address</span>
+        </a>
+      </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Extension
+      </dt>
+      <dd class="govuk-summary-list__value">
+        33452
+      </dd>
+      <dd class="govuk-summary-list__actions">
+        <a class="govuk-link" href="postal-address.html">
+          Change<span class="govuk-visually-hidden"> address</span>
+        </a>
+      </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Mobile number 
+      </dt>
+      <dd class="govuk-summary-list__value">
+        {{ data['contact-number'] | default("07789 666 398") }}
+      </dd>
+      <dd class="govuk-summary-list__actions">
+        <a class="govuk-link" href="postal-address.html">
+          Change<span class="govuk-visually-hidden"> address</span>
+        </a>
+      </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Contact reason
+      </dt>
+      <dd class="govuk-summary-list__value">
+        <p class="govuk-body">{{ data['query-type'] | default("All queries") }}</p>
+      </dd>
+      <dd class="govuk-summary-list__actions">
+        <a class="govuk-link" href="postal-address.html">
+          Change<span class="govuk-visually-hidden"> address</span>
+        </a>
+      </dd>
+    </div>
+    <br>
+    <a href="manage-contacts.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+      Add new contact
+      </a>
+    </div>
+</div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <h1 class="govuk-heading-l">Reset link sent
+
+        </h1>
+<p class="govuk-body">We've sent a password rest link to joebloggs@gmail.com.</p>
+
+                    
+
+       
+
+        <form action="/form-handler" method="post" novalidate>
+
+          
+      
+        </form>
+       
+        <ul class="govuk-list">
+        <p>RESEARCH PURPOSE ONLY</p>
+            <li><a href="create-password" class="govuk-link">Reset link</a></li>
+            </ul>
+
+      </div>
+    </div>
+  </main>
+</div>
+    {% endblock %}

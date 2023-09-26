@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back to Authenticate prototypes</a>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Simplifying Employer Deductions (SED) Prototype
+      </h1>
+      <h2 class="govuk-heading-m">Archived Authentication protoypes</h2>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+      <h2 class="govuk-heading-m">Authentication journey Februrary 2023</h2>
+      <h3 class="govuk-heading-s">Existing employer, existing portal user, first time sign in v5</h3>
+      <p class="govuk-body">Iterations to screens:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Added Child Maintenance Service branding to screens</li>
+        <li>Added journey for multiple contacts migrated, one contact migrated & no contactss migrated</li>
+        <li>Re-ordered screens to show 'Adim user' message first</li>
+        <li>Added more details of the user to 'Check your details' screen: What can you help with, Are you a third party payroll provider</li>
+        <li>Added a third contact nuber preference to 'Contact details' page</li>
+        <li>Removed the 'User level' question, all first time users signing in will be set as 'Admin' users by default
+        <li>Uppdated confirmation screen content and removed CTA button</li>
+       </ul>
+
+      <h3 class="govuk-heading-s">Existing employer with multiple contacts migrated</h3>
+      <a href="authv5/existing-employer-old-user/portal-home.html" class="govuk-button govuk-button">View
+        prototype</a>
+      <h3 class="govuk-heading-s">Existing employer with a single contact migrated</h3>
+      <a href="authv5/existing-employer-old-user-single-contact/portal-home.html" class="govuk-button govuk-button">View
+        prototype</a>
+      <h3 class="govuk-heading-s">Existing employer with no contacts migrated</h3>
+      <a href="authv5/existing-employer-old-user-no-contacts/portal-home.html" class="govuk-button govuk-button">View
+        prototype</a>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Authentication journey from January 2023</h2>
+      <p class="govuk-body">Existing employer, existing portal user, first time sign in v4 - Jira ticket: SEDG-858
+      </p>
+      <p class="govuk-body">Iterations to screens:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Updated exisitng user deatils replayed screen</li>
+        <li>Updated change existing user deatils screen for consistency</li>
+        <li>Added messaging on replayed users to add an email address if there is non migrated</li>
+        <li>Replaced Contact Reason 'No contact' with 'General enquiries' option</li>
+        <li>Removed the 'Do you know the name and email address of the admin user?' question</li>
+        <li>Changed to screen flow for a 'Non admin' user</li>
+        <li>Updated screens from content review </li>
+      </ul>
+      <a href="authv4/existing-employer-old-user/portal-home.html" class="govuk-button govuk-button">View
+        prototype</a>
+      <p><a href="public/pdfs/sed-authentication-journey-v4.pdf">Screen flow v4</a></p>
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Authentication journey from December 2022</h2>
+      <p class="govuk-body">Existing employer, existing portal user, first time sign in v3 - Jira ticket: SEDG-858
+      </p>
+      <p class="govuk-body">Iterations to screens:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Replay migrated email address</li>
+        <li>Change contact numbers screen flow</li>
+        <li>Remove contact preference question</li>
+        <li>Remove contact preference question</li>
+        <li>Add 'No contact' to list of contact reasons</li>
+        <li>Add the question for user level (Admin, Standard, No contact)</li>
+        <li>Updated data input screens for addtional user set up</li>
+        <li>Updated Check Your Answers screen to capture all data input on the journey</li>
+      </ul>
+      <a href="authv3/existing-employer-old-user/portal-home.html" class="govuk-button govuk-button">View
+        prototype</a>
+      <p><a href="public/pdfs/sed-authentication-journey-v3.pdf">Screen flow v3</a></p>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Authentication journey from November 2022</h2>
+      <p class="govuk-body">Existing employer, existing portal user, first time sign in v2 - Jira ticket: SEDG-858
+      </p>
+      <p class="govuk-body">The user enters their email address and cofirms contact number.</p>
+      <p class="govuk-body">The user then completes all questions to build their account.</p>
+      <a href="authv2/existing-employer-old-user/portal-home.html" class="govuk-button govuk-button">View
+        prototype</a>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Authentication journey from August 2022</h2>
+      <p class="govuk-body">Existing employer, existing portal, user v1.1 - Jira ticket: SEDG-858</p>
+      <p class="govuk-body">First iteration for exisitng employer using the new protal</p>
+      <a href="authv2/existing-employer-old-user/portal-home.html" class="govuk-button govuk-button">View
+        prototype</a>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Authentication journey from June 2022</h2>
+      <p class="govuk-body">Existing employer, existing portal user V1</p>
+      <p class="govuk-body">Initial designs for an exisitng employer contact logging int the new portal</p>
+      <a href="auth/existing-employer-old-user/portal-home.html" class="govuk-button govuk-button">View
+        prototype</a>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Authentication journey Februrary 2023</h2>
+      <h3 class="govuk-heading-s">New employer details added by CMG caseworker, first time sign in - v4</h3>
+      <p class="govuk-body">Iterations to screens:</p>
+      <ul class="govuk-list govuk-list--bullet">
+          <li>Updated change existing user deatils screen for consistency</li>
+          <li>Added messaging on replayed users to add an email address if there is non migrated</li>
+          <li>Replaced Contact Reason 'No contact' with 'General enquiries' option</li>
+          <li>Removed the 'Do you know the name and email address of the admin user?' question</li>
+          <li>Changed to screen flow for a 'Non admin' user</li>
+          <li>Updated screens from content review </li>
+      </ul>
+      <a href="authv5/new-employer/invite-email.html" class="govuk-button govuk-button">View
+        prototype</a>
+      <!-- <a href="#" class="govuk-button govuk-button">View prototype - link to follow</a> -->
+      <!-- <p><a href="#">Screen flow v4 - to follow</a></p> -->
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Authentication journey from January 2023</h2>
+      <p class="govuk-body">New employer set up v3 - Jira ticket: SEDG-854</p>
+      <p class="govuk-body">Content updates added from content review Jan 2023</p>
+      <p class="govuk-body">New employer contact first log in after being set up by a CMG Caseworker.</p>
+      <p class="govuk-body">Iterations to screens to bring consistency for the journey</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Remove contact preference question</li>
+        <li>Add 'No contact' to list of contact reasons</li>
+        <li>Add the question for user level (Admin, Standard, No contact)</li>
+        <li>Updated data input screens for addtional user set up</li>
+      </ul>
+      <a href="authv4/new-employer/log-in.html" class="govuk-button govuk-button">View prototype</a>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Authentication journey from October 2022</h2>
+      <p class="govuk-body">New employer set up v2 - Jira ticket: SEDG-854</p>
+      <p class="govuk-body">New employer contact first log in after being set up by a CMG Caseworker.</p>
+      <p class="govuk-body">Iterations to screens from previous verion.</p>
+      <a href="authv2/new-employer/log-in.html" class="govuk-button govuk-button">View prototype</a>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Authentication journey from August 2022</h2>
+      <h3 class="govuk-heading-s">New employer one time pasword set up v1.1</h3>
+      <p class="govuk-body">New employer contact first log in after being set up by a CMG Caseworker.</p>
+      <a href="authv2/new-employer/log-in" class="govuk-button govuk-button">View prototype</a>
+
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Authentication journey from June 2022</h2>
+      <p class="govuk-body">New employer, one time pasword set up</p>
+      <a href="auth/new-employer/log-in" class="govuk-button govuk-button">View prototype</a>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+Which user are you?
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form action="/form-handler" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Which user are you?</h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="which-user-are-you-ref1" name="which-user-are-you-ref1" type="radio"
+                    value="John Smith~reference_files/v1-auth/existing-employer-old-user/user_1/admin-user-message.html">
+                  <label class="govuk-label govuk-radios__label" for="which-user-are-you-ref1">
+                    John Smith
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="which-user-are-you-ref1-2" name="which-user-are-you-ref1" type="radio"
+                    value="Jane Doe~reference_files/v1-auth/existing-employer-old-user/user_2/admin-user-message.html">
+                  <label class="govuk-label govuk-radios__label" for="which-user-are-you-ref1-2">
+                    Jane Doe
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="which-user-are-you-ref1-3" name="which-user-are-you-ref1" type="radio"
+                    value="Robert Jones~reference_files/v1-auth/existing-employer-old-user/user_3/admin-user-message.html">
+                  <label class="govuk-label govuk-radios__label" for="which-user-are-you-ref1-3">
+                    Robert Jones
+                  </label>
+                </div>
+                <div class="govuk-radios__divider">or</div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="which-user-are-you-ref1-4" name="which-user-are-you-ref1" type="radio"
+                    value="None of these~reference_files/v1-auth/existing-employer-old-user/user_4/add-users-details-new.html">
+                  <label class="govuk-label govuk-radios__label" for="which-user-are-you-ref1-4">
+                    None of these
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">Save and continue </button>
+
+        </form>
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

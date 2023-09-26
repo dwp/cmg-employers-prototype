@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+{% include "includes/account-menu.html" %}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/home">Home</a>
+    </li>
+      <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/messages">Messages</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Received message</li>
+  </ol>
+</div>
+
+<section class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">Employee information request</h1>
+      <p class="govuk-heading-m govuk-!-margin-bottom-6">Received on July 17 2021</p>
+      <p class="govuk-body">
+        For more help on downloading a PDF see our <a class="govuk-link" href="#" data-cw-hint="This link is not accessible from Navigable Model">How to use this site</a> on our help section or contact us.
+      </p>
+      <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Letter name</h2>
+      {{ govukSummaryList({
+        classes: "message-summary",
+        rows: [
+          {
+            key: {
+              text: "Employee information request"
+            },
+            value: {
+              html: '<a href="#">Download PDF</a>'
+            }
+          }
+        ]
+      }) }}
+      <div class="govuk-!-margin-bottom-4">
+        <p class="govuk-body">You need Adobe Acrobat Reader to view the PDF files. If you do not already have it on your computer, you can 
+        <a href="#" data-cw-hint="This link is not accessible from Navigable Model">install the latest version Adobe Acrobat Reader (opens in a new tab).</a></p>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

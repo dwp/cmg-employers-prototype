@@ -1,0 +1,78 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link"  href="/employee-details/employee-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+<a href="employee-details.html" class="govuk-back-link">Back</a>
+<table class="govuk-table">
+    <caption class="govuk-table__caption govuk-table__caption--m">Sarah Pascoe</caption>
+    <thead class="govuk-table__head">
+     
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Name</th>
+        <td class="govuk-table__cell">Sarah Pascoe</td>
+        <td class="govuk-table__cell"><a href="change">Change</a></td>
+
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Date of birth</th>
+        <td class="govuk-table__cell">04/02/1983</td>
+        <td class="govuk-table__cell"><a href="change">Change</a></td>
+
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">National Insurance number</th>
+        <td class="govuk-table__cell">PR 44 23 59 C</td>
+        <td class="govuk-table__cell"><a href="change">Change</a></td>
+
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Deduction amount</th>
+        <td class="govuk-table__cell">£109.89 (monthly)</td>
+        <td class="govuk-table__cell"><a href="change">Change</a></td>
+
+      </tr>
+    </tbody>
+  </table>
+  
+  
+
+{% endblock %}

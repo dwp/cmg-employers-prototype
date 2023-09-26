@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form action="/form-handler" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  What type of user will you be?
+                </h1>
+              </legend>
+              <div id="changed-name-hint" class="govuk-hint">
+                As the admin user you'll be in charge of adding and removing users. </div>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="admin-main-new" name="admin-main-new" type="radio"
+                    value="Admin~authv3/existing-employer-old-user/cya-new">
+                  <label class="govuk-label govuk-radios__label" for="admin-main-new">
+                    Admin
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="admin-main-new-2" name="admin-main-new" type="radio"
+                    value="Standard~authv3/existing-employer-old-user/main-user-details.html">
+                  <label class="govuk-label govuk-radios__label" for="admin-main-new-2">
+                    Standard
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="admin-main-new-3" name="admin-main-new" type="radio"
+                    value="Contact only~authv3/existing-employer-old-user/main-user-details.html">
+                  <label class="govuk-label govuk-radios__label" for="admin-main-new-3">
+                    Contact only
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+          <br>
+          <a href="name.html">Cancel</a>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

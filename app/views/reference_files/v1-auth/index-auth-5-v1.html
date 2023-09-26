@@ -1,0 +1,70 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a href="/index-ref" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-l">Reference screens to support JIRA stories</h1>
+
+        <h1 class="govuk-heading-m">MVP service</h1>
+        <a href="portal-sign-in/portal-home.html" class="govuk-button govuk-button">View screens</a>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h3 class="govuk-heading-s">User screen flows</h3>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="/public/pdfs/employer-portal-sign-in.pdf" class="govuk-link">Screen flow </a></li>
+        </ul>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-m">Screens for reference - Signing into the Employer Portal (transition of users to the Authenticate service)</h2>
+
+        <h2 class="govuk-heading-s">Portal home page</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="portal-sign-in/portal-home.html">Existing Portal Home page for employers</a>
+                </li>
+        </ul>
+        
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-s">Portal sign in options</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="portal-sign-in/portal-sign-in-page-new.html">Sign in options for new method (email and password) and exisitng method (ERN and PAYE)</a>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Validation message - to follow</a>
+                    </li>
+                </ul>    
+             </li>
+        </ul>
+        
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-s">New sign in</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="portal-sign-in/log-in.html">Sign into the Employer Portal using Email and Password</a>
+                </li>
+        </ul>
+        
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-s">Existing sign in</h2>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="portal-sign-in/log-in-2.html">Sign into the Employer Portal using ERN and PAYE</a>
+                </li>
+        </ul>
+        
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    </div> <!-- govuk-column-full-->
+</div> <!-- govuk-grid row -->
+{% endblock %}

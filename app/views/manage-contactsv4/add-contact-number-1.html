@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+        <div class="govuk-form-group">
+            <form action="test-numbers-input.html" method="get">
+                <fieldset class="govuk-fieldset">
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                                <h1 class="govuk-fieldset__heading">
+                                    A contact number is needed for this acount
+                                </h1>
+                            </legend>
+                            <div class="govuk-inset-text">You can only add one international number to your account.
+                            </div>
+                            <div id="contact-hint" class="govuk-hint">
+                                Select one option.
+                            </div>
+                            <div class="govuk-radios" data-module="govuk-radios">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="contact" name="contact" type="radio"
+                                        value="email~uk-or-not-landline-1" data-aria-controls="conditional-contact">
+                                    <label class="govuk-label govuk-radios__label" for="contact">
+                                        Landline
+                                    </label>
+                                </div>
+
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="contact-2" name="contact" type="radio"
+                                        value="phone~uk-or-not-1" data-aria-controls="conditional-contact-2">
+                                    <label class="govuk-label govuk-radios__label" for="contact-2">
+                                        Mobile
+                                    </label>
+                                </div>
+
+                               <!--  <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="contact-3" name="contact" type="radio"
+                                        value="text~uk-or-not-both" data-aria-controls="conditional-contact-3">
+                                    <label class="govuk-label govuk-radios__label" for="contact-3">
+                                        Both (UK numbers only)
+                                    </label>
+                                </div> -->
+
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+
+
+
+                </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+            Continue
+        </button>
+        <br>
+        <a href="test-manage-contacts.html">Cancel</a>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

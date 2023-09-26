@@ -1,0 +1,106 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="moj-sub-navigation">
+
+  <div class="moj-sub-navigation__container">
+
+    <div class="moj-sub-navigation__nav">
+
+      <nav class="moj-sub-navigation" aria-label="sub navigation">
+
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="../home">Account Home</a>
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/messages/messages.html">Messages<span id="notifications" class="moj-notification-badge">3</span></a> 
+          </li>
+
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" aria-current="page" href="/v3company-details/company-details.html">Company details</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="/payments/payments.html">Payments</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link" href="v3/v3company-details/company-details.html">Employee details</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  
+    <div class="govuk-width-container">
+      
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <h1 class="govuk-heading-l">What is the contact's name?</h1>
+      
+              <form action ="test-numbers.html" method="get">
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Title
+                  </label>
+                  <select class="govuk-select" id="sort" name="sort">
+                    <option value="updated" selected>Ms</option>
+                    <option value="published">Mr</option>
+                    <option value="views">Mrs</option>
+                    <option value="comments">Miss</option>
+                    <option value="published">Captain</option>
+                    <option value="published">Colonel</option>
+                    <option value="published">Dame</option>
+                    <option value="published">Dr</option>
+                    <option value="published">Lady</option>
+                    <option value="published">Lord</option>
+                    <option value="published">Major</option>
+                    <option value="published">Professor</option>
+                    <option value="published">Reverend</option>
+                    <option value="published">Sir</option>
+
+                  </select>
+                </div>
+
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="telephone-number">
+                      First name
+                    </label>
+                    <input class="govuk-input govuk-input--width-20" id="first-name" name="first-name" value="" type="tel" autocomplete="tel">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="telephone-number">
+                     Last name
+                    </label>
+                    <input class="govuk-input govuk-input--width-20" id="last-name" name="last-name" value="" type="tel" autocomplete="tel">
+                  </div>
+                </div>
+
+</div>
+                  <button class="govuk-button" data-module="govuk-button">
+                    Continue
+                  </button>
+                
+                   
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+  </div>  
+
+{% endblock %}
