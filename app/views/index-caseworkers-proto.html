@@ -1,7 +1,7 @@
 {% extends "layout_dwp_unbranded.html" %}
 
 {% block pageTitle %}
-Manage Employer Deductions
+Employer deductions service
 {% endblock %}
 
 {% block content %}
@@ -10,7 +10,7 @@ Manage Employer Deductions
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-l">
-        Manage Employer Deductons (MED) Prototypes
+        Employer deductions service (EDS) Prototypes
       </h1>
       <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
       <div class="govuk-tabs" data-module="govuk-tabs">
@@ -24,158 +24,66 @@ Manage Employer Deductions
             </a>
           </li>
           <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#employer-information">
-              Employer information
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
             <a class="govuk-tabs__tab" href="#missing-payments">
-              Missing payments
-            </a>
-          </li>
-
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#unassigned-receipts">
-              Unassigned receipts
+             Missing payments
             </a>
           </li>
           
           <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="edeo">
-              EDEO
+            <a class="govuk-tabs__tab" href="#unassigned-receipts">
+              Unassigned receipts 
             </a>
           </li>
+          <!-- <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#s">
+              Spare
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#">
+              Spare
+            </a>
+          </li> -->
         </ul>
         <div class="govuk-tabs__panel" id="employer-contacts">
           <h2 class="govuk-heading-l">Siebel UX screens - Employer contacts</h2>
           <p class="govuk-body">
-            These prototypes are experimental screens for CMG caseworkers to support the new Manage Employer
-            Deductions
-            Service.
+            These prototypes are experimental screens for an authentication journey for the new Employer Deductions Service.
           </p>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <h2 class="govuk-heading-m">Siebel screens for Employer contacts - I-frame - November 2023</h2>
-          <h3 class="govuk-heading-s">New designs for caseworkers supporting employer information - v1</h3>
-          <a href="caseworkers-v1/siebel-screens/employer-contacts-iframe/employer-contacts-iframe.html"
-            class="govuk-button govuk-button">View
-            prototype</a>
+        <h2 class="govuk-heading-m">Siebel screens for Employer contacts -  August 2023</h2>
+        <h3 class="govuk-heading-s">New designs for caseworkers supporting employer account contacts  - v1</h3>
+        <p class="govuk-body">Employer account with no contacts, adding a new contact.</p>
+        <a href="caseworkers-v1/siebel-screens/add-a-contact/employer-search.html" class="govuk-button govuk-button">View
+          prototype</a>
+  
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+        <h2 class="govuk-heading-m">Siebel screens for Employer contacts - August 2023 </h2>
+        <h3 class="govuk-heading-s">New designs for caseworkers supporting employer account contacts - v1</h3>
+        <p class="govuk-body">Changing the employer deatils/preferences</p>
+        <a href="caseworkers-v1/siebel-screens/change-company-details/employer-search.html" class="govuk-button govuk-button">View
+          prototype</a>
+  
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-          <h2 class="govuk-heading-m">Siebel screens for Employer contacts - May 2024</h2>
-          <h3 class="govuk-heading-s">New designs for caseworkers supporting employer account contacts - v4</h3>
-          <p class="govuk-body">Employer account with no contacts, adding a new 'Individual' contact to the account and changning the details for the contact.</p>
-          <p class="govuk-body">Agent then creates a 'Department' contact for the Employer account</p>
-          <p class="govuk-body">Adding a 'Resend passcode' feature for the agents.</p>
-          <p class="govuk-body">Incorporating UR feedback changes from sessions in April 2024</p>   
-          <a href="caseworkers_v4/siebel-screens/add-a-contact/employer-details-none.html"
-            class="govuk-button govuk-button">View
-            prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-         
-          <h2 class="govuk-heading-m">Siebel screens for Employer contacts - May 2024</h2>
-          <h3 class="govuk-heading-s">New designs for caseworkers supporting employer account contacts - v4</h3>
-          <p class="govuk-body">Employer account with existing contacts migrated from Siebel reviewing and adding the
-            contacts.</p>
-          <p class="govuk-body">Adding a 'Resend passcode' feature for the agents</p>
-          <p class="govvukk-body">Adding a 'Delete' shortcut to the display to remove contacts not needed</p>
-          <p class="govvukk-body">Adding UR feedback changes from UR sesisons April 2024</p>
-          <a href="caseworkers_v4/siebel-screens/existing-contact/employer-details-none.html"
-            class="govuk-button govuk-button">View
-            prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m">Siebel screens for Employer contacts - May 2024</h2>
-          <h3 class="govuk-heading-s">New designs for caseworkers supporting employer account contacts - v4</h3>
-          <p class="govuk-body">Employer account with existing contacts migrated from Siebel, reviewing and deleting a
-            Department contact.</p>
-          <p class="govuk-body">Adding a 'Delete' shortcut to the display to remove contacts not needed</p>
-          <p class="govvukk-body">Adding in UR feedback changes from sessions in April 2024</p>
-          <a href="caseworkers_v4/siebel-screens/existing-contact-delete/employer-details-none.html"
-            class="govuk-button govuk-button">View
-            prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m">Siebel screens for Employer contacts - December 2023</h2>
-          <h3 class="govuk-heading-s">New designs for caseworkers supporting employer account contacts - v1</h3>
-          <p class="govuk-body">Changing the status for the employer contact</p>
-          <a href="caseworkers-v1/siebel-screens/account-status/employer-details.html"
-            class="govuk-button govuk-button">View
-            prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m">Siebel screens for Employer contacts - July 2024</h2>
-          <h3 class="govuk-heading-s">New designs for caseworkers supporting employer account contacts - v2</h3>
-          <p class="govuk-body">Changing the employer deatils/preferences</p>
-          <p class="govuk-body">Updating the screens to bring consistency with latest Employer details designs</p>
-          <p class="govuk-body">Adding the ability to add/change/delete a correspondence address</p>
-          <a href="caseworkers_v4/siebel-screens/change-company-details/employer-details.html"
-            class="govuk-button govuk-button">View
-            prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m"><a href="index-caseworkers-archived.html">View archived Caseworkers prototypes</a>
-          </h2>
-
-        </div> <!-- govuk-tabs__panel govuk-tabs__panel--hidden -->
-
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="employer-information">
-          <h2 class="govuk-heading-l">Siebel UX screens - Employer information</h2>
-          <p class="govuk-body">
-            These prototypes are experimental screens for CMG caseworkers to support the new Manage Employer
-            Deductions
-            Service.
-          </p>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m">Siebel screens for Employer information - October 2023</h2>
-          <h3 class="govuk-heading-s">New designs for caseworkers supporting employer information - v1</h3>
-          <a href="caseworkers-v1/employer_information/employer-information.html" class="govuk-button govuk-button">View
-            prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+        <h2 class="govuk-heading-m">Siebel screens for Employer contacts - August 2023</h2>
+        <h3 class="govuk-heading-s">New designs for caseworkers supporting employer account contacts - v1</h3>
+        <p class="govuk-body">Changing the status for the employer contact</p>
+        <a href="caseworkers-v1/siebel-screens/account-status/employer-search.html" class="govuk-button govuk-button">View
+          prototype</a>
+  
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
         </div> <!-- govuk-tabs__panel govuk-tabs__panel--hidden -->
 
         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="missing-payments">
           <h2 class="govuk-heading-l">Siebel UX screens - Missing payments</h2>
           <p class="govuk-body">
-            These prototypes are experimental screens for CMG caseworkers to support the new Manage Employer
-            Deductions
-            Service.
+            These prototypes are experimental screens for an authentication journey for the new Employer Deductions Service.
           </p>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m">Siebel UX screens for Missing payments - June 2024</h2>
-          <h3 class="govuk-heading-s">Designs for caseworkers working on missing payments - v3</h3>
-          <p class="govuk-body"> Updated screens following UR feedback - November 2023</p>
-          <p class="govuk-body">Iterations to Task List, Missing Payments details pages</p>
-          <p class="govuk-body">Removed tabbed view from DEO pages and added a side navigation</p>
-          <p class="govuk-body">Updated Payments page, DEO acvivty page, DEO activity archive page and Employer Contacts page</p>
-          <p class="govuk-body">Added features to Employer Call page and added a letter preview feature</p>
-          <a href="caseworkers_v3/missed-payments/view-tasks.html" class="govuk-button govuk-button">View
-            prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m">Siebel UX screens for Missing payments - October 2023</h2>
-          <h3 class="govuk-heading-s">Designs for caseworkers working on missing payments - v2</h3>
-          <p class="govuk-body"> Updated screens following content review</p>
-          <!-- <p class="govuk-body">Iterations to company home page and user details and preferences inputs</p>
-          <p class="govuk-body">Portal user details removed and portal user question removed</p>
-          <p class="govuk-body">Content updates added from content review Jan 2023</p> -->
-          <a href="caseworkers_v2/missed-payments/view-tasks.html" class="govuk-button govuk-button">View
-            prototype</a>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
@@ -193,36 +101,28 @@ Manage Employer Deductions
         </div> <!-- govuk-tabs__panel govuk-tabs__panel--hidden -->
 
         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="unassigned-receipts">
-          <h2 class="govuk-heading-l">Siebel UX screens - Unasssigned receipts</h2>
-
-          <p class="govuk-body">
-            These prototypes are experimental screens for CMG caseworkers to support the new Manage Employer
-            Deductions
-            Service.
-          </p>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m">Siebel UX screens for Unassigned receipts - August 2023</h2>
-          <h3 class="govuk-heading-s">New designs for caseworkers working on unassigned receipts - v1</h3>
-          <p class="govuk-body"> Screen designs for Caseworkerss to investiagte and allocate incoming Unassigned
-            Receipts</p>
-          <!-- <p class="govuk-body">Iterations to company home page and user details and preferences inputs</p>
+            <h2 class="govuk-heading-l">Siebel UX screens - Unasssigned receipts</h2>
+           
+            <p class="govuk-body">
+              These prototypes are experimental screens for an authentication journey for the new Employer Deductions Service.
+            </p>
+  
+            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+  
+            <h2 class="govuk-heading-m">Siebel UX screens for Unassigned receipts - August 2023</h2>
+            <h3 class="govuk-heading-s">New designs for caseworkers working on unassigned receipts - v1</h3>
+            <p class="govuk-body"> Screen designs for Caseworkerss to investiagte and allocate incoming Unassigned Receipts</p>
+            <!-- <p class="govuk-body">Iterations to company home page and user details and preferences inputs</p>
             <p class="govuk-body">Portal user details removed and portal user question removed</p>
             <p class="govuk-body">Content updates added from content review Jan 2023</p> -->
-          <a href="caseworkers-v1/unassigned-receipts/view-tasks.html" class="govuk-button govuk-button">View
-            prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <!-- <h2 class="govuk-heading-m"><a href="index-portal-archived">View archived Employer Portal prototypes</a></h2> -->
-
-        </div> <!-- govuk-tabs__panel govuk-tabs__panel--hidden -->
-
-        <div class="govuk-tabs__panel" id="edeo">
-          <h2 class="govuk-heading-m">Siebel UX screens for new Enhanced Deductions from Earnings Orders</h2>
-          <p class="govuk-body">Prototypes will be displayed here.</p>
-        </div>
+            <a href="caseworkers-v1/unassigned-receipts/view-tasks.html" class="govuk-button govuk-button">View
+              prototype</a>
+  
+            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+  
+            <!-- <h2 class="govuk-heading-m"><a href="index-portal-archived">View archived Employer Portal prototypes</a></h2> -->
+  
+          </div> <!-- govuk-tabs__panel govuk-tabs__panel--hidden -->
       </div>
     </div>
 

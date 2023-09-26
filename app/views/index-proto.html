@@ -1,7 +1,7 @@
 {% extends "layout_dwp_unbranded.html" %}
 
 {% block pageTitle %}
-Manage Employer Deductions
+Employer deductions service
 {% endblock %}
 
 {% block content %}
@@ -10,7 +10,7 @@ Manage Employer Deductions
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-l">
-        Manage Employer Deductions (MED) Prototypes
+        Employer deductions service (EDS) Prototypes
       </h1>
       <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
       <div class="govuk-tabs" data-module="govuk-tabs">
@@ -57,152 +57,109 @@ Manage Employer Deductions
         <div class="govuk-tabs__panel" id="authentication">
           <h2 class="govuk-heading-l">Authentication</h2>
           <p class="govuk-body">
-            These prototypes are experimental screens for an authentication journey for the new Manage Employer
-            Deductions Service.
+            These prototypes are experimental screens for an authentication journey for the new Employer Deductions Service.
           </p>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <h2 class="govuk-heading-m">Registration journey October 2023</h2>
-          <h3 class="govuk-heading-s">New designs for registering employer contacts to be abe to use Employer Portal
-          </h3>
-          <p class="govuk-body">Further updated October 2023 to meet the requirements of the technical solution.</p>
-          <p class="govuk-body">Referred to as the TCMO (Tech testing service).</p>
-          <a href="authv6/registration_2/enter-employer-details.html" class="govuk-button govuk-button">View
+          <h2 class="govuk-heading-m">Registration journey August 2023</h2>
+          <h3 class="govuk-heading-s">New designs for registerring employer contacts to be abe to use Employer Portal </h3>
+          <p class="govuk-body">Technical requirements for account registration have changed the user journey for employer contacts. Exisitng employer contacts are identified as initial users for the this revised journey.</p>
+          <a href="authv6/registration/portal-home.html" class="govuk-button govuk-button">View
             prototype</a>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <h2 class="govuk-heading-m">Registration journey January 2024 - Journey A for UR purposes</h2>
-          <!-- <h2 class="govuk-heading-m">Journey A</h2> -->
-          <h3 class="govuk-heading-s">Design for registering employers to use the CM Employer portal - SEDG-2100</h3>
-          <p class="govuk-body">Employer registering to use the service and is on the whitelist and email not held in
-            SAE</p>
-          <p class="govuk-body">Includes content updates from February 2024</p>
-          <a href="authv8/registration-whitelist/portal-home.html" class="govuk-button govuk-button">View
-            prototype</a>
+          <h2 class="govuk-heading-m">New Portal sign in screens for employers</h2>
+          <h3 class="govuk-heading-s">Screens to provide multiple sign in options for both ERN/PAYE and Email and Password</h3>
+          <a href="authv5/portal-sign-in/portal-home-1.html" class="govuk-button govuk-button">Option 1</a>
+         
+          <a href="authv5/portal-sign-in/portal-home-2.html" class="govuk-button govuk-button">Option 2</a>
+
+          <a href="authv5/portal-sign-in/portal-home-3.html" class="govuk-button govuk-button">Option 3</a>
+
+          <a href="authv6/portal-sign-in/portal-home-4.html" class="govuk-button govuk-button">Option 4</a>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <h2 class="govuk-heading-m">Registration journey January 2024 - Journey B for UR purposes</h2>
-          <!-- <h2 class="govuk-heading-m">Journey B</h2> -->
-          <h3 class="govuk-heading-s">Design for registering employers to use the CM Employer portal - SEDG-2104</h3>
-          <p class="govuk-body">Employer registering to use the service and is on the whitelist and email held in SAE
-          </p>
-          <p class="govuk-body">Includes content updates from February 2024</p>
-          <a href="authv8/registration-whitelist-email-held/portal-home.html" class="govuk-button govuk-button">View
+          <h2 class="govuk-heading-m">Authentication journey May 2023</h2>
+          <h3 class="govuk-heading-s">Existing employer, existing portal user, first time sign in v5</h3>
+          <p class="govuk-body">Iterations to screens:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Decision to remove migrated contacts from the first sign in journey</li>
+            <li>Screen changes so that each user will need to add their details to ensure all contact infomratin is up to date</li>
+            <li>Content change to 'Admin user' message screen</li>
+            <li>Content change to 'What can you help with?' question. Changing the question to 'What can we contact you about?'</li>
+            <li>Removed 'General enquiries' option from 'What can we contact you about?' question page</li>
+            <li>Content change to 'Check your answers' screen to bring in line with page content changes</li>
+          </ul>
+          
+          <h3 class="govuk-heading-s">Existing employer with no contacts migrated</h3>
+          <a href="authv6/existing-employer-old-user-no-contacts/portal-home.html"
+            class="govuk-button govuk-button">View
             prototype</a>
+
+          <!-- <p><a href="#">Screen flow v5 - to follow</a></p> -->
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <h2 class="govuk-heading-m">Registration journey January 2024</h2>
-          <h3 class="govuk-heading-s">Design for registering employers to use the CM Employer portal - SEDG-2099</h3>
-          <p class="govuk-body">Employer signs into the Employer Portal and not on the whitelist</p>
-          <p class="govuk-body">Includes content updates from February 2024</p>
-          <p class="govuk-body">For users who have entered the V1 Auth journey and have not been invited to use the
-            private beta service. Adding a temporary <a
-              href="authv7/portal-sign-in-not-on-whitelist/redirect.html">redirect screen </a></p>
-          <a href="authv8/portal-sign-in-not-on-whitelist/portal-home.html" class="govuk-button govuk-button">View
+          <h2 class="govuk-heading-m">Authentication journey May 2023</h2>
+          <h3 class="govuk-heading-s">New employer details added by CMG caseworker, first time sign in - v5</h3>
+          <p class="govuk-body">Iterations to screens:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Removed forgotten email link from 'Sign in' page</li>
+            <li>Request new passcode screens: content change on 'Enter your email' screen</li>
+            <li>Content change on 'Are these details correct?' screen, to bring in line with 'What can we contact you about?' question</li>
+            <li>Updated the 'What can you help with?' question, to 'What can we contact you about?'. Removed the 'General enquiries' option from the page</li>
+            <li>Content chnage to 'SAdmin user' message screen</li>
+           </ul>
+          <a href="authv6/new-employer/invite-email.html" class="govuk-button govuk-button">View
             prototype</a>
+          <!-- <a href="#" class="govuk-button govuk-button">View prototype - link to follow</a> -->
+          <!-- <p><a href="#">Screen flow v5 - to follow</a></p> -->
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <!-- <h2 class="govuk-heading-m">Journey C</h2> -->
-          <h2 class="govuk-heading-m">Registration journey January 2024 - Journey C for UR purposes</h2>
-          <h3 class="govuk-heading-s">Design for registering employers to use the CM Employer portal - SEDG-2098</h3>
-          <p class="govuk-body">Second person log in presents a page advising the user to contact the admin user for the
+          <h2 class="govuk-heading-m">Authentication journey from October 2022</h2>
+          <h3 class="govuk-heading-s">Existing employer, existing portal user, second user sign in v2 - Jira ticket:
+            SEDG-864 </h3>
+          <p class="govuk-body">Attempted log in presents a page advising the user to contact the admin user for the
             company.</p>
-          <p class="govuk-body">Includes content updates from February 2024</p>
-          <p class="govuk-body">Added new screen to support users, contact EPT</p>
-          <a href="authv8/existing-employer-second-user/portal-home.html" class="govuk-button govuk-button">View
+          <a href="authv2/existing-employer-second-user/portal-home.html" class="govuk-button govuk-button">View
             prototype</a>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <!-- <h2 class="govuk-heading-m">Journey D</h2> -->
-          <h2 class="govuk-heading-m">Registration journey January 2024 - Journey D for UR purposes</h2>
-          <h3 class="govuk-heading-s">Design for registering employers to use the CM Employer portal - SEDG-2106</h3>
-          <p class="govuk-body">Next sign in after the employer contact has registered and authenticated - supporting
-            single employer</p>
-          <p class="govuk-body">Includes content updates from February 2024</p>
-          <a href="authv8/next-sign-in/portal-home.html" class="govuk-button govuk-button">View
-            prototype</a>
-
-          <p class="govuk-body">Next sign in after the employer contact has registered and authenticated - supporting
-            multiple employers</p>
-          <p class="govuk-body">Includes content updates from February 2024</p>
-          <a href="authv8/next-sign-in-multiple-employers/portal-home.html" class="govuk-button govuk-button">View
-            prototype</a>
+          <h2 class="govuk-heading-m">Authentication journey from October 2022</h2>
+          <h3 class="govuk-heading-s">Payroll with access to multiple employers - Jira ticket: SEDG-859</h3>
+          <p class="govuk-body">Updated with content review Jan 2023</p>
+          <p class="govuk-body">The user can select the organisation from a list presented.</p>
+          <p class="govuk-body">The user has a feature/button to change the organisation once they are logged in.</p>
+          <a href="authv2/payroll-multiple/log-in.html" class="govuk-button govuk-button">View prototype</a>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <h2 class="govuk-heading-m">Registration journey January 2024</h2>
-          <h3 class="govuk-heading-s">Password reset journey - SEDG-2105</h3>
-          <p class="govuk-body">User requests a new password and is sent a password reset link by email to set a new
-            password.</p>
-          <p class="govuk-body">Includes content updates from February 2024</p>
-          <a href="authv8/password-reset/portal-home.html" class="govuk-button govuk-button">View prototype</a>
+          <h2 class="govuk-heading-m">Authentication journey from October 2022</h2>
+          <h3 class="govuk-heading-s">Password reset journey - Jira ticket: SEDG-860</h3>
+          <p class="govuk-body">User enters their email address and is sent a new One Time Passcode email.</p>
+          <p class="govuk-body">They cannot log in until the the email address is verified to create a new password.</p>
+          <a href="authv6/password-reset/log-in.html" class="govuk-button govuk-button">View prototype</a>
 
           <h3 class="govuk-heading-s">Account temporary locked - password</h3>
           <p class="govuk-body">User tries to enter the incorrect password 10 times in a 15 minute period</p>
-          <p class="govuk-body">Includes content updates from February 2024</p>
-          <a href="authv8/account-lock-out-password/portal-home.html" class="govuk-button govuk-button">View
-            prototype</a>
+          <a href="authv6/account-lock-out/log-in.html" class="govuk-button govuk-button">View prototype</a>
 
           <h3 class="govuk-heading-s">Account permanently locked - password</h3>
           <p class="govuk-body">User has 2 temporary lock outs (20 failed attempts) in a 24 hour period</p>
-          <p class="govuk-body">Includes content updates from February 2024</p>
-          <p class="govuk-body">Added new screen to support users, contact EPT</p>
-          <a href="authv8/account-lock-out-password-permanent/portal-home.html" class="govuk-button govuk-button">View
-            prototype</a>
+          <a href="authv6/account-lock-out/log-in-2.html" class="govuk-button govuk-button">View prototype</a>
 
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m">Registration journey January 2024</h2>
-          <h3 class="govuk-heading-s">Account locked passcode - SEDG-2269</h3>
+          <h3 class="govuk-heading-s">Account locked - passcode</h3>
           <p class="govuk-body">User tries to enter the incorrect passcode 3 times in a 15 minute period</p>
-          <p class="govuk-body">Includes content updates from February 2024</p>
-          <p class="govuk-body">Added new screen to support users, contact EPT</p>
-          <a href="authv8/account-lock-out-passcode/portal-home.html" class="govuk-button govuk-button">View
-            prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <!-- <h2 class="govuk-heading-m">Journey E</h2> -->
-          <h2 class="govuk-heading-m">Registration journey February 2024 - Journey E for UR purposes </h2>
-          <h3 class="govuk-heading-s">Incorrect email provided in registration - SEDG-2107</h3>
-          <p class="govuk-body">User has provided an incorrect email and has not received a one-time passcode</p>
-          <p class="govuk-body">Added new screen to support users, contact EPT</p>
-          <a href="authv8/passcode-not-delivered/portal-home.html" class="govuk-button govuk-button">View prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m">Friction screens </h2>
-          <h3 class="govuk-heading-s">Screens to manage user behaviour when they click the browser back button</h3>
-          <p class="govuk-body">Password reset journey</p>
-          <a href="authv8/password-reset/browser-back-friction-screen.html" class="govuk-button govuk-button">View
-            screen</a>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <p class="govuk-body">Registration journey - new contact with no email held</p>
-          <p class="govuk-body">Behaviour before they set a password</p>
-          <a href="authv8/password-reset/browser-back-friction-screen-2.html" class="govuk-button govuk-button">View
-            screen</a>
-          <p class="govuk-body"><a href="/public/pdfs/friction-page-for-new-contact-no-email-a211.pdf    " class="govuk-link">Screenflow (opens a pdf file)</a></p>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <p class="govuk-body">Registration journey - new contact with email held</p>
-          <p class="govuk-body">Behaviour after they have set a password</p>
-          <a href="authv8/password-reset/browser-back-friction-screen-3.html" class="govuk-button govuk-button">View
-            screen</a>
-          <p class="govuk-body"><a href="/public/pdfs/friction-page-for-new-contact-email-held-a22.pdf  " class="govuk-link">Screenflow (opens a pdf file)</a></p>
+          <a href="authv6/account-lock-out/log-in-passcode.html" class="govuk-button govuk-button">View prototype</a>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
           <h2 class="govuk-heading-m"><a href="index-auth-archived">View archived Authentication prototypes</a></h2>
-
 
 
         </div> <!-- govuk-tabs__panel govuk-tabs__panel--hidden -->
@@ -210,76 +167,49 @@ Manage Employer Deductions
         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="employer-contacts">
           <h2 class="govuk-heading-l">Company details & Employer contacts</h2>
           <p class="govuk-body">
-            These prototypes are experimental screens for an authentication journey for the new Manage Employer
-            Deductions Service.
+            These prototypes are experimental screens for an authentication journey for the new Employer Deductions Service.
           </p>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <h2 class="govuk-heading-m">Service unavailable</h2>
-          <h2 class="govuk-heading-m">Employer contacts on the Portal - v1 April 2024</h2>
-          <p class="govuk-body"> Temporary screen message to display during the data integration testing in May 2024</p>
-
-          <a href="manage-contactsv7/company_details/portal-home.html" class="govuk-button govuk-button">View
-            prototype</a>
-
-          <p><a href="manage-contactsv7/company_details/company-details-home.html" class="govuk-link">View page</a></p>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m">Admin user resends a one-time passcode</h2>
-          <h2 class="govuk-heading-m">Employer contacts on the Portal - v7 April 2024</h2>
-          <p class="govuk-body"> New updates to screens to add a feature for Admin users to resend a one-time passcode to contacts</p>
-          <!-- <p class="govuk-body"> Includes UR feedback updates and content review changes</p> -->
-          <a href="manage-contactsv7/admin-manage-contacts-2/company-details-home.html"
-            class="govuk-button govuk-button">View
+          <h2 class="govuk-heading-m">Employer contacts on the Portal - v6 May 2023</h2>
+          <p class="govuk-body"> List of updates to follow</p>
+          <!-- <p class="govuk-body">Iterations to company home page and user details and preferences inputs</p>
+          <p class="govuk-body">Portal user details removed and portal user question removed</p>
+          <p class="govuk-body">Content updates added from content review Jan 2023</p> -->
+          <a href="manage-contactsv6/log-in.html" class="govuk-button govuk-button">View
             prototype</a>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <h2 class="govuk-heading-m">Admin user creates an individual contact with no exisitng email held</h2>
-          <h2 class="govuk-heading-m">Employer contacts on the Portal - v7 March 2024</h2>
-          <p class="govuk-body"> Re-order of users on the Company Details page from UR feedback</p>
-          <p class="govuk-body"> Includes UR feedback updates and content review changes</p>
-          <a href="manage-contactsv7/create-contact-no-email-held/portal-home.html"
-            class="govuk-button govuk-button">View
+          <h2 class="govuk-heading-m">Company details page from November 2022</h2>
+          <p class="govuk-body">Updated company details page design - v1.3</p>
+          <p class="govuk-body">Iteration of company details 'Home' page with new contacts design view and removal of
+            some company information</p>
+
+          <a href="contacts/company-page-v2/test-manage-contacts-alt.html" class="govuk-button govuk-button">View
             prototype</a>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <h2 class="govuk-heading-m">Admin user creates an individual contact with exisitng email held</h2>
-          <h2 class="govuk-heading-m">Employer contacts on the Portal - v7 March 2024</h2>
-          <p class="govuk-body"> Re-order of users on the Company Details page from UR feedback</p>
-          <p class="govuk-body">Includes UR feedback updatessand content review changes </p>
-          <a href="manage-contactsv7/create-contact-email-held/portal-home.html" class="govuk-button govuk-button">View
-            prototype</a>
+
+          <h2 class="govuk-heading-m">Company details page from November 2021</h2>
+          <p class="govuk-body">Company details usability testing prototype - v1.1</p>
+          <p class="govuk-bosy">Iteration of company details 'Home' page</p>
+          <a href="v2company-details/company-details.html" class="govuk-button govuk-button">View prototype</a>
+          <p class="govuk-body"><a
+              href="https://dwpdigital.atlassian.net/wiki/spaces/SEDG/pages/132472963250/Company+Details">Company
+              details confluence write up</a></p>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-          <h2 class="govuk-heading-m">Admin user creates a general contact/department</h2>
-          <h2 class="govuk-heading-m">Employer contacts on the Portal - v7 March 2024</h2>
-          <p class="govuk-body"> Re-order of users on the Company Details page from UR feedback</p>
-          <p class="govuk-body">Includes UR feedback updates and content review changes </p>
-          <a href="manage-contactsv7/create-general-contact/portal-home.html" class="govuk-button govuk-button">View
-            prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <H2 class="govuk-heading-m"> Admin user edits and deletes contact from the Employer Portal</h2>
-          <h2 class="govuk-heading-m">Employer contacts on the Portal - v7 March 2024</h2>
-          <p class="govuk-body"> Re-order of users on the Company Details page from UR feedback</p>
-          <p class="govuk-body">Includes UR feedback updates and content review changes</p>
-          <a href="manage-contactsv7/admin-manage-contacts/portal-home.html" class="govuk-button govuk-button">View
-            prototype</a>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-          <h2 class="govuk-heading-m">Standard user views and edits their own details</h2>
-          <h2 class="govuk-heading-m">Employer contacts on the Portal - v7 March 2024</h2>
-          <p class="govuk-body"> Re-order of users on the Company Details page from UR feedback</p>
-          <p class="govuk-body">Includes UR feedback updates and content review changes</p>
-          <a href="manage-contactsv7/ordinary-user-access/portal-home.html" class="govuk-button govuk-button">View
-            prototype</a>
+          <h2 class="govuk-heading-m">Company details page from October 2021</h2>
+          <p class="govuk-body">Company details usability testing prototype - v1.0</p>
+          <p class="govuk-bosy">First iteration of company details 'Home' page</p>
+          <a href="company-details/company-details.html" class="govuk-button govuk-button">View prototype</a>
+          <p class="govuk-body"><a
+              href="https://dwpdigital.atlassian.net/wiki/spaces/SEDG/pages/132472963250/Company+Details">Company
+              details confluence write up</a></p>
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 

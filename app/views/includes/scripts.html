@@ -1,12 +1,8 @@
 <!-- Javascript -->
 <script src="/public/javascripts/jquery-1.11.3.js"></script>
 
-{% for scriptConfig in extensionConfig.scripts %}
-  {% if scriptConfig.type|length %}
-    <script type="{{scriptConfig.type}}" src="{{scriptConfig.src}}"></script>
-  {% else %}
-    <script src="{{scriptConfig.src}}"></script>
-  {% endif %}
+{% for scriptUrl in extensionConfig.scripts %}
+  <script src="{{scriptUrl}}"></script>
 {% endfor %}
 
 <script src="/public/javascripts/application.js"></script>

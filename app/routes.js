@@ -1,14 +1,8 @@
-//
-// For guidance on how to create routes see:
-// https://prototype-kit.service.gov.uk/docs/create-routes
-//
-
-const govukPrototypeKit = require('govuk-prototype-kit')
-const router = govukPrototypeKit.requests.setupRouter()
-
-// Add your routes here
+const express = require('express')
+const router = express.Router()
 const radioButtonRedirect = require('radio-button-redirect')
 router.use(radioButtonRedirect)
+// Add your routes here - above the module.exports line
 
 // v2 COMPANY DETAILS ROUTES START
 router.get('v2company-details/contact-details', function (req, res) {
@@ -75,3 +69,4 @@ router.get('v2company-details/contact-details', function (req, res) {
 //   res.render('messages/contact-history');
 // });
 
+module.exports = router

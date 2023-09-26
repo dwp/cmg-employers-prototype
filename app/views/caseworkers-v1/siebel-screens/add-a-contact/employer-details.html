@@ -1,4 +1,4 @@
-{% extends "layout_dwp_unbranded.html" %}
+{% extends "layout_cm.html" %}
 
 {% block content %}
 
@@ -10,8 +10,6 @@
           <form action="/form-handler" method="post" novalidate>
 
             <h1 class="govuk-heading-l">AB Cars Ltd</h1>
-
-            <h2 class="govuk-heading-m">Employer contact details</h2>
             
             <dl class="govuk-summary-list">
               <!-- <div class="govuk-summary-list__row">
@@ -44,11 +42,11 @@
                 <dd class="govuk-summary-list__value">
                   Email and postal
                 </dd>
-                <!-- <dd class="govuk-summary-list__actions">
+                <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#">
                     Change<span class="govuk-visually-hidden"> contact preference</span>
                   </a>
-                </dd> -->
+                </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
@@ -57,11 +55,11 @@
                 <dd class="govuk-summary-list__value">
                   information@abcars.co.uk
                 </dd>
-                <!-- <dd class="govuk-summary-list__actions">
+                <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#">
                     Change<span class="govuk-visually-hidden"> email address</span>
                   </a>
-                </dd> -->
+                </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
@@ -74,11 +72,11 @@
                   Leeds </br>
                   LS12 1QQ
                 </dd>
-                <!-- <dd class="govuk-summary-list__actions">
+                <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#">
                     Change<span class="govuk-visually-hidden"> postal address</span>
                   </a>
-                </dd> -->
+                </dd>
               </div>
             </dl>
           </div> <!-- govuk-grid-column-two-thirds -->
@@ -94,19 +92,19 @@
             
             <div class="govuk-summary-card">
               <div class="govuk-summary-card__title-wrapper">
-                <h2 class="govuk-summary-card__title">{{data['siebel-v1-first-name-new']}} {{data['siebel-v1-last-name-new']}}</h2><strong class="govuk-tag app-task-list__tag
+                <h2 class="govuk-summary-card__title">Zoe Burns</h2><strong class="govuk-tag app-task-list__tag
                 ">Administrator</strong>
                 <ul class="govuk-summary-card__actions">
                   <!-- <li class="govuk-summary-card__action"> <a class="govuk-link" href="user_2/confirmation-page-otp.html">
                     Send passcode<span class="govuk-visually-hidden"> of University of Bristol</span>
                     </a>
                   </li> -->
-                  <!-- <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
-                    Update account status<span class="govuk-visually-hidden"> of new user</span>
+                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                    Update account status<span class="govuk-visually-hidden"> of Zoe Burns</span>
                     </a>
-                  </li> -->
+                  </li>
                   <li class="govuk-summary-card__action"> <a class="govuk-link" href="change-user-1-details.html">
-                    Change details<span class="govuk-visually-hidden"> of new user</span>
+                    Change details<span class="govuk-visually-hidden"> of Zoe Burns</span>
                     </a>
                   </li>
                 </ul>
@@ -118,7 +116,7 @@
                       Account status
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      Registered
+                      Inactive
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -126,7 +124,7 @@
                       Email address
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      {{data['siebel-v1-email-new']}}
+                      zoe.burns@abcars.co.uk
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -134,7 +132,7 @@
                       Contact number
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      {{data['siebel-v1-contact-1-new']}}
+                      07777777777
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -142,7 +140,7 @@
                       Extension number
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      {{data['siebel-v1-contact-2-new']}}
+                      6789
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -150,7 +148,7 @@
                       Alternative number
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      {{data['siebel-v1-contact-3-new']}}
+                      01132320987
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -158,7 +156,7 @@
                       Are they a third party provider?
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      {{data['siebel-v1-new-user-payroll-provider']}}
+                     No
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -166,7 +164,7 @@
                        What can we contact them about?
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      {{data['siebel-v1-new-user-contact-reason']}}
+                      Sending Child Maintenance payments to DWP
                     </dd>
                   </div>
                 </dl>

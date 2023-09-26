@@ -1,7 +1,6 @@
 {#- We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework. -#}
 {%- set assetPath = '/govuk/assets' -%}
 
-
 {% extends "govuk/template.njk" %}
 
 {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
@@ -41,12 +40,12 @@ GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
-<header class="dwp-header">
-<div class="dwp-header__content govuk-width-container">
-<div class="dwp-header__service-name">
-  <a href="#" class="dwp-header__link">Manage Employer Deductions</a>
-</div>
-</div>
+<header class="govuk-header dwp-header" data-module="govuk-header">
+    <div class=" govuk-width-container ">
+        <a href="/" class="govuk-header__link govuk-header__link--service-name dwp-header__container--service-name">
+           Simplyfying employer deductions
+        </a>
+    </div>
 </header>
 {% endblock %}
 
