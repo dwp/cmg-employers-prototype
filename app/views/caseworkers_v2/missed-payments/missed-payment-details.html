@@ -1,0 +1,113 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="view-tasks.html" class="govuk-back-link">Back to tasks list</a>
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+                <h1 class="govuk-heading-l">AB Cars Ltd</h1>
+                <p class="govuk-body">
+                    Unit 3</br>
+                    Greenway Industrial Estate</br>
+                    Newtown</br>
+                    Oldcity</br>
+                    OY32 1JK
+                </p>
+            </div> <!-- govuk-grid-column-one-half -->
+
+            <div class="govuk-grid-column-one-half">
+                <h2 class="govuk-heading-s govuk-!-text-align-right govuk-!-margin-bottom-0">Employer Reference Number:
+                </h2>
+                <p class="govuk-body govuk-!-text-align-right govuk-!-margin-top-0">501001687235</p>
+                <h2 class="govuk-heading-s govuk-!-text-align-right  govuk-!-margin-bottom-0">Payroll frequency:</h2>
+                <p class="govuk-body govuk-!-text-align-right govuk-!-margin-top-0">501001687235</p>
+                <h2 class="govuk-heading-s govuk-!-text-align-right govuk-!-margin-bottom-0">Employer referred to FIU:
+                </h2>
+                <p class="govuk-body govuk-!-text-align-right govuk-!-margin-top-0">No</p>
+
+            </div> <!-- govuk-grid-column-one-half -->
+        </div> <!-- govuk-grid-row -->
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+
+                <table class="govuk-table">
+                    <caption class="govuk-table__caption govuk-table__caption--m">New Missed Payments tasks</caption>
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Status</th>
+                            <th scope="col" class="govuk-table__header">Name</th>
+                            <th scope="col" class="govuk-table__header ">NINO</th>
+                            <!-- <th scope="col" class="govuk-table__header ">Task type</th> -->
+                            <th scope="col" class="govuk-table__header ">Date of task</th>
+                            
+                            <th scope="col" class="govuk-table__header ">Category</th>
+                            <th scope="col" class="govuk-table__header ">Priority</th>
+                            
+                            <th scope="col" class="govuk-table__header">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
+                                New
+                              </strong>
+                            <td class="govuk-table__cell ">David Francis</td>
+                            <td class="govuk-table__cell">AA112233A</td>
+                            <!-- <td class="govuk-table__cell">Missed payment</td> -->
+                            <td class="govuk-table__cell">31st August 2023</td>
+                            
+                            </td>
+                            <td class="govuk-table__cell  govuk-!-width-one-quarter">New DEO imposed - incorrect payment received</td>
+                            <td class="govuk-table__cell">High</td>
+                            
+                            <td class="govuk-table__cell"><a href="deo1-details-alt.html" class="govuk-link">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="govuk-table">
+                    <caption class="govuk-table__caption govuk-table__caption--m">In progress Missed Payments tasks</caption>
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Status</th>
+                            <th scope="col" class="govuk-table__header">Name</th>
+                            <th scope="col" class="govuk-table__header">NINO</th>
+                            <th scope="col" class="govuk-table__header">Date of task</th>
+                            <!-- <th scope="col" class="govuk-table__header ">Date of task</th> -->
+                            
+                            <th scope="col" class="govuk-table__header ">Category</th>
+                            <th scope="col" class="govuk-table__header">Priority</th>
+                            
+                            <th scope="col" class="govuk-table__header">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell "><strong class="govuk-tag govuk-tag--yellow">
+                                Waiting
+                               </strong>
+                            </td>
+                            <td class="govuk-table__cell ">David Francis</td>
+                            <td class="govuk-table__cell">AA112233A</td>
+                            <!-- <td class="govuk-table__cell">Missed payment</td> -->
+                            <td class="govuk-table__cell">31st July 2023</td>
+                            
+                            <td class="govuk-table__cell ">New DEO imposed - no payment received</td>
+                            <td class="govuk-table__cell">High</td>
+                           
+                            <td class="govuk-table__cell"><a href="deo1-details.html" class="govuk-link">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div> <!-- govuk-grid-column-full -->
+        </div> <!-- govuk-grid-row -->
+    </main>
+</div> <!-- govuk-width-container -->
+{% endblock %}
