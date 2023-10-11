@@ -1,0 +1,186 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="view-tasks.html" class="govuk-back-link">Back to CMS-2012</a>
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+                <h1 class="govuk-heading-l">AB Cars Ltd</h1>
+                <!-- <p class="govuk-body">
+                    Unit 3</br>
+                    Greenway Industrial Estate</br>
+                    Newtown</br>
+                    Oldcity</br>
+                    OY32 1JK
+                </p> -->
+            </div> <!-- govuk-grid-column-one-half -->
+
+            <div class="govuk-grid-column-one-half">
+                <h2 class="govuk-heading-s govuk-!-text-align-right govuk-!-margin-bottom-0">Employer Reference Number:
+                </h2>
+                <p class="govuk-body govuk-!-text-align-right govuk-!-margin-top-0">501001687235</p>
+                <!-- <h2 class="govuk-heading-s govuk-!-text-align-right  govuk-!-margin-bottom-0">Payroll frequency:</h2>
+                <p class="govuk-body govuk-!-text-align-right govuk-!-margin-top-0">501001687235</p>
+                <h2 class="govuk-heading-s govuk-!-text-align-right govuk-!-margin-bottom-0">Employer referred to FIU:
+                </h2>
+                <p class="govuk-body govuk-!-text-align-right govuk-!-margin-top-0">No</p> -->
+
+            </div> <!-- govuk-grid-column-one-half -->
+        </div> <!-- govuk-grid-row -->
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <div class="govuk-tabs" data-module="govuk-tabs">
+                    <h2 class="govuk-tabs__title">
+                        Contents
+                    </h2>
+                    <ul class="govuk-tabs__list">
+                        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                            <a class="govuk-tabs__tab" href="#contact-details">
+                                Contact details
+                            </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                            <a class="govuk-tabs__tab" href="#payroll-information">
+                                Payroll information
+                            </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                            <a class="govuk-tabs__tab" href="#active-deos">
+                                Active DEO's
+                            </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                            <a class="govuk-tabs__tab" href="#closed-deos">
+                                Closed DEO's
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="govuk-tabs__panel" id="contact-details">
+                        <h2 class="govuk-heading-m">Contact details</h2>
+                        <table class="govuk-table">
+                            <thead class="govuk-table__head">
+                                <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header">Case manager</th>
+                                    <th scope="col" class="govuk-table__header">Cases opened</th>
+                                    <th scope="col" class="govuk-table__header">Cases closed</th>
+                                </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">David Francis</td>
+                                    <td class="govuk-table__cell">3</td>
+                                    <td class="govuk-table__cell">0</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Paul Farmer</td>
+                                    <td class="govuk-table__cell">1</td>
+                                    <td class="govuk-table__cell">0</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Rita Patel</td>
+                                    <td class="govuk-table__cell">2</td>
+                                    <td class="govuk-table__cell">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="payroll-information">
+                        <h2 class="govuk-heading-m">Payroll information</h2>
+                        <table class="govuk-table">
+                            <thead class="govuk-table__head">
+                                <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header">Case manager</th>
+                                    <th scope="col" class="govuk-table__header">Cases opened</th>
+                                    <th scope="col" class="govuk-table__header">Cases closed</th>
+                                </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">David Francis</td>
+                                    <td class="govuk-table__cell">24</td>
+                                    <td class="govuk-table__cell">18</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Paul Farmer</td>
+                                    <td class="govuk-table__cell">16</td>
+                                    <td class="govuk-table__cell">20</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Rita Patel</td>
+                                    <td class="govuk-table__cell">24</td>
+                                    <td class="govuk-table__cell">27</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="active-deos">
+                        <h2 class="govuk-heading-m">Active DEO's</h2>
+                        <table class="govuk-table">
+                            <thead class="govuk-table__head">
+                                <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header">Case manager</th>
+                                    <th scope="col" class="govuk-table__header">Cases opened</th>
+                                    <th scope="col" class="govuk-table__header">Cases closed</th>
+                                </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">David Francis</td>
+                                    <td class="govuk-table__cell">98</td>
+                                    <td class="govuk-table__cell">95</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Paul Farmer</td>
+                                    <td class="govuk-table__cell">122</td>
+                                    <td class="govuk-table__cell">131</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Rita Patel</td>
+                                    <td class="govuk-table__cell">126</td>
+                                    <td class="govuk-table__cell">142</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="closed-deos">
+                        <h2 class="govuk-heading-m">Closed DEO's</h2>
+                        <table class="govuk-table">
+                            <thead class="govuk-table__head">
+                                <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header">Case manager</th>
+                                    <th scope="col" class="govuk-table__header">Cases opened</th>
+                                    <th scope="col" class="govuk-table__header">Cases closed</th>
+                                </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">David Francis</td>
+                                    <td class="govuk-table__cell">1380</td>
+                                    <td class="govuk-table__cell">1472</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Paul Farmer</td>
+                                    <td class="govuk-table__cell">1129</td>
+                                    <td class="govuk-table__cell">1083</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Rita Patel</td>
+                                    <td class="govuk-table__cell">1539</td>
+                                    <td class="govuk-table__cell">1265</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div> <!-- govuk-grid-column-full -->
+        </div> <!-- govuk-grid-row -->
+    </main>
+</div> <!-- govuk-width-container -->
+{% endblock %}
