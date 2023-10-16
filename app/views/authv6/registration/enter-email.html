@@ -11,21 +11,42 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds-from-desktop">
 
-        <h1 class="govuk-heading-l">Enter your email address</h1>
+        <h1 class="govuk-heading-l">Enter your details to register </h1>
+        <form action="confirmation.html" method="get" novalidate>
           <div class="govuk-form-group">
-          <label class="govuk-label" for="password">
-            Email address
-          </label>
-          <input class="govuk-input" id="password" name="password" type="password" spellcheck="false"
-            aria-describedby="password-hint">
-        </div>
+            <label class="govuk-heading-m" for="ern">12 digit employer reference number</label>
+            <div id="ern-hint" class="govuk-hint">
+              This is the 12 digit number you can find at the top of your letters.
+            </div>
+            <input class="govuk-input govuk-input--width-20" id="ern" name="ern" type="number"
+              spellcheck="false" aria-describedby="email-hint">
+          </div>
 
-       <a href="invite-email.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Continue
-       </a>
+          <div class="govuk-form-group">
+            <label class="govuk-heading-m" for="paye">PAYE number</label>
+            <div id="paye-hint" class="govuk-hint">
+              You can find it on your P30BC payslip booklet. For example, '123/XY12345'.
+            </div>
+            <input class="govuk-input govuk-input--width-20" id="paye" name="paye" type="text"
+              spellcheck="false" aria-describedby="email-hint">
+          </div>
 
-      </div>
+          <div class="govuk-form-group">
+            <label class="govuk-heading-m" for="email">Email </label>
+            <div id="email-hint" class="govuk-hint">
+              You will use this email address to sign into the service.
+            </div>
+            <input class="govuk-input" id="email" name="email" type="email" spellcheck="false"
+              aria-describedby="password-hint">
+          </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+      </form>
+
     </div>
-  </main>
+</div>
+</main>
 </div>
 {% endblock %}
