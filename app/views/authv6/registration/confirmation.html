@@ -1,0 +1,45 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            First part of registration complete
+          </h1>
+          <div class="govuk-panel__body">
+            An email has been sent to:<br>{{data['email']}}
+          </div>
+        </div>
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+        <p class="govuk-body">
+          Use the link in the email to access the service.
+        </p>
+        <p class="govuk-body">
+          Enter the one-time passcode in the email.
+        </p>
+        <p class="govuk-body">
+          You can close this window now.
+        </p>
+
+
+        <a href="invite-email.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Close this window
+        </a>
+
+
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
