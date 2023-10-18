@@ -147,32 +147,195 @@ GOV.UK Prototype Kit
                     </div>
                     <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="payroll-information">
                         <h2 class="govuk-heading-m">Payroll information</h2>
-                        <table class="govuk-table">
-                            <thead class="govuk-table__head">
-                                <tr class="govuk-table__row">
-                                    <th scope="col" class="govuk-table__header">Case manager</th>
-                                    <th scope="col" class="govuk-table__header">Cases opened</th>
-                                    <th scope="col" class="govuk-table__header">Cases closed</th>
-                                </tr>
-                            </thead>
-                            <tbody class="govuk-table__body">
-                                <tr class="govuk-table__row">
-                                    <td class="govuk-table__cell">David Francis</td>
-                                    <td class="govuk-table__cell">24</td>
-                                    <td class="govuk-table__cell">18</td>
-                                </tr>
-                                <tr class="govuk-table__row">
-                                    <td class="govuk-table__cell">Paul Farmer</td>
-                                    <td class="govuk-table__cell">16</td>
-                                    <td class="govuk-table__cell">20</td>
-                                </tr>
-                                <tr class="govuk-table__row">
-                                    <td class="govuk-table__cell">Rita Patel</td>
-                                    <td class="govuk-table__cell">24</td>
-                                    <td class="govuk-table__cell">27</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="govuk-summary-card">
+                          <div class="govuk-summary-card__title-wrapper">
+                            <h2 class="govuk-summary-card__title">Monthly payroll</h2>
+                          </div>
+                          <div class="govuk-summary-card__content">
+                            <dl class="govuk-summary-list">
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Payroll run date
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                 27th of each month
+                                </dd>
+                                
+                              </div>
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Employer pay date
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                 Last workng day of each month
+                                </dd>
+                                
+                              </div>
+                              
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Payroll cut off
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                 22nd of each month
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> working situation</span>
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Payment expected
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                 5 days after payroll run
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> working situation</span>
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Payment to CMG frequency
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                 Monthly
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> working situation</span>
+                                  </a>
+                                </dd>
+                              </div>
+                            </dl>
+                          </div>
+                        </div>
+                        <!-- <div class="govuk-summary-card">
+                          <div class="govuk-summary-card__title-wrapper">
+                            <h2 class="govuk-summary-card__title">Person 2</h2>
+                          </div>
+                          <div class="govuk-summary-card__content">
+                            <dl class="govuk-summary-list">
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Details known
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                  Yes
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> whether details are known</span>
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Relationship to lead tenant
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                  Partner
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> relationship to lead tenant</span>
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Age
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                  42
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> age</span>
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Working situation
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                  Unable to work because of long-term sickness or disability
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> working situation</span>
+                                  </a>
+                                </dd>
+                              </div>
+                            </dl>
+                          </div>
+                        </div>
+                        <div class="govuk-summary-card">
+                          <div class="govuk-summary-card__title-wrapper">
+                            <h2 class="govuk-summary-card__title">Person 3</h2>
+                          </div>
+                          <div class="govuk-summary-card__content">
+                            <dl class="govuk-summary-list">
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Details known
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                  Yes
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> whether details are known</span>
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Relationship to lead tenant
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                  Child
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> relationship to lead tenant</span>
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Age
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                  7
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> age</span>
+                                  </a>
+                                </dd>
+                              </div>
+                              <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  Working situation
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                  Child under 16
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> working situation</span>
+                                  </a>
+                                </dd>
+                              </div>
+                            </dl>
+                          </div>
+                        </div> -->
                     </div>
                     <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="active-deos">
                         <h2 class="govuk-heading-m">Active DEO's</h2>
