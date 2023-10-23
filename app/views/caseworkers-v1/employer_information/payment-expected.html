@@ -1,0 +1,47 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+                <form action="cya.html" method="get">
+                    
+                  <h1 class="govuk-heading-l">When is the DEO payment expected from the employer?</h1>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="subject">
+                      Select when the payment is expected
+                    </label>
+                    <!-- <div id="subject-hint" class="govuk-hint">
+                      This can be different to where you went before
+                    </div> -->
+                    <select class="govuk-select" id="subject" name="subject" aria-describedby="subject-hint">
+                      <option value="choose" selected>Select</option>
+                      <option value="oneday">One day after the payroll run</option>
+                      <option value="twodays">Two days after the payroll run</option>
+                      <option value="threedays">Three days after the payroll run</option>
+                      <option value="fourdays">Four days after the payroll run</option>
+                      <option value="fivedays">Five days after the payroll run</option>
+                      <option value="sixdays">Six days after the payroll run</option>
+                      <option value="oneweek">One week after the pyroll run</option>
+                      <option value="other~payment-expected-other-details.html">Other</option>
+                    </select>
+                  </div>
+
+                    <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+
+                </form>
+
+            </div> <!-- govuk-grid-column-one-half -->
+        </div> <!-- govuk-grid-row -->
+
+
+    </main>
+</div> <!-- govuk-width-container -->
+{% endblock %}
