@@ -19,14 +19,15 @@ GOV.UK Prototype Kit
           <dl class="govuk-summary-list govuk-!-margin-bottom-9">
             <div class="govuk-summary-list__row">
               <dt class="govuk-summary-list__key">
-                When is the DEO payment expected from the employer?
+                Payroll cut off details
               </dt>
               <dd class="govuk-summary-list__value">
-                <p class="govuk-body">{{data['paymentexpected']}}</p>
+                <p class="govuk-body">This is the deadline for contacting the employer before a payroll is run</p>
+                <p class="govuk-body">{{data['payrollCutoff']}} {{data['payroll-cutoff']}}</p>
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="payment-expected.html">
-                  Change<span class="govuk-visually-hidden"> name</span>
+                <a class="govuk-link" href="payroll-cutoff.html">
+                  Change<span class="govuk-visually-hidden"> payroll cut off</span>
                 </a>
               </dd>
             </div>
