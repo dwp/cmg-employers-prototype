@@ -1,0 +1,55 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+                <form action="cya-letters.html" method="get">
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="letters">
+                          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                            <h1 class="govuk-fieldset__heading">
+                              What is the employers letters preference?
+                            </h1>
+                          </legend>
+                          <div class="govuk-radios" data-module="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="letters-1" name="letters" type="radio" value="Online" aria-describedby="payroll-provider-item-hint">
+                              <label class="govuk-label govuk-radios__label" for="letters-1">
+                                Online
+                              </label>
+                              <div id="signIn-item-hint" class="govuk-hint govuk-radios__hint">
+                                Letters will be available to view on the Employer Portal
+                              </div>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="letters-2" name="letters" type="radio" value="Postal" aria-describedby="payroll-provider-item-hint">
+                              <label class="govuk-label govuk-radios__label" for="letters-2">
+                               Postal
+                              </label>
+                              <div id="signIn-2-item-hint" class="govuk-hint govuk-radios__hint">
+                                Letters will be sent by post and available to view on the Employer Portal
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                    <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+
+                </form>
+
+            </div> <!-- govuk-grid-column-one-half -->
+        </div> <!-- govuk-grid-row -->
+
+
+    </main>
+</div> <!-- govuk-width-container -->
+{% endblock %}
