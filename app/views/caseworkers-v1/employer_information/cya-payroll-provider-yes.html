@@ -1,0 +1,61 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <!-- <a href="javascript:history.back()" class="govuk-back-link">Back</a> -->
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <form action="confirmation-page.html" method="get">
+
+            <h2 class="govuk-heading-l">Check the details before saving</h2>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Do you need to add a Payroll Provider address?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">Yes</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="payroll-provider-address.html">
+                    Change<span class="govuk-visually-hidden"> name</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  What is the payroll-provider address?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['payroll-provider-addressLine1']}},<br>{{data['payroll-provider-addressLine2']}},<br>
+                    {{data['payroll-provider-addressTown']}},<br>{{data['payroll-provider-addressCounty']}},<br>{{data['payroll-provider-addressPostcode']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="payroll-provider-address-detail.html">
+                    Change<span class="govuk-visually-hidden"> name</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+           
+            <div class="govuk-form-group">
+              <button class="govuk-button" data-module="govuk-button">
+                Confirm and save
+              </button> 
+            </div>
+          </form>
+          <a href="payroll-provider-address.html">Cancel</a>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}
