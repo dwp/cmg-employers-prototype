@@ -1,0 +1,58 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+                <form action="cya.html" method="get">
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="payroll-provider">
+                          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                            <h1 class="govuk-fieldset__heading">
+                              Do you need to add a Payroll Provider address?
+                            </h1>
+                          </legend>
+                          <div id="signIn-hint" class="govuk-hint">
+                            Child Maintenance Service will send letters to this address as well as the registered address
+                          </div>
+                          <div class="govuk-radios" data-module="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="payrollProvider-1" name="payrollProvider" type="radio" value="Yes~/caseworkers-v1/employer_information/payroll-provider-address-detail.html" aria-describedby="payroll-provider-item-hint">
+                              <label class="govuk-label govuk-radios__label" for="payrollProvider-1">
+                                Yes
+                              </label>
+                              <!-- <div id="signIn-item-hint" class="govuk-hint govuk-radios__hint">
+                                Add a payroll-provider address
+                              </div> -->
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="payrollProvider-2" name="payrollProvider" type="radio" value="No~/caseworkers-v1/employer_information/cya-payroll-provider-no.html" aria-describedby="payroll-provider-item-hint">
+                              <label class="govuk-label govuk-radios__label" for="payrollProvider-2">
+                                No
+                              </label>
+                              <!-- <div id="signIn-2-item-hint" class="govuk-hint govuk-radios__hint">
+                                Delete the existing payroll-provider address
+                              </div> -->
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                    <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+
+                </form>
+
+            </div> <!-- govuk-grid-column-one-half -->
+        </div> <!-- govuk-grid-row -->
+
+
+    </main>
+</div> <!-- govuk-width-container -->
+{% endblock %}
