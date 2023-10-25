@@ -1,0 +1,75 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+              <h1 class="govuk-heading-l">Payroll cut off details</h1>
+              <div id="subject-hint" class="govuk-hint">
+                      This is the deadline for contacting the employer before a payroll is run
+                    </div>
+              <form action="cya-payroll-cutoff.html" method="get" novalidate>
+               
+                  <div class="govuk-form-group">
+                    <h1 class="govuk-heading-m">Select a number</h1>
+                    <!-- <label class="govuk-label" for="paymentexpected">
+                      Select a number
+                    </label> -->
+                    <!-- <div id="subject-hint" class="govuk-hint">
+                      This can be different to where you went before
+                    </div> -->
+                    <select class="govuk-select" id="payrollCutoff" name="payrollCutoff" aria-describedby="payrollCutoff-hint">
+                      <option value="choose" selected>Select</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      
+                    </select>
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+                          Choose a frequency
+                        </h1>
+                      </legend>
+                      <div class="govuk-radios" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="payroll-cutoff" name="payroll-cutoff" type="radio" value="days">
+                          <label class="govuk-label govuk-radios__label" for="payroll-cutoff">
+                            Days
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="payroll-cutoff-2" name="payroll-cutoff" type="radio" value="weeks">
+                          <label class="govuk-label govuk-radios__label" for="payroll-cutoff-2">
+                            Weeks
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                <button class="govuk-button" data-module="govuk-button">
+                  Continue
+                </button>
+              </form>
+
+            </div> <!-- govuk-grid-column-one-half -->
+        </div> <!-- govuk-grid-row -->
+
+
+    </main>
+</div> <!-- govuk-width-container -->
+{% endblock %}
