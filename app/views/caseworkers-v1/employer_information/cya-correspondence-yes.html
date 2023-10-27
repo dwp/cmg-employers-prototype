@@ -12,12 +12,12 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <form action="confirmation-page.html" method="get">
+          <form action="confirmation-page-address.html" method="get">
 
             <h2 class="govuk-heading-l">Check the details before saving</h2>
 
             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-              <div class="govuk-summary-list__row">
+              <!-- <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
                   Does this employer use a correspondence address?
                 </dt>
@@ -25,14 +25,14 @@ GOV.UK Prototype Kit
                   <p class="govuk-body">Yes</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="correspondence-address.html">
+                  <a class="govuk-link" href="correspondence-address-detail.html">
                     Change<span class="govuk-visually-hidden"> name</span>
                   </a>
                 </dd>
-              </div>
+              </div> -->
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  What is the correspondence address?
+                  Update the preferred contact address for AB Cars Ltd
                 </dt>
                 <dd class="govuk-summary-list__value">
                   <p class="govuk-body">{{data['correspondence-addressLine1']}},<br>{{data['correspondence-addressLine2']}},<br>
@@ -52,7 +52,7 @@ GOV.UK Prototype Kit
               </button> 
             </div>
           </form>
-          <a href="correspondence-address.html">Cancel</a>
+          <a href="correspondence-address-detail.html">Cancel</a>
         </div>
       </div>
     </main>
