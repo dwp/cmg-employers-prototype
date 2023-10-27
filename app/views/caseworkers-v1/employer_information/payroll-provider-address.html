@@ -11,43 +11,48 @@ GOV.UK Prototype Kit
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
 
-                <form action="cya.html" method="get">
-                    <div class="govuk-form-group">
-                        <fieldset class="govuk-fieldset" aria-describedby="payroll-provider">
-                          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                            <h1 class="govuk-fieldset__heading">
-                              Do you need to add a Payroll Provider address?
-                            </h1>
-                          </legend>
-                          <div id="signIn-hint" class="govuk-hint">
-                            Child Maintenance Service will send letters to this address as well as the registered address
-                          </div>
-                          <div class="govuk-radios" data-module="govuk-radios">
-                            <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="payrollProvider-1" name="payrollProvider" type="radio" value="Yes~/caseworkers-v1/employer_information/payroll-provider-address-detail.html" aria-describedby="payroll-provider-item-hint">
-                              <label class="govuk-label govuk-radios__label" for="payrollProvider-1">
-                                Yes
-                              </label>
-                              <!-- <div id="signIn-item-hint" class="govuk-hint govuk-radios__hint">
-                                Add a payroll-provider address
-                              </div> -->
-                            </div>
-                            <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="payrollProvider-2" name="payrollProvider" type="radio" value="No~/caseworkers-v1/employer_information/cya-payroll-provider-no.html" aria-describedby="payroll-provider-item-hint">
-                              <label class="govuk-label govuk-radios__label" for="payrollProvider-2">
-                                No
-                              </label>
-                              <!-- <div id="signIn-2-item-hint" class="govuk-hint govuk-radios__hint">
-                                Delete the existing payroll-provider address
-                              </div> -->
-                            </div>
-                          </div>
-                        </fieldset>
-                      </div>
+              <form action="cya-payroll-provider-yes.html" method="get">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                      Update the Payroll Provider address for AB Cars Ltd
+                    </h1>
+                  </legend>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="payroll-provider-address-line-1">
+                      Address line 1
+                    </label>
+                    <input class="govuk-input" id="payroll-provider-address-line-1" name="payroll-provider-addressLine1" type="text" autocomplete="payroll-provider-address-line1">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="payroll-provider-address-line-2">
+                      Address line 2 (optional)
+                    </label>
+                    <input class="govuk-input" id="payroll-provider-address-line-2" name="payroll-provider-addressLine2" type="text" autocomplete="payroll-provider-address-line2">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="payroll-provider-address-town">
+                      Address line 3
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="payroll-provider-address-town" name="payroll-provider-addressTown" type="text" autocomplete="payroll-provider-address-level2">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="payroll-provider-address-county">
+                      City or town
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="payroll-provider-address-county" name="payroll-provider-addressCounty" type="text">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="payroll-provider-address-postcode">
+                      Postcode
+                    </label>
+                    <input class="govuk-input govuk-input--width-10" id="payroll-provider-address-postcode" name="payroll-provider-addressPostcode" type="text" autocomplete="payroll-provider-postal-code">
+                  </div>
+                </fieldset>
 
-                    <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+                  <input type="submit" class="govuk-button" value="Save and continue" id="submit">
 
-                </form>
+              </form>
 
             </div> <!-- govuk-grid-column-one-half -->
         </div> <!-- govuk-grid-row -->
