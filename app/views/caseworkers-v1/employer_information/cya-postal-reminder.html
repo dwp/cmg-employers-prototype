@@ -12,34 +12,20 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <form action="confirmation-page-payroll-provider.html" method="get">
+          <form action="confirmation-page.html" method="get">
 
             <h2 class="govuk-heading-l">Check the details before saving</h2>
 
             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-              <!-- <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Do you need to add a Payroll Provider address?
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">Yes</p>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="payroll-provider-address.html">
-                    Change<span class="govuk-visually-hidden"> name</span>
-                  </a>
-                </dd>
-              </div> -->
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Update the Payroll Provider address for AB Cars Ltd
+                  Does the employer need a postal DEO reminder?
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['payroll-provider-addressLine1']}},<br>{{data['payroll-provider-addressLine2']}},<br>
-                    {{data['payroll-provider-addressTown']}},<br>{{data['payroll-provider-addressCounty']}},<br>{{data['payroll-provider-addressPostcode']}}</p>
+                  <p class="govuk-body">{{data['postal-reminder']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="payroll-provider-address-detail.html">
+                  <a class="govuk-link" href="postal-reminder.html">
                     Change<span class="govuk-visually-hidden"> name</span>
                   </a>
                 </dd>
