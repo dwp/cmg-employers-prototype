@@ -21,9 +21,13 @@ GOV.UK Prototype Kit
             </div>
             <div class="govuk-notification-banner__content">
               <p class="govuk-notification-banner__heading">
-                This is a temporary registration and sign in journey
+              This is a test service
               </p>
-               Note the URL or bookmark this page if you need to sign into the Child Maintenance Service during this test. 
+              If you need to use this service again: 
+              <ul>
+                <li> make a note of the page URL in the address bar</li>
+                <li> add this page to your browser bookmarks or favourites</li>
+              </ul>
               </p>
             </div>
           </div>
@@ -36,19 +40,23 @@ GOV.UK Prototype Kit
             </strong>
           </div> -->
 
-          <h1 class="govuk-heading-l">Sign into the Child Maintenance service</h1>
+          <h1 class="govuk-heading-l">Sign into the Child Maintenance Service</h1>
 
           <div class="govuk-form-group">
-            <label class="govuk-label" for="login-email">Email address</label>
-            <input class="govuk-input" id="login-email" name="login-email" type="email" spellcheck="false"
-              aria-describedby="email-hint" autocomplete="email">
-          </div>
-
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="login-password">Password</label>
-            <input class="govuk-input" id="login-password" name="login-password" type="text" spellcheck="false"
-              aria-describedby="email-hint" autocomplete="text">
-          </div>
+            <label class="govuk-label" for="password">Password</label>
+            <input class="govuk-input govuk-input--width-20" id="login-paye" name="login-paye" type="text" spellcheck="false"
+              aria-describedby="email-hint">
+              <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                Show
+              </button>
+ 
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="Confirm your password">Confirm your password</label>
+                <input class="govuk-input govuk-input--width-20" id="login-paye" name="login-paye" type="text" spellcheck="false"
+                  aria-describedby="email-hint">
+                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                    Show
+                  </button>
 
           <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
             Sign in
