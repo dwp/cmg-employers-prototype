@@ -10,21 +10,21 @@ GOV.UK Prototype Kit
     <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-three-quarters">
-
+<h1 class="govuk-heading-l">DEO information</h1>
                 <div class="govuk-tabs" data-module="govuk-tabs">
                     <ul class="govuk-tabs__list">
                         <li class="govuk-tabs__list-item ">
-                            <a class="govuk-tabs__tab" href="#past-day">
+                            <a class="govuk-tabs__tab" href="#details">
                                 DEO details
                             </a>
                         </li>
                         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                            <a class="govuk-tabs__tab" href="#past-week">
-                                DEO history
+                            <a class="govuk-tabs__tab" href="#history-notes">
+                                DEO history and notes
                             </a>
                         </li>
                         <li class="govuk-tabs__list-item">
-                            <a class="govuk-tabs__tab" href="#past-month">
+                            <a class="govuk-tabs__tab" href="#contact">
                                 Employer contacts
                             </a>
                         </li>
@@ -34,8 +34,7 @@ GOV.UK Prototype Kit
                         </a>
                       </li> -->
                     </ul>
-                    <div class="govuk-tabs__panel" id="past-day">
-                        <h2 class="govuk-heading-l">DEO details</h2>
+                    <div class="govuk-tabs__panel" id="details">
                         <dl class="govuk-summary-list">
                             <div class="govuk-summary-list__row">
                                 <dt class="govuk-summary-list__key">
@@ -112,8 +111,7 @@ GOV.UK Prototype Kit
                         </dl>
                     </div>
 
-                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
-                        <h2 class="govuk-heading-l">Employer contacts</h2>
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="contact">
                         <div class="govuk-summary-card">
                             <div class="govuk-summary-card__title-wrapper">
                                 <h2 class="govuk-summary-card__title">Contact 1</h2>
@@ -289,29 +287,13 @@ GOV.UK Prototype Kit
 
                     </div>
 
-                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
-                        <h2 class="govuk-heading-l">DEO History</h2>
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history-notes">
+
 
 
                         <div class="dwp-timeline">
                             <!-- <h1 class="govuk-heading-m">DEO history</h1> -->
                             <ol class="dwp-timeline__events">
-                              <li class="dwp-timeline__events--entry">
-                                <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action date</h2>
-                                <p class="govuk-caption-m govuk-!-margin-bottom-1">Follow up on 18 September 2023</p>
-                                <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="deo1-notes7.html"
-                                  class="govuk-link">View
-                                  notes</a></p>
-                                <p class="govuk-caption-m">12 September 2023</p>
-                            </li>
-                              <li class="dwp-timeline__events--entry">
-                                <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
-                                <p class="govuk-caption-m govuk-!-margin-bottom-1">Date of call 12 September 2023</p>
-                                <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="deo1-notes6.html"
-                                  class="govuk-link">View
-                                  notes</a></p>
-                                <p class="govuk-caption-m">12 September 2023</p>
-                            </li>
                                 <li class="dwp-timeline__events--entry">
                                     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Missed payment</h2>
                                     <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
@@ -393,18 +375,18 @@ GOV.UK Prototype Kit
             </div> <!-- govuk-grid-column-two-thirds -->
             <div class="govuk-grid-column-one-quarter">
 
-                <h3 class="govuk-heading-s">What do you want to do next?</h3>
+                <h2 class="govuk-heading-m">Update this account</h2>
                 <ul class="govuk-list">
                     <li>
                         <a class="govuk-link" href="assign-receipt.html.html">Assign the receipt</a>
                     </li>
                     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
                     <li>
-                        <a class="govuk-link" href="nad1.html">Set a Next Action Date</a>
+                        <a class="govuk-link" href="nad1.html">Set a next action date</a>
                     </li>
                     <hr class="govuk-section-break  govuk-section-break--m govuk-section-break--visible">
                     <li>
-                        <a class="govuk-link" href="employer-call">Make a call to the employer</a>
+                        <a class="govuk-link" href="employer-call">Record call details</a>
                     </li>
                     <!-- <hr class="govuk-section-break  govuk-section-break--m govuk-section-break--visible">
                     <li>
@@ -416,8 +398,10 @@ GOV.UK Prototype Kit
                     </li> -->
                     <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
                     <li>
-                        <a class="govuk-link" href="view-tasks.html">Go back to Tasks list</a>
+                        <a class="govuk-link" href="view-tasks.html">Go back to tasks list</a>
                     </li>
+
+                </ul>
 
             </div> <!-- govuk-grid-column-one-quarter -->
         </div> <!-- govuk-grid-row -->
