@@ -12,14 +12,11 @@ GOV.UK Prototype Kit
             <div class="govuk-grid-column-two-thirds">
 
                 <form action="confirmation-page-letter.html" method="get">
-
-                    <h1 class="govuk-heading-l">Contact this employer</h1>
-
                     <div class="govuk-form-group">
                         <fieldset class="govuk-fieldset">
-                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                                 <h1 class="govuk-fieldset__heading">
-                                    Select which letter to send
+                                    Which notification letter do you want to send?
                                 </h1>
                             </legend>
                             <div class="govuk-radios" data-module="govuk-radios">
@@ -27,16 +24,21 @@ GOV.UK Prototype Kit
                                     <input class="govuk-radios__input" id="notification-1" name="notification"
                                         type="radio" value="">
                                     <label class="govuk-label govuk-radios__label" for="notification-1">
-                                        Email
+                                        8205 - Missed Payment letter
                                     </label>
                                 </div>
                                 <div class="govuk-radios__item">
                                     <input class="govuk-radios__input" id="notification-2" name="notification"
                                         type="radio" value="">
                                     <label class="govuk-label govuk-radios__label" for="notification-2">
-                                        Letter
+                                        Another letter
                                     </label>
                                 </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="notification-3" name="notification"
+                                        type="radio" value="">
+                                    <label class="govuk-label govuk-radios__label" for="notification-3">
+                                        A different letter
                                     </label>
                                 </div>
                             </div>
@@ -45,9 +47,9 @@ GOV.UK Prototype Kit
 
                     <div class="govuk-form-group">
                         <fieldset class="govuk-fieldset">
-                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                                 <h1 class="govuk-fieldset__heading">
-                                    Select who to send the letter to
+                                    Who do you want to send the notification to?
                                 </h1>
                             </legend>
                             <div class="govuk-radios" data-module="govuk-radios">
@@ -68,7 +70,6 @@ GOV.UK Prototype Kit
                             </div>
                         </fieldset>
                     </div>
-
 
                     <input type="submit" class="govuk-button" value="Save and continue" id="submit">
 
