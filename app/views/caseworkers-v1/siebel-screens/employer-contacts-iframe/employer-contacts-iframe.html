@@ -3,14 +3,12 @@
 {% block pageTitle %}
 GOV.UK Prototype Kit
 {% endblock %}
-
-{% block content %}
-
-
- 
-  <main class="govuk-main-wrapper " id="main-content" role="main">
+{#  set the main block rather then content - this overrides the parent govuk-width-container/main #}
+{% block main %}
+{#  added some wrapping grid/since we have removed the margin #}
+  <main class="govuk-main-wrapper govuk-!-margin-5" id="main-content" role="main">
     <div class="govuk-grid-row">
-     
+      <div class="govuk-grid-column-full">
         <table class="govuk-table">
           <caption class="govuk-table__caption govuk-table__caption--m">Contacts for AB Cars Ltd</caption>
           <thead class="govuk-table__head">
@@ -22,9 +20,6 @@ GOV.UK Prototype Kit
               <th scope="col" class="govuk-table__header">Extension number</th>
               <th scope="col" class="govuk-table__header">Alternative number</th>
               <th scope="col" class="govuk-table__header">Email</th>
-              
-              
-              
             </tr>
           </thead>
           <tbody class="govuk-table__body">
@@ -67,6 +62,7 @@ GOV.UK Prototype Kit
           class="govuk-button" data-module="govuk-button">Close employer contacts</a>
 
       </div>
+    </div>
     </div>
   </main>
 
