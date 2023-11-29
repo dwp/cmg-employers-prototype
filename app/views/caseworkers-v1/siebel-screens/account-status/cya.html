@@ -1,8 +1,4 @@
-{% extends "layout_dwp_unbranded.html" %}
-
-{% block pageTitle %}
-GOV.UK Prototype Kit
-{% endblock %}
+{% extends "layout_cm.html" %}
 
 {% block content %}
 
@@ -14,19 +10,19 @@ GOV.UK Prototype Kit
 
           <form action="confirmation-page.html" method="get">
 
-            <h2 class="govuk-heading-l">Check your answers</h2>
+            <h2 class="govuk-heading-l">Check before updating</h2>
 
             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Select who you want to assign the receipt to
+                  What are you updating?
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['assign']}}</p>
+                  <p class="govuk-body">{{data['siebel-v1-account-status']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="assign-receipt.html">
-                    Change<span class="govuk-visually-hidden"> name</span>
+                  <a class="govuk-link" href="change-account-status.html">
+                    Change<span class="govuk-visually-hidden"> account status</span>
                   </a>
                 </dd>
               </div>
@@ -34,11 +30,11 @@ GOV.UK Prototype Kit
            
             <div class="govuk-form-group">
               <button class="govuk-button" data-module="govuk-button">
-                Confirm and save
+                Confirm
               </button> 
             </div>
           </form>
-          <a href="assign-receipt.html">Cancel</a>
+          <a href="#">Cancel</a>
         </div>
       </div>
     </main>
