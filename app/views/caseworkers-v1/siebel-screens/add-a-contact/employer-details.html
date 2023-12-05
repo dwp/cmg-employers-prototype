@@ -92,7 +92,7 @@
             
             <div class="govuk-summary-card">
               <div class="govuk-summary-card__title-wrapper">
-                <h2 class="govuk-summary-card__title">Zoe Burns</h2><strong class="govuk-tag app-task-list__tag
+                <h2 class="govuk-summary-card__title">{{data['siebel-v1-first-name-new']}} {{data['siebel-v1-last-name-new']}}</h2><strong class="govuk-tag app-task-list__tag
                 ">Administrator</strong>
                 <ul class="govuk-summary-card__actions">
                   <!-- <li class="govuk-summary-card__action"> <a class="govuk-link" href="user_2/confirmation-page-otp.html">
@@ -100,11 +100,11 @@
                     </a>
                   </li> -->
                   <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
-                    Update account status<span class="govuk-visually-hidden"> of Zoe Burns</span>
+                    Update account status<span class="govuk-visually-hidden"> of new user</span>
                     </a>
                   </li>
                   <li class="govuk-summary-card__action"> <a class="govuk-link" href="change-user-1-details.html">
-                    Change details<span class="govuk-visually-hidden"> of Zoe Burns</span>
+                    Change details<span class="govuk-visually-hidden"> of new user</span>
                     </a>
                   </li>
                 </ul>
@@ -124,7 +124,7 @@
                       Email address
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      zoe.burns@abcars.co.uk
+                      {{data['siebel-v1-email-new']}}
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -132,7 +132,7 @@
                       Contact number
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      07777777777
+                      {{data['siebel-v1-contact-1-new']}}
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -140,7 +140,7 @@
                       Extension number
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      6789
+                      {{data['siebel-v1-contact-2-new']}}
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -148,7 +148,7 @@
                       Alternative number
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      01132320987
+                      {{data['siebel-v1-contact-3-new']}}
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -156,7 +156,7 @@
                       Are they a third party provider?
                     </dt>
                     <dd class="govuk-summary-list__value">
-                     No
+                      {{data['siebel-v1-new-user-payroll-provider']}}
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -164,7 +164,7 @@
                        What can we contact them about?
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      Sending Child Maintenance payments to DWP
+                      {{data['siebel-v1-new-user-contact-reason']}}
                     </dd>
                   </div>
                 </dl>
