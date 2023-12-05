@@ -81,38 +81,7 @@
             </dl>
           </div> <!-- govuk-grid-column-two-thirds -->
 
-          <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title"
-            data-module="govuk-notification-banner">
-            <div class="govuk-notification-banner__header">
-              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                Important
-              </h2>
-            </div>
-            <div class="govuk-notification-banner__content">
-              <p class="govuk-notification-banner__heading">
-                You have actions to take for this employers contacts. 
-                <!-- <a class="govuk-notification-banner__link" href="#">View contacts</a>. -->
-              </p>
-            </div>
-          </div>
-
-          <dl class="govuk-summary-list">
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">
-                Name
-              </dt>
-              <dd class="govuk-summary-list__value">
-                Payroll Payroll
-              </dd>
-              <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="change-user-3-details.html">
-                  Change<span class="govuk-visually-hidden"> details</span>
-                </a>
-              </dd>
-            </div>
-          </dl>
-
-         
+          
             <h2 class="govuk-heading-m">Manage employer contacts</h2>
 
             <a href="add-a-contact.html" role="button" draggable="false" class="govuk-button"
@@ -276,6 +245,86 @@
                     </dt>
                     <dd class="govuk-summary-list__value">
                       Sending Child Maintenance payments to DWP
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+            <div class="govuk-summary-card">
+              <div class="govuk-summary-card__title-wrapper">
+                <h2 class="govuk-summary-card__title">{{data['siebel-v1-first-name-user-3']}} {{data['siebel-v1-last-name-user-3']}}</h2>
+                <ul class="govuk-summary-card__actions">
+                  <!-- <li class="govuk-summary-card__action"> <a class="govuk-link" href="user_2/confirmation-page-otp.html">
+                    Send passcode<span class="govuk-visually-hidden"> of University of Bristol</span>
+                    </a>
+                  </li> -->
+                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                    Update account status<span class="govuk-visually-hidden"> of Jackie Smith</span>
+                    </a>
+                  </li>
+                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="change-user-2-details.html">
+                    Change details<span class="govuk-visually-hidden"> of Jackie Smith</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="govuk-summary-card__content">
+                <dl class="govuk-summary-list">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Account status
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Inactive
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Email address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v1-email-user-3']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v1-contact-1-user-3']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Extension number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v1-contact-2-user-3']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Alternative number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v1-contact-3-user-3']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Are they a third party provider?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v1-user-3-payroll-provider']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                       What can we contact them about?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v1-user-3-contact-reason']}}
                     </dd>
                   </div>
                 </dl>
