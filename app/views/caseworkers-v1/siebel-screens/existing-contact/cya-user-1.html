@@ -8,7 +8,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <form action="confirmation-page.html" method="get">
+          <form action="confirmation-page-user-1.html" method="get">
 
             <h2 class="govuk-heading-l">Check your answers</h2>
 
@@ -18,10 +18,10 @@
                   Full name
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v1-first-name-new']}} {{data['siebel-v1-last-name-new']}}</p>
+                  <p class="govuk-body">{{data['siebel-v1-first-name-user-1']}} {{data['siebel-v1-first-name-user-1']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="add-a-contact.html">
+                  <a class="govuk-link" href="change-user-1-details.html">
                     Change<span class="govuk-visually-hidden"> name</span>
                   </a>
                 </dd>
@@ -31,10 +31,10 @@
                   Email address
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v1-email-new']}}</p>
+                  <p class="govuk-body">{{data['siebel-v1-email-user-1']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="add-a-contact.html">
+                  <a class="govuk-link" href="change-user-1-details.html">
                     Change<span class="govuk-visually-hidden"> email</span>
                   </a>
                 </dd>
@@ -44,10 +44,10 @@
                   Contact number
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v1-contact-1-new']}}</p>
+                  <p class="govuk-body">{{data['siebel-v1-contact-1-user-1']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="add-a-contact.html">
+                  <a class="govuk-link" href="change-user-1-details.html">
                     Change<span class="govuk-visually-hidden"> contact number</span>
                   </a>
                 </dd>
@@ -57,10 +57,10 @@
                   Extension
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v1-contact-2-new']}}</p>
+                  <p class="govuk-body">{{data['siebel-v1-contact-2-user-1']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="add-a-contact.html">
+                  <a class="govuk-link" href="change-user-1-details.html">
                     Change<span class="govuk-visually-hidden"> contact number</span>
                   </a>
                 </dd>
@@ -70,10 +70,10 @@
                   Alternative number
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v1-contact-3-new']}}</p>
+                  <p class="govuk-body">{{data['siebel-v1-contact-3-user-1']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="add-a-contact.html">
+                  <a class="govuk-link" href="change-user-1-details.html">
                     Change<span class="govuk-visually-hidden"> contact number</span>
                   </a>
                 </dd>
@@ -83,23 +83,23 @@
                   Are they a third party that manages the payroll for this employer?
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v1-new-user-payroll-provider']}}</p>
+                  <p class="govuk-body">{{data['siebel-v1-user-1-payroll-provider']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="payroll-provider.html">
+                  <a class="govuk-link" href="change-user-1-details.html">
                     Change<span class="govuk-visually-hidden"> are you a payroll provider</span>
                   </a>
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  What can they help with?
+                  What can we contact them about?
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v1-new-user-contact-reason']}}</p>
+                  <p class="govuk-body">{{data['siebel-v1-user-1-contact-reason']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="contact-reason.html">
+                  <a class="govuk-link" href="change-user-1-details.html">
                     Change<span class="govuk-visually-hidden"> contact reason</span>
                   </a>
                 </dd>
@@ -109,10 +109,10 @@
                   Can this person manage other peoples details for this employer?
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v1-new-user-admin-user']}}</p>
+                  <p class="govuk-body">{{data['siebel-v1-user-1-admin-user']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="user-level.html">
+                  <a class="govuk-link" href="change-user-1-details.html">
                     Change<span class="govuk-visually-hidden"> user type</span>
                   </a>
                 </dd>
@@ -121,11 +121,11 @@
            
             <div class="govuk-form-group">
               <button class="govuk-button" data-module="govuk-button">
-                Confirm
+                Confirm and save these details
               </button> 
             </div>
           </form>
-          <a href="/manage-contactssiebel-v1/company-details-home.html">Cancel</a>
+          <a href="employer-details-none.html">Cancel</a>
         </div>
       </div>
     </main>
