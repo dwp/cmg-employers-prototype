@@ -3,68 +3,72 @@
 {% block pageTitle %}
 GOV.UK Prototype Kit
 {% endblock %}
-{#  set the main block rather then content - this overrides the parent govuk-width-container/main #}
+{# set the main block rather then content - this overrides the parent govuk-width-container/main #}
 {% block main %}
-{#  added some wrapping grid/since we have removed the margin #}
-  <main class="govuk-main-wrapper govuk-!-margin-9" id="main-content" role="main">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
-        <table class="govuk-table">
-          <caption class="govuk-table__caption govuk-table__caption--m">Contacts for AB Cars Ltd</caption>
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Admin user</th>
-              <th scope="col" class="govuk-table__header">Name</th>
-              <th scope="col" class="govuk-table__header">Contact them about</th>          
-              <th scope="col" class="govuk-table__header">Contact number</th>
-              <th scope="col" class="govuk-table__header">Extension number</th>
-              <th scope="col" class="govuk-table__header">Alternative number</th>
-              <th scope="col" class="govuk-table__header">Email</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Yes</td>
-              <td class="govuk-table__cell">Zoe Burns</td>
-              <td class="govuk-table__cell">Payroll</td>             
-              <td class="govuk-table__cell">01132321234</td>
-              <td class="govuk-table__cell">123345</td>
-              <td class="govuk-table__cell">07777777777</td>            
-              <td class="govuk-table__cell">zoe.burns@abcars.co.uk</td>              
-            </tr>
-          </tbody>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">No</td>
-              <td class="govuk-table__cell">Jackie Smith</td> 
-              <td class="govuk-table__cell">HR</td>             
-              <td class="govuk-table__cell">01132321235</td>
-              <td class="govuk-table__cell">54321</td>
-              <td class="govuk-table__cell">07777777778</td>                           
-              <td class="govuk-table__cell">jackie.smith@abcars.co.uk</td>
-            </tr>
-          </tbody>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">No</td>
-              <td class="govuk-table__cell">Ishamil Hussein</td>
-              <td class="govuk-table__cell">Any Enquiries</td>
-              <td class="govuk-table__cell">+912267789595</td>
-              <td class="govuk-table__cell">98765</td>
-              <td class="govuk-table__cell">+911234567821</td>            
-              <td class="govuk-table__cell">ishmail.m.hussein@abcars.co.uk</td>
-              
-            </tr>
-          </tbody>
-        </table>
+{# added some wrapping grid/since we have removed the margin #}
+<main class="govuk-main-wrapper govuk-!-margin-9" id="main-content" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Contacts for AB Cars Ltd</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Admin user</th>
+            <th scope="col" class="govuk-table__header">Name</th>
+            <th scope="col" class="govuk-table__header">Contact them about</th>
+            <th scope="col" class="govuk-table__header">Contact number</th>
+            <th scope="col" class="govuk-table__header">Extension number</th>
+            <th scope="col" class="govuk-table__header">Alternative number</th>
+            <th scope="col" class="govuk-table__header">Email</th>
+            <th scope="col" class="govuk-table__header">Start date</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Zoe Burns</td>
+            <td class="govuk-table__cell">Payroll</td>
+            <td class="govuk-table__cell">01132321234</td>
+            <td class="govuk-table__cell">12345</td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell">zoe.burns@abcars.co.uk</td>
+            <td class="govuk-table__cell">18 November 2023</td>
+          </tr>
+        </tbody>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Ishamil Hussein</td>
+            <td class="govuk-table__cell">Any Enquiries</td>
+            <td class="govuk-table__cell">+912267789595</td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell">+911234567821</td>
+            <td class="govuk-table__cell">ishmail.m.hussein@abcars.co.uk</td>
+            <td class="govuk-table__cell">16 September 2019</td>
+          </tr>
+        </tbody>
 
-        <a href="/index-caseworkers-proto.html" role="button" draggable="false"
-          class="govuk-button" data-module="govuk-button">Close employer contacts</a>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Jackie Smith</td>
+            <td class="govuk-table__cell">HR</td>
+            <td class="govuk-table__cell">01132321235</td>
+            <td class="govuk-table__cell">54321</td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell">jackie.smith@abcars.co.uk</td>
+            <td class="govuk-table__cell">3 March 2022</td>
+          </tr>
+        </tbody>
+      </table>
 
-      </div>
+      <!-- <a href="/index-caseworkers-proto.html" role="button" draggable="false" class="govuk-button"
+        data-module="govuk-button">Close employer contacts</a> -->
+
     </div>
-    </div>
-  </main>
+  </div>
+  </div>
+</main>
 
 
 {% endblock %}
