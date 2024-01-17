@@ -1,0 +1,79 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+
+        <form action="/form-handler" method="post" novalidate>
+          <h1 class="govuk-heading-l">Sign in to your employer account</h1>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-m" for="login-ern">12 digit employer reference number</label>
+            <div id="event-name-hint" class="govuk-hint">
+                This is the 12 digit number you can find at the top of your letters.
+              </div>
+            <input class="govuk-input govuk-input--width-20" id="login-ern" name="login-ern" type="number" spellcheck="false"
+              aria-describedby="email-hint">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-m" for="login-paye">PAYE number</label>
+            <div id="event-name-hint" class="govuk-hint">
+                You can find it on your P30BC payslip booklet. For example, '123/XY12345'.
+              </div>
+            <input class="govuk-input govuk-input--width-20" id="login-paye" name="login-paye" type="text" spellcheck="false"
+              aria-describedby="email-hint">
+              <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                Show
+              </button>
+          </div>
+          
+          <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+            Sign in
+          </a>
+
+          <p class="govuk-body"><a href="#" class="govuk-link">How to sign in</a></p>
+
+        </form>
+        </div> <!-- govuk-grid-column-one-half-->
+       
+        <div class="govuk-grid-column-one-half">
+        <form action="/form-handler" method="post" novalidate>
+          <h1 class="govuk-heading-l">Signing into the Child Maintenance service using your email and password</h1>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="login-email">Email address</label>
+            <input class="govuk-input" id="login-email" name="login-email" type="email" spellcheck="false"
+              aria-describedby="email-hint" autocomplete="email">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="login-password">Password</label>
+            <input class="govuk-input" id="login-password" name="login-password" type="text" spellcheck="false"
+              aria-describedby="email-hint" autocomplete="text">
+          </div>
+
+          <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+            Sign in
+          </a>
+
+        </form>
+
+        <h2 class="govuk-heading-m">Problems signing in</h2>
+        <ul class="govuk-list">
+          <li><a href="#" class="govuk-link">Request a new password</a></li>
+
+        </ul>
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

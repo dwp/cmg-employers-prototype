@@ -1,0 +1,53 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="contact-reason.html" method="get">
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="v5-add-user-payroll-provider-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                      Are you a third party that manages the payroll for this employer?
+                    </h1>
+                  </legend>
+                  <div id="v5-user-4-payroll-provider-hint" class="govuk-hint">
+                    This could be anyone not directly employed by this employer who manages payroll on their behalf.
+                  </div>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="v5-add-user-payroll-provider" name="v5-add-user-payroll-provider" type="radio" value="Yes">
+                      <label class="govuk-label govuk-radios__label" for="v5-add-user-payroll-provider">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="v5-add-user-payroll-provider-2" name="v5-add-user-payroll-provider" type="radio" value="No">
+                      <label class="govuk-label govuk-radios__label" for="v5-add-user-payroll-provider-2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="govuk-form-group">
+                <button class="govuk-button" data-module="govuk-button">
+                  Save and continue
+                </button>
+              </div>
+
+        </form>   
+        <a href="/authv5/existing-employer-old-user/change-details-user-4.html">Cancel</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

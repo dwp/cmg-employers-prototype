@@ -1,0 +1,28 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form action="/form-handler" method="post" novalidate>
+          <h1 class="govuk-heading-l">Sign in to the Child Maintenance Service</h1>
+
+          <p class="govuk-body">Use your email and password to<a href="log-in.html" class="govuk-link"> sign into the Child Maintenance Service</a></p>
+         
+          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+          <p class="govuk-body">Use your 12 digit employer reference number and PAYE number to<a href="log-in-2.html" class="govuk-link"> sign into the Child Maintenance Service</a></p>
+         
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
