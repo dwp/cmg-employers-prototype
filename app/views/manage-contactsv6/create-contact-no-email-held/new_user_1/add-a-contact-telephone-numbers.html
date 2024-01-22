@@ -1,0 +1,152 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+{% include "manage-contactsv5/_nav-header.html" %}
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+     <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              
+              <div class="govuk-warning-text">
+                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                <strong class="govuk-warning-text__text">
+                  <span class="govuk-warning-text__assistive">Warning</span>
+                  You must have an email address on your account to sign in.
+                </strong>
+              </div>
+              
+              <form action="contact-reason.html" method="get">
+
+                <h1 class="govuk-heading-l govuk-!-margin-bottom-0">What are their details?</h1>
+               <div class="govuk-form-group">
+                <br><br>
+                   <label class="govuk-label govuk-label--s" for="v5-first-name-new">
+                     First name
+                   </label>
+                   <input class="govuk-input" id="v5-first-name-new" name="v5-first-name-new" type="text" spellcheck="false" autocomplete="name" value="">
+                 </div> <!-- govuk-form-group -->
+           
+                 <div class="govuk-form-group">
+                   <label class="govuk-label govuk-label--s" for="v5-last-name-new">
+                     Last name
+                   </label>
+                   <input class="govuk-input" id="v5-last-name-new" name="v5-last-name-new" type="text" spellcheck="false" autocomplete="name" value="">
+                 </div> <!-- govuk-form-group -->
+                 <div class="govuk-form-group">
+                  <label class="govuk-label govuk-label--s" for="v5-email-new">
+                    Email address
+                  </label>
+                  <input class="govuk-input" id="v5-email-new" name="v5-email-new" type="email" spellcheck="false" aria-describedby="email-hint"
+                    autocomplete="email" value="">
+                </div> <!-- govuk-form-group -->
+
+
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                      <h1 class="govuk-fieldset__heading">
+                        Where is the contact number based?
+                      </h1>
+                    </legend>
+                    <div id="contact-hint" class="govuk-hint">
+                      For international numbers you'll need to include the country code. For example, +91 8123 67894
+                    </div>
+                    <div class="govuk-radios" data-module="govuk-radios">
+                      
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                        <label class="govuk-label govuk-radios__label" for="contact-2">
+                          UK
+                        </label>
+                      </div>
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="uk-contact-number">
+                            Phone number
+                          </label>
+                          <input class="govuk-input govuk-!-width-one-third" id="uk-contact-number" name="uk-contact-number" type="tel" autocomplete="tel">
+                        </div>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+                        <label class="govuk-label govuk-radios__label" for="contact-3">
+                          International
+                        </label>
+                      </div>
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="international-contact-number">
+                            Phone number
+                          </label>
+                          <input class="govuk-input govuk-!-width-one-third" id="international-contact-number" name="international-contact-number" type="tel" autocomplete="tel">
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                 <div class="govuk-form-group">
+                   <label class="govuk-label govuk-label--s" for="v5-contact-2-new">
+                     Extension number (optional)
+                   </label>
+                   <input class="govuk-input govuk-input--width-20" id="v5-contact-2-new" name="v5-contact-2-new" type="number" spellcheck="false" aria-describedby="extension-hint"
+                     autocomplete="number" value="">
+                 </div> <!-- govuk-form-group -->
+
+
+                 <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                      <h1 class="govuk-fieldset__heading">
+                        Where is the alternative number based? (optional)
+                      </h1>
+                    </legend>
+                    <div id="contact-hint" class="govuk-hint">
+                      For international numbers you'll need to include the country code. For example, +91 8123 67894
+                    </div>
+                    <div class="govuk-radios" data-module="govuk-radios">
+                      
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="alt-contact-2" name="alt-contact" type="radio" value="phone" data-aria-controls="conditional-alt-contact-2">
+                        <label class="govuk-label govuk-radios__label" for="alt-contact-2">
+                          UK
+                        </label>
+                      </div>
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-alt-contact-2">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="uk-alt-contact-number">
+                            Phone number
+                          </label>
+                          <input class="govuk-input govuk-!-width-one-third" id="uk-alt-contact-number" name="uk-alt-contact-number" type="tel" autocomplete="tel">
+                        </div>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="alt-contact-3" name="alt-contact" type="radio" value="text" data-aria-controls="conditional-alt-contact-3">
+                        <label class="govuk-label govuk-radios__label" for="contact-3">
+                          International
+                        </label>
+                      </div>
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-alt-contact-3">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="alt-international-contact-number">
+                            Phone number
+                          </label>
+                          <input class="govuk-input govuk-!-width-one-third" id="alt-international-contact-number" name="alt-international-contact-number" type="tel" autocomplete="tel">
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+ 
+                 <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+             </form>
+             <a href="/manage-contactsv5/company-details-home.html">Cancel</a>
+            </div>
+          </div>
+        </main>
+  </div>  
+
+{% endblock %}
