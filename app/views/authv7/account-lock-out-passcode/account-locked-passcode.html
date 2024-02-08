@@ -17,9 +17,7 @@ Sign in
                         </h2>
                         <div class="govuk-error-summary__body">
                             <ul class="govuk-list govuk-error-summary__list">
-                                <!-- <li>
-                  <a href="#login-email-4">Your email address is not recognsied</a>
-                </li> -->
+
                                 <li>
                                     <a href="#login-passcode-4">Your one-time passcode has expired </a>
                                 </li>
@@ -28,7 +26,10 @@ Sign in
                     </div>
                 </div>
                 <form action="/form-handler" method="post" novalidate>
-                    <h1 class="govuk-heading-l">Enter your one-time passcode</h1>
+                    <h1 class="govuk-heading-l">We've sent you a one-time passcode</h1>
+                    <p class="govuk-body">We've sent a one-time passcode to:</p>
+                    <p class="govuk-body"> <strong>Steven.gordon@engineering.digital.dwp.gov.uk</strong> </p>
+                    <p class="govuk-body">This passcode will be valid for 15 minutes.</p>
 
                     <div class="govuk-form-group govuk-form-group--error">
                         <label class="govuk-label" for="login-passcode-3">One-time passcode</label>
@@ -41,13 +42,13 @@ Sign in
                     </div>
 
                     <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-                      Continue
+                        Continue
                     </a>
 
                 </form>
 
                 <ul class="govuk-list">
-                    <li><a href="reset-sent.html" class="govuk-link">Request a new passcode</a></li>
+                    <li><a href="reset-sent.html" class="govuk-link">I need a new passcode  </a></li>
                     <li><a href="contact-ept.html" class="govuk-link">I have not received a passcode</a></li>
                 </ul>
 
