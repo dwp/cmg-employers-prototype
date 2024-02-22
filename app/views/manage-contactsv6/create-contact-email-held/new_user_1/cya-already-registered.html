@@ -4,143 +4,147 @@
 
 <div class="govuk-width-container">
   <a href="javascript:history.back()" class="govuk-back-link">Back</a>
-    <main class="govuk-main-wrapper " id="main-content" role="main">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
 
-          <form action="confirmation-page.html" method="get">
+        <form action="confirmation-page.html" method="get">
 
-            <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-              <div class="govuk-notification-banner__header">
-                <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                  Important
-                </h2>
-              </div>
-              <div class="govuk-notification-banner__content">
-                <p class="govuk-notification-banner__heading">
-                  This contact has already been registered to use the Child Maintenance Service Portal with another employer, check the details before adding them  to your account.</p>
-                </div>
+          <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title"
+            data-module="govuk-notification-banner">
+            <div class="govuk-notification-banner__header">
+              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                Important
+              </h2>
             </div>
-
-            <h1 class="govuk-heading-l">Check your answers</h1>
-
-            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Full name
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['v6-first-name-new']}} {{data['v6-last-name-new']}}</p>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="add-a-contact.html">
-                    Change<span class="govuk-visually-hidden"> name</span>
-                  </a>
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Email address
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['v6-email-new']}}</p>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="add-a-contact.html">
-                    Change<span class="govuk-visually-hidden"> email</span>
-                  </a>
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Contact number
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['v6-contact-1-new']}}</p>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="add-a-contact.html">
-                    Change<span class="govuk-visually-hidden"> contact number</span>
-                  </a>
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Extension
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['v6-contact-2-new']}}</p>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="add-a-contact.html">
-                    Change<span class="govuk-visually-hidden"> contact number</span>
-                  </a>
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Alternative number
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['v6-contact-3-new']}}</p>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="add-a-contact.html">
-                    Change<span class="govuk-visually-hidden"> contact number</span>
-                  </a>
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Are they a third party that manages the payroll for this employer?
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">Yes</p>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="payroll-provider.html">
-                    Change<span class="govuk-visually-hidden"> are you a payroll provider</span>
-                  </a>
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  What can they help with?
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">Deductions that have or should have been taken from employees pay, Sending Child Maintenance payments to DWP</p>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="contact-reason.html">
-                    Change<span class="govuk-visually-hidden"> contact reason</span>
-                  </a>
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Can this person manage other peoples details for this employer?
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">No</p>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="user-level.html">
-                    Change<span class="govuk-visually-hidden"> user type</span>
-                  </a>
-                </dd>
-              </div>
-            </dl>
-           
-            <div class="govuk-form-group">
-              <button class="govuk-button" data-module="govuk-button">
-                Confirm and send
-              </button> 
+            <div class="govuk-notification-banner__content">
+              <p class="govuk-notification-banner__heading">
+                This contact uses the Child Maintenance employer portal with another employer.</p>
+              <p class="govuk-notification-banner__heading">
+                Check their details are correct before adding them to your account.</p>
             </div>
-          </form>
-          <a href="/manage-contactsv6/company-details-home.html">Cancel</a>
-        </div>
+          </div>
+
+          <h1 class="govuk-heading-l">Check your answers</h1>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Full name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{data['v6-first-name-new']}} {{data['v6-last-name-new']}}</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="add-a-contact.html">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Email address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{data['v6-email-new']}}</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="add-a-contact.html">
+                  Change<span class="govuk-visually-hidden"> email</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{data['v6-contact-1-new']}}</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="add-a-contact.html">
+                  Change<span class="govuk-visually-hidden"> contact number</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Extension
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{data['v6-contact-2-new']}}</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="add-a-contact.html">
+                  Change<span class="govuk-visually-hidden"> contact number</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Alternative number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{data['v6-contact-3-new']}}</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="add-a-contact.html">
+                  Change<span class="govuk-visually-hidden"> contact number</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Are they a third party that manages the payroll for this employer?
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">Yes</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="payroll-provider.html">
+                  Change<span class="govuk-visually-hidden"> are you a payroll provider</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                What can they help with?
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">Deductions that have or should have been taken from employees pay, Sending Child
+                  Maintenance payments to DWP</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="contact-reason.html">
+                  Change<span class="govuk-visually-hidden"> contact reason</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Can this person manage other peoples details for this employer?
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">No</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="user-level.html">
+                  Change<span class="govuk-visually-hidden"> user type</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+          <div class="govuk-form-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Confirm and send
+            </button>
+          </div>
+        </form>
+        <a href="/manage-contactsv6/company-details-home.html">Cancel</a>
       </div>
-    </main>
+    </div>
+  </main>
 </div>
 
 {% endblock %}
