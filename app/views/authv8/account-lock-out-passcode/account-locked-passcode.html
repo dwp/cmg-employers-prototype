@@ -6,7 +6,7 @@ Sign in
 
 {% block content %}
 <div class="govuk-width-container">
-
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
     <main class="govuk-main-wrapper " id="main-content" role="main">
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds-from-desktop">
@@ -36,7 +36,7 @@ Sign in
                         <p id="login-email-error" class="govuk-error-message">
                             <span class="govuk-visually-hidden">Error:</span>Your one-time passcode has expired
                         </p>
-                        <input class="govuk-input " id="login-passcode-4" name="login-passcode-4" type="text"
+                        <input class="govuk-input govuk-input--width-10" id="login-passcode-4" name="login-passcode-4" type="text"
                             spellcheck="false" aria-describedby="login-passcode-hint login-passcode-number-error"
                             autocomplete="text">
                     </div>
