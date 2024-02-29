@@ -6,38 +6,38 @@ GOV.UK Prototype Kit
 
 {% block content %}
 <div class="govuk-width-container">
-
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds-from-desktop">
-        <form action="/form-handler" method="post" novalidate>
-        <h1 class="govuk-heading-l">Sign into the Child Maintenance service</h1>
+        <form action="#" method="post" novalidate>
+          <h1 class="govuk-heading-l">Sign into the Child Maintenance Service</h1>
 
-        <div class="govuk-form-group">
-          <label class="govuk-label" for="email">
-            Email address
-          </label>
-          <input class="govuk-input" id="email" name="email" type="email" spellcheck="false"
-            aria-describedby="email-hint" autocomplete="email">
-        </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="login-email">Email address</label>
+            <input class="govuk-input govuk-input--width-20" id="login-email" name="login-email" type="email" spellcheck="false"
+              aria-describedby="email-hint" autocomplete="email">
+          </div>
 
-        <div class="govuk-form-group">
-          <label class="govuk-label" for="email">
-            Password
-          </label>
-          <input class="govuk-input" id="email" name="email" type="email" spellcheck="false"
-            aria-describedby="email-hint" autocomplete="email">
-        </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="login-password">Password</label>
+            <input class="govuk-input govuk-input--width-20" id="login-password" name="login-password" type="text" spellcheck="false"
+              aria-describedby="email-hint" autocomplete="text">
+              <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                Show
+              </button>
+          </div>
 
-        <a href="reset-password" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Sign in
-        </a>
+          <a href="log-in-error.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+            Sign in
+          </a>
 
         </form>
+
         <h2 class="govuk-heading-m">Problems signing in</h2>
         <ul class="govuk-list">
-          <li><a href="reset-password" class="govuk-link">I have forgotten my password</a></li>
-          <!-- <li><a href="reset-email" class="govuk-link">I have forgotten my email address</a></li> -->
+          <li><a href="reset-password.html" class="govuk-link">Reset my password</a></li>
+
         </ul>
 
       </div>

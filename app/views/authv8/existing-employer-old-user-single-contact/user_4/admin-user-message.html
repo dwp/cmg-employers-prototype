@@ -1,0 +1,52 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <form action="cya-new.html" method="get" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              
+              <h1 class="govuk-heading-l">
+                You'll be set up as an admin user
+              </h1>
+              <h2 class="govuk-heading-m">
+                What does this mean?
+              </h2>
+              <p class="govuk-body">As the first person to sign in to this account, you're automatically made an admin user. 
+                <br><br>
+                Each employer must have at least one admin user.
+              </p>
+              <h3 class="govuk-heading-m">
+               What can an admin user do?
+              </h3>
+              <p class="govuk-body">As an admin user you're able to:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>add other users to the employer account</li>
+                <li>choose whether they have admin, standard or contact only access</li>
+                <li>delete any users you do not need</li>
+              </ul>
+              
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+          
+        </form>
+        <a href="/authv5/existing-employer-old-user-single-contact/name.html">Cancel</a>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

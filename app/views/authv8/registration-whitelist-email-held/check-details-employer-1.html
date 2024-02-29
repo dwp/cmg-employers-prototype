@@ -1,0 +1,105 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+ 
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <form action="home.html" method="get">
+
+            <h2 class="govuk-heading-l">Confirm your details for Employer #1</h2>
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Full name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">John Jones</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-details-employer-1.html">
+                    Change<span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">John.jones@gmail.com</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">0113 2324567</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-details-employer-1.html">
+                    Change<span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Extension
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">6789</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-details-employer-1.html">
+                    Change<span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Are you a third party that manages the Payroll for this employer?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">Yes</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="payroll-provider-employer-1.html">
+                    Change<span class="govuk-visually-hidden"> are you a payroll provider</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Select what you can help with
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">Deductions from an employees pay</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contact-reason-employer-1.html">
+                    Change<span class="govuk-visually-hidden"> contact reason</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <div class="govuk-form-group">
+              <button class="govuk-button" data-module="govuk-button">
+                Confirm
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}

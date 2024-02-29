@@ -1,0 +1,124 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <!-- <a href="javascript:history.back()" class="govuk-back-link">Back</a> -->
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <form action="account-set-up-done.html" method="get">
+
+            <h2 class="govuk-heading-l">Confirm your details</h2>
+
+            <dl class="govuk-summary-list ">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Full name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v8-new-user-first-name']}} {{data['v8-new-user-last-name']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="add-user-details.html">
+                    Change<span class="govuk-visually-hidden"> name</span>
+                  </a>
+                </dd>
+              </div>
+              <!-- <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v8-new-user-email']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="add-user-details.html">
+                    Change<span class="govuk-visually-hidden"> email</span>
+                  </a>
+                </dd>
+              </div>   -->       
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v8-new-user-contact-1']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="add-users-details-main.html">
+                    Change<span class="govuk-visually-hidden"> contact number</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Extension number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v8-new-user-contact-2']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="add-users-details-main.html">
+                    Change<span class="govuk-visually-hidden"> contact number</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Alternative number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v8-new-user-contact-3']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="add-users-details-main.html">
+                    Change<span class="govuk-visually-hidden"> contact number</span>
+                  </a>
+                </dd>
+              </div>   
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Are you a third party that manages the payroll for this employer?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v8-add-user-payroll-provider']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="payroll-provider.html">
+                    Change<span class="govuk-visually-hidden"> are you a third party managing the payroll for this employer</span>
+                  </a>
+                </dd>
+              </div>     
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Select what you can help with
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['v8-add-user-contact-reason']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contact-reason.html">
+                    Change<span class="govuk-visually-hidden"> contact reason</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+            
+
+            <div class="govuk-form-group">
+              <button class="govuk-button" data-module="govuk-button">
+                Confirm
+              </button>
+           </div>
+          </form>
+          <a href="add-user-details.html">Cancel</a>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}

@@ -10,46 +10,46 @@
 
         <form action="/form-handler">
 
-            <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="v6-user-1-payroll-provider-hint">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                    <h1 class="govuk-fieldset__heading">
-                      Is this a general contact for 'the employer'/or [insert name of employer]?
-                    </h1>
-                  </legend>
-                  <!-- <div id="v6-user-1-payroll-provider-hint" class="govuk-hint">
-                    This could be a Payroll Provider company or Accountant who assumes all aspects of payroll on behalf of another business.
-                  </div> -->
-                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="v6-general-contact" name="v6-general-contact" type="radio" value="Yes~manage-contactsv6/create-contact-no-email-held/new_user_1/user-details-general-contact.html">
-                      <label class="govuk-label govuk-radios__label" for="v6-general-contact">
-                        Yes
-                      </label>
-                      <div id="v6-general-contact-hint" class="govuk-hint govuk-radios__hint">
-                        This means it's a genral contact point with a shared contact number or email.
-                      </div>
-                    </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="v6-general-contact-2" name="v6-general-contact" type="radio" value="No~manage-contactsv6/create-contact-no-email-held/new_user_1/add-a-contact.html">
-                      <label class="govuk-label govuk-radios__label" for="v6-general-contact-2">
-                        No
-                      </label>
-                      <div id="v6-general-contact-hint" class="govuk-hint govuk-radios__hint">
-                        This means it's a person with their own contact number and email.
-                      </div>
-                    </div>
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="v6-user-1-payroll-provider-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Is this account for an individual or a general contact?
+                </h1>
+              </legend>
+
+              <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="v6-general-contact" name="v6-general-contact" type="radio"
+                    value="Yes~manage-contactsv6/create-contact-no-email-held/new_user_1/add-a-contact">
+                  <label class="govuk-label govuk-radios__label" for="v6-general-contact">
+                    Individual person
+                  </label>
+                  <div id="v6-general-contact-hint" class="govuk-hint govuk-radios__hint">
+                    This means it's a person with their own contact number and email.
                   </div>
-                </fieldset>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="v6-general-contact-2" name="v6-general-contact" type="radio"
+                    value="No~manage-contactsv6/create-contact-no-email-held/new_user_1/user-details-general-contact.html">
+                  <label class="govuk-label govuk-radios__label" for="v6-general-contact-2">
+                    General contact
+                  </label>
+                  <div id="v6-general-contact-hint" class="govuk-hint govuk-radios__hint">
+                    This means it's an account with a shared telephone number or email inbox.
+                  </div>
+                </div>
               </div>
+            </fieldset>
+          </div>
 
-              <div class="govuk-form-group">
-                <button class="govuk-button" data-module="govuk-button">
-                  Save and continue
-                </button>
-              </div>
+          <div class="govuk-form-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+          </div>
 
-        </form>   
+        </form>
         <!-- <a href="/authv6/existing-employer-old-user/change-details-user-1.html">Cancel</a> -->
       </div>
     </div>
