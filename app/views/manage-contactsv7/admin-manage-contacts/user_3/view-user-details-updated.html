@@ -1,0 +1,99 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+{% include "manage-contactsv6/_nav-header.html" %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="#" method="post" novalidate>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">Ben Raine</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-user-details.html">Change
+                  <span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Email
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">ben.raine@company.co.uk</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-user-details.html">
+                  Change<span class="govuk-visually-hidden"> email address</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">+66741282751</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-user-details.html">
+                  Change<span class="govuk-visually-hidden"> mobile number</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                What can they help with?
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">Deductions</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="contact-reason.html">
+                  Change<span class="govuk-visually-hidden"> contact details</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                User level
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">Standard</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="user-level.html">
+                  Change<span class="govuk-visually-hidden"> user status</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+          <div><a href="confirmation-page-otp.html" role="button" draggable="false" class="govuk-button"
+              data-module="govuk-button">
+              Resend One-Time Passcode
+            </a></div>
+            
+            <a href="delete-contact-2.html" role="button" draggable="false" class="govuk-button govuk-button--warning"
+              data-module="govuk-button">
+              Remove Ben Raine
+            </a>
+
+        </form>
+        <a href="test-manage-contacts-alt.html">Cancel</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
