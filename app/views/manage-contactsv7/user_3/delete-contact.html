@@ -1,0 +1,97 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+{% include "manage-contactsv6/_nav-header.html" %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-l">Do you want to remove this user?</h1>
+
+          <form action="confirmation-page.html" method="get">
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">Ben Raine</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-name2.html">
+                    <span class="govuk-visually-hidden"> name</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body"></p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    <span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">
+                    +66741282751</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="uk-or-not.html">
+                    <span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  What can they help with
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">Deductions</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="uk-or-not.html">
+                    <span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                 User level
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">Contact only</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    <span class="govuk-visually-hidden"> contact details</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <button class="govuk-button govuk-button--warning" data-module="govuk-button">
+              Remove user
+            </button>
+           
+          </form>
+          <a href="view-user-details.html">Cancel</a>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}
