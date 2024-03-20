@@ -5,124 +5,154 @@ Manage Employer Deductions
 {% endblock %}
 
 {% block content %}
-
 <div class="govuk-width-container">
-  <a href="index.html" class="govuk-back-link">Back to main Home page</a>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-l">
+    <a href="index.html" class="govuk-back-link">Back to main Home page</a>
+    <h1 class="govuk-heading-l">
         Manage Employer Deductions (MED) reference files for Jira stories
       </h1>
+    <div class="govuk-tabs" data-module="govuk-tabs">
+        <h2 class="govuk-tabs__title">
+            Contents
+        </h2>
+        <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#past-day">
+                    'A' journeys
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#past-week">
+                    'B' journeys
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#past-month">
+                    'C' journeys
+                </a>
+            </li>
+           <!--  <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#past-year">
+                    Past year
+                </a>
+            </li> -->
+        </ul>
+        <div class="govuk-tabs__panel" id="past-day">
+            <h2 class="govuk-heading-l">'A' journeys - Registration authentication</h2>
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
 
-      <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2> 
+            <p>Registration journey (A1).</p>
+            <p>Standard sign in journey when the employer is not on the whitelist.</p>
+            <p class="govuk-body"><a href="reference_files/registration_a1/index-registration-a1.html"
+                    class="govuk-link">View files</a></p>
 
-      <p>Registration journey (A1).</p>
-      <p>Standard sign in journey when the employer is not on the whitelist.</p>
-      <p class="govuk-body"><a href="reference_files/registration_a1/index-registration-a1.html" class="govuk-link">View files</a></p>
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
 
-      <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2> 
-
-      <p>Registration journey (A5).</p>
-      <p>Issues with the one-time passcode. Passcode expired and not recevied due to incorrect email address.</p>
-      <p class="govuk-body"><a href="reference_files/registration_a5/index-registration-a5.html" class="govuk-link">View files</a></p>
+            <p>Registration journey (A5).</p>
+            <p>Issues with the one-time passcode. Passcode expired and not recevied due to incorrect email address.</p>
+            <p class="govuk-body"><a href="reference_files/registration_a5/index-registration-a5.html"
+                    class="govuk-link">View files</a></p>
 
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-      <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2> 
+            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
 
-      <p>Registration journey (A4).</p>
-      <p>Standard sign in once a contact has registered, using email and password.</p>
-      <p class="govuk-body"><a href="reference_files/registration_a4/index-registration-a4.html" class="govuk-link">View files</a></p>
+            <p>Registration journey (A4).</p>
+            <p>Standard sign in once a contact has registered, using email and password.</p>
+            <p class="govuk-body"><a href="reference_files/registration_a4/index-registration-a4.html"
+                    class="govuk-link">View files</a></p>
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-      <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2> 
+            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
 
-      <p>Registration journey (A3).</p>
-      <p>Passsword reset journey.</p>
-      <p class="govuk-body"><a href="reference_files/registration_a3/index-registration-a3.html" class="govuk-link">View files</a></p>
-      
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+            <p>Registration journey (A3).</p>
+            <p>Passsword reset journey.</p>
+            <p class="govuk-body"><a href="reference_files/registration_a3/index-registration-a3.html"
+                    class="govuk-link">View files</a></p>
 
-      <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2> 
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-      <p>Registration journey (A231).</p>
-      <p>Second person tries to register and is told to contact the Admin user for the account.</p>
-      <p class="govuk-body"><a href="reference_files/registration_a231/index-registration-a231.html" class="govuk-link">View files</a></p>
+            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+            <p>Registration journey (A231).</p>
+            <p>Second person tries to register and is told to contact the Admin user for the account.</p>
+            <p class="govuk-body"><a href="reference_files/registration_a231/index-registration-a231.html"
+                    class="govuk-link">View files</a></p>
 
-      <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2> 
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-      <p>Registration journey (A22).</p>
-      <p>First person registers and the email is held in TCMO.</p>
-      <p class="govuk-body"><a href="reference_files/registration_a22/index-registration-a22.html" class="govuk-link">View files</a></p>
+            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+            <p>Registration journey (A22).</p>
+            <p>First person registers and the email is held in TCMO.</p>
+            <p class="govuk-body"><a href="reference_files/registration_a22/index-registration-a22.html"
+                    class="govuk-link">View files</a></p>
 
-      <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2> 
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-      <p>Registration journey (A211).</p>
-      <p>First person registers and the email is not held in TCMO.</p>
-      <p class="govuk-body"><a href="reference_files/registration_a211/index-registration-a211.html" class="govuk-link">View files</a></p>
+            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+            <p>Registration journey (A211).</p>
+            <p>First person registers and the email is not held in TCMO.</p>
+            <p class="govuk-body"><a href="reference_files/registration_a211/index-registration-a211.html"
+                    class="govuk-link">View files</a></p>
 
-      <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v0</h2> 
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-      <p>Tactical Registration journey.</p>
-      <p class="govuk-body"><a href="reference_files/registration_2/index-registration-v1.html" class="govuk-link">View files</a></p>
+            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v0</h2>
 
-      
+            <p>Tactical Registration journey.</p>
+            <p class="govuk-body"><a href="reference_files/registration_2/index-registration-v1.html"
+                    class="govuk-link">View files</a></p>
 
-     <!--  <p>New account set up by CMG Caseworker - first time sign in by the employer.</p>
-      <p class="govuk-body"><a href="reference_files/v1-auth/index-auth-1-v1.html" class="govuk-link">View files</a></p>
-      
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-      <p>Exisitng employer sign in with no migrated contacts</details></p>
-      <p class="govuk-body"><a href="reference_files/v1-auth/index-auth-2-v1.html" class="govuk-link">View files</a></p>
-
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-      <p>Exisitng employer sign in, second person from an organisation attempting to sign in</p>
-      <p class="govuk-body"><a href="reference_files/v1-auth/index-auth-4-v1.html" class="govuk-link">View files</a></p>
-
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-      <p>Account locked out - passcode</p>
-      <p class="govuk-body"><a href="reference_files/v1-auth/index-auth-6-v1.html" class="govuk-link">View files</a></p>
-      
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-      <p>Account temporarily locked out - password</p>
-      <p class="govuk-body"><a href="reference_files/v1-auth/index-auth-7-v1.html" class="govuk-link">View files</a></p>
-      
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-      <p>Account permanently locked out - password</p>
-      <p class="govuk-body"><a href="reference_files/v1-auth/index-auth-8-v1.html" class="govuk-link">View files</a></p>
-      
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-      <p>Password reset screens</p>
-      <p class="govuk-body"><a href="reference_files/v1-auth/index-auth-3-v1.html" class="govuk-link">View files</a></p>
-      
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-      <p>Signing into the Employer Portal, using new and exisitng methods through the transition to Authenticate</p>
-      <p class="govuk-body"><a href="reference_files/v1-auth/index-auth-5-v1.html" class="govuk-link">View files</a> --></p>
-      
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+            
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+            <h2 class="govuk-heading-l">'B' journeys - Registration authentication - Employer Portal view</h2>
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+            <!-- add further code here for 'B' journeys-->
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+            <h2 class="govuk-heading-l">'C' journeys - Registration authentication - Agent view</h2>
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+            <!-- add further code here for 'C' journeys-->
+        </div>
+        <!-- <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+            <h2 class="govuk-heading-l">Past year</h2>
+            <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Case manager</th>
+                        <th scope="col" class="govuk-table__header">Cases opened</th>
+                        <th scope="col" class="govuk-table__header">Cases closed</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">David Francis</td>
+                        <td class="govuk-table__cell">1380</td>
+                        <td class="govuk-table__cell">1472</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Paul Farmer</td>
+                        <td class="govuk-table__cell">1129</td>
+                        <td class="govuk-table__cell">1083</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Rita Patel</td>
+                        <td class="govuk-table__cell">1539</td>
+                        <td class="govuk-table__cell">1265</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
     </div>
-  </div>
 
 </div>
 
