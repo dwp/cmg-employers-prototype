@@ -1,0 +1,97 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+{% include "manage-contactsv7/_nav-header.html" %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="change-user-details.html" method="get">
+          <h1 class="govuk-heading-l govuk-!-margin-bottom-6">View user details</h1>
+          
+
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                John Stones
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Email
+              </dt>
+              <dd class="govuk-summary-list__value">
+                john.stones@company.co.uk
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                011323321234
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Are you a third party that manages the Payroll for this employer?
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">No</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                What can we contact you about?
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Employee details
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Can this person manage other peoples details for this employer?
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Yes
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+          </dl>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Change details
+          </button>
+
+        </form>
+        <!-- <a href="/manage-contactsv7/company-details-home.html">Cancel</a> -->
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
