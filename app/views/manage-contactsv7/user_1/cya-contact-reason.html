@@ -1,0 +1,47 @@
+{% extends "layout_cm.html" %}
+
+
+
+{% block content %}
+
+{% include "manage-contactsv7/_nav-header.html" %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <form action="confirmation-page.html" method="get">
+
+            <h2 class="govuk-heading-l">Check your answers</h2>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  What can you help with?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{ data['v7-user-1-contact-reason'] }}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contact-reason.html">
+                    Change<span class="govuk-visually-hidden"> reason for contact</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <div class="govuk-form-group">
+            </div>
+            <button class="govuk-button" data-module="govuk-button">
+              Confirm and send
+            </button>
+          </form>
+          <a href="view-user-details.html">Cancel</a>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}
