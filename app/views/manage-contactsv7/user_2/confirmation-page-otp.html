@@ -1,0 +1,37 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+{% include "manage-contactsv7/_nav-header.html" %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            We have received your request
+          </h1>
+
+          <div class="govuk-panel__body">
+          </div>
+        </div>
+        
+        <h2 class="govuk-heading-m">What happens next</h2>
+        <p class="govuk-body">
+          We've sent a confirmation email, including a one-time passcode and a link to the new service. This passcode will be valid for 15 minutes. 
+        </p>
+        <p class="govuk-body">
+          Once they've used this passcode to sign in to the employer account, they
+          can set up their own password.
+        </p>
+        <a href="/manage-contactsv7/company-details-home.html" role="button" draggable="false" class="govuk-button"
+          data-module="govuk-button">
+          Return to company details
+        </a>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
