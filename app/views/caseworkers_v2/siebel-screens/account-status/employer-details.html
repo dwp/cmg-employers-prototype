@@ -1,0 +1,250 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-full">
+
+          <form action="/form-handler" method="post" novalidate>
+
+            <h1 class="govuk-heading-l">AB Cars Ltd</h1>
+            
+            <dl class="govuk-summary-list">
+              <!-- <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  The Company Ltd. 
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div> -->
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Employer reference number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  501002271004
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+           
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact preference
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Email and postal
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> contact preference</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  information@abcars.co.uk
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> email address</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Postal address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  The Head Office </br>
+                  123 Down Road </br>
+                  Armley </br>
+                  Leeds </br>
+                  LS12 1QQ
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> postal address</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div> <!-- govuk-grid-column-two-thirds -->
+
+         
+            <h2 class="govuk-heading-m">Manage employer contacts</h2>
+
+            <a href="add-a-contact.html" role="button" draggable="false" class="govuk-button"
+              data-module="govuk-button">
+              Add new contact
+            </a>
+           
+            
+            <div class="govuk-summary-card">
+              <div class="govuk-summary-card__title-wrapper">
+                <h2 class="govuk-summary-card__title">Zoe Burns</h2><strong class="govuk-tag app-task-list__tag
+                ">Administrator</strong>
+                <ul class="govuk-summary-card__actions">
+                  <!-- <li class="govuk-summary-card__action"> <a class="govuk-link" href="user_2/confirmation-page-otp.html">
+                    Send passcode<span class="govuk-visually-hidden"> of University of Bristol</span>
+                    </a>
+                  </li> -->
+                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="change-account-status.html">
+                    Update account status<span class="govuk-visually-hidden"> of Zoe Burns</span>
+                    </a>
+                  </li>
+                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                    Change details<span class="govuk-visually-hidden"> of Zoe Burns</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="govuk-summary-card__content">
+                <dl class="govuk-summary-list">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Account status
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Locked
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Email address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      zoe.burns@abcars.co.uk
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      07777777777
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Extension number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      6789
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Alternative number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      01132320987
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Are they a third party provider?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                     No
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                       What can we contact them about?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Sending Child Maintenance payments to DWP
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+           <!--  <div class="govuk-summary-card">
+              <div class="govuk-summary-card__title-wrapper">
+                <h2 class="govuk-summary-card__title govuk-!-padding-rght-15">John Stones</h2> <strong class="govuk-tag app-task-list__tag
+                  ">Administrator</strong> 
+                <ul class="govuk-summary-card__actions">
+                  
+                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="user_1/view-user-details.html">
+                      Account status - active<span class="govuk-visually-hidden"> of John Stones</span>
+                    </a>
+                  </li>
+                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                      Change details<span class="govuk-visually-hidden"> of John Stones</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="govuk-summary-card__content">
+                <dl class="govuk-summary-list">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Email address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      john.stones@abcars.co.uk
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      01132321234
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                       What can you help with?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                     Employee details
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div> -->
+   
+            <!-- <nav class="moj-pagination" id="pagination-label">
+
+              <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+              <ul class="moj-pagination__list">
+                <a class="moj-pagination__link" href=""><span class="govuk-visually-hidden"> set of pages</span></a>
+                </li>
+
+                <li class="moj-pagination__item moj-pagination__item--active">1</li>
+
+                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=1">2</a>
+
+                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=3">3</a></li>
+
+                <li class="moj-pagination__item moj-pagination__item--dots">...</li>
+
+                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=5">5</a></li>
+
+                <li class="moj-pagination__item  moj-pagination__item--next">
+                  <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of
+                      pages</span></a>
+                </li>
+              </ul>
+            </nav> -->
+
+          </form>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}
