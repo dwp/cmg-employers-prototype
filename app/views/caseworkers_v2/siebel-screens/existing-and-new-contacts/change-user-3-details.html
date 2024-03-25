@@ -1,0 +1,167 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <form action="#" method="get">
+
+             <h1 class="govuk-heading-l govuk-!-margin-bottom-6">Change user details</h1>
+             
+            <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="siebel-v2-first-name-user-3">
+                  First name
+                </label>
+                <input class="govuk-input" id="siebel-v2-first-name-user-3" name="siebel-v2-first-name-user-3" type="text" spellcheck="false" autocomplete="name" value="Payroll">
+              </div> <!-- govuk-form-group -->
+        
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="siebel-v2-last-name-user-3">
+                  Last name
+                </label>
+                <input class="govuk-input" id="siebel-v2-last-name-user-3" name="siebel-v2-last-name-user-3" type="text" spellcheck="false" autocomplete="name" value="Payroll">
+              </div> <!-- govuk-form-group -->
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="siebel-v2-email-user-3">
+                  Email address
+                </label>
+                <input class="govuk-input" id="siebel-v2-email-user-3" name="siebel-v2-email-user-3" type="email" spellcheck="false" aria-describedby="email-hint"
+                  autocomplete="email" value="payroll@abcars.co.uk">
+              </div> <!-- govuk-form-group -->
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="siebel-v2-contact-1-user-3">
+                  Contact telephone number
+                </label>
+                <div id="phone-hint" class="govuk-hint">For international numbers you'll need to include the country code. For example, +91 8123 67894</div>
+                <input class="govuk-input govuk-input--width-20" id="siebel-v2-contact-1-user-3" name="siebel-v2-contact-1-user-3" type="number" spellcheck="false" aria-describedby="landline-hint"
+                  autocomplete="number" value="07777777779">
+              </div> <!-- govuk-form-group -->
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="siebel-v2-contact-2-user-3">
+                  Extension number (optional)
+                </label>
+                <!-- <div id="phone-hint" class="govuk-hint">For international numbers you will need to include the country code. For example, +353 8123 67894
+                </div> -->
+                <input class="govuk-input govuk-input--width-20" id="siebel-v2-contact-2-user-3" name="siebel-v2-contact-2-user-3" type="number" spellcheck="false" aria-describedby="extension-hint"
+                  autocomplete="number" value="">
+              </div> <!-- govuk-form-group -->
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="siebel-v2-contact-3-user-3">
+                 Alternative telephone number (optional) 
+                </label>
+                <div id="phone-hint" class="govuk-hint">For international numbers you'll need to include the country code. For example, +353 8123 67894
+                </div>
+                <input class="govuk-input govuk-input--width-20" id="siebel-v2-contact-3-user-3" name="siebel-v2-contact-3-user-3" type="number" spellcheck="false" aria-describedby="mobile-hint"
+                  autocomplete="number" value="">
+              </div> <!-- govuk-form-group -->
+
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                    <h1 class="govuk-fieldset__heading">
+                      Are they a third party that manages the payroll for this employer?
+                    </h1>
+                  </legend><div id="siebel-v2-user-3-payroll-provider-hint" class="govuk-hint">
+                    This could be a Payroll Provider company or Accountant who assumes all aspects of payroll on behalf of another business.
+                  </div>
+                  <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="siebel-v2-user-3-payroll-provider" name="siebel-v2-user-3-payroll-provider" type="radio" value="Yes" checked>
+                      <label class="govuk-label govuk-radios__label" for="siebel-v2-user-3-payroll-provider">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="siebel-v2-user-3-payroll-provider-2" name="siebel-v2-user-3-payroll-provider" type="radio" value="No">
+                      <label class="govuk-label govuk-radios__label" for="siebel-v2-user-3-payroll-provider-2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                    <h1 class="govuk-fieldset__heading">
+                      What can we contact them about?
+                    </h1>
+                  </legend>
+                  <div id="siebel-v2-user-3-contact-reason-hint" class="govuk-hint">
+                    Select all that apply.
+                  </div>
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="siebel-v2-user-3-contact-reason" name="siebel-v2-user-3-contact-reason" type="checkbox" value="Deductions that have or should have been taken from employees pay">
+                      <label class="govuk-label govuk-checkboxes__label" for="siebel-v2-user-3-contact-reason">
+                        Deductions that have or should have been taken from employees pay
+                      </label>
+                      </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="siebel-v2-user-3-contact-reason-2" name="siebel-v2-user-3-contact-reason" type="checkbox" value="Sending Child Maintenance payments to DWP">
+                      <label class="govuk-label govuk-checkboxes__label" for="siebel-v2-user-3-contact-reason-2">
+                        Sending Child Maintenance payments to DWP
+                      </label>
+                      </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="siebel-v2-user-3-contact-reason-3" name="siebel-v2-user-3-contact-reason" type="checkbox" value="Individual employee details">
+                      <label class="govuk-label govuk-checkboxes__label" for="siebel-v2-user-3-contact-reason-3">
+                        Individual employee details
+                      </label>
+                      </div>
+                     </div>
+                </fieldset>
+              </div>
+
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                    <h1 class="govuk-fieldset__heading">
+                     Can this person manage other peoples details for this employer?
+                    </h1>
+                  </legend><div id="siebel-v2-user-3-admin-user-hint" class="govuk-hint">
+                    Admin users have the ability to edit, add and remove other users.
+                  </div>
+                  <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="siebel-v2-user-3-admin-user" name="siebel-v2-user-3-admin-user" type="radio" value="Yes">
+                      <label class="govuk-label govuk-radios__label" for="siebel-v2-user-3-admin-user">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="siebel-v2-user-3-admin-user-2" name="siebel-v2-user-3-admin-user" type="radio" value="No">
+                      <label class="govuk-label govuk-radios__label" for="siebel-v2-user-3-admin-user-2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              
+             
+              <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+
+              <div>
+                <a href="#" role="button" draggable="false" class="govuk-button govuk-button--warning"
+                  data-module="govuk-button">
+                  Remove Payroll Payroll
+                </a>
+              </div>
+          </form>
+          <a href="employer-details-update-2.html">Cancel</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+{% endblock %}
