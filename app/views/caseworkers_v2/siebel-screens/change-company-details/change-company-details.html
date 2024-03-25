@@ -1,0 +1,118 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="cya.html" method="get">
+
+          <h1 class="govuk-heading-l govuk-!-margin-bottom-0">AB Cars Ltd</h1>
+          <h2 class="govuk-heading-m">Employer Reference Number: 501002271004</h2>
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                <h1 class="govuk-fieldset__heading">
+                  Contact preference
+                </h1>
+              </legend>
+              <div id="sign-in-hint" class="govuk-hint">
+                Select one option for notification preferences.
+              </div>
+              <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="siebel-v2-employer-contact-preference"
+                    name="siebel-v2-employer-contact-preference" type="radio" value="Online">
+                  <label class="govuk-label govuk-radios__label" for="siebel-v2-employer-contact-preference">
+                    Online
+                  </label>
+                  <div id="signIn-item-hint" class="govuk-hint govuk-radios__hint">
+                    Letters will be available to view on the Employer Portal
+                  </div>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="siebel-v2-employer-contact-preference-2"
+                    name="siebel-v2-employer-contact-preference" type="radio" value="Postal" checked>
+                  <label class="govuk-label govuk-radios__label" for="siebel-v2-employer-contact-preference-2">
+                    Postal
+                  </label>
+                  <div id="signIn-2-item-hint" class="govuk-hint govuk-radios__hint">
+                    Letters will be sent by post and available to view on the Employer Portal
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="siebel-v2-employer-email">
+              Email address
+            </label>
+            <input class="govuk-input" id="siebel-v2-employer-email" name="siebel-v2-employer-email" type="email"
+              spellcheck="false" aria-describedby="email-hint" autocomplete="email" value="information@abcars.co.uk">
+          </div> <!-- govuk-form-group -->
+
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              <h1 class="govuk-fieldset__heading">
+                Postal address
+              </h1>
+            </legend>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="siebel-v2-employer-address-line-1">
+                Address line 1
+              </label>
+              <input class="govuk-input" id="siebel-v2-employer-address-line-1" name="siebel-v2-employer-address-line-1"
+                type="text" autocomplete="" value="The Head Office">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="siebel-v2-employer-address-line-2">
+                Address line 2 (optional)
+              </label>
+              <input class="govuk-input" id="siebel-v2-employer-address-line-2" name="siebel-v2-employer-address-line-2"
+                type="text" autocomplete="" value="123 Down Road">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="siebel-v2-employer-address-line-3">
+                Address line 3 (optional)
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="siebel-v2-employer-address-line-3"
+                name="siebel-v2-employer-address-line-3" type="text" value="Armley">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="siebel-v2-employer-address-town">
+                Town or city
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="siebel-v2-employer-address-town"
+                name="siebel-v2-employer-address-town" type="text" autocomplete="" value="Leeds">
+            </div>
+            <!-- <div class="govuk-form-group">
+              <label class="govuk-label" for="address-county">
+                County (optional)
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+            </div> -->
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="siebel-v2-employer-address-postcode">
+                Postcode
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="siebel-v2-employer-address-postcode"
+                name="siebel-v2-employer-address-postcode" type="text" autocomplete="postal-code" value="LS12 1QQ">
+            </div>
+          </fieldset>
+
+          <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+        </form>
+        <a href="employer-details.html">Cancel</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
