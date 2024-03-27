@@ -172,16 +172,12 @@
                 </dl>
               </div>
             </div>
-           <!--  <div class="govuk-summary-card">
+            <div class="govuk-summary-card">
               <div class="govuk-summary-card__title-wrapper">
-                <h2 class="govuk-summary-card__title govuk-!-padding-rght-15">John Stones</h2> <strong class="govuk-tag app-task-list__tag
-                  ">Administrator</strong> 
+                <h2 class="govuk-summary-card__title govuk-!-padding-rght-15">{{data['siebel-v2-first-name-new']}} </h2> <strong class="govuk-tag app-task-list__tag
+                govuk-tag--yellow">Department</strong> 
                 <ul class="govuk-summary-card__actions">
                   
-                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="user_1/view-user-details.html">
-                      Account status - active<span class="govuk-visually-hidden"> of John Stones</span>
-                    </a>
-                  </li>
                   <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
                       Change details<span class="govuk-visually-hidden"> of John Stones</span>
                     </a>
@@ -192,10 +188,18 @@
                 <dl class="govuk-summary-list">
                   <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
+                      Account status
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Registered
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
                       Email address
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      john.stones@abcars.co.uk
+                      {{data['cwv2-general-email-new-user']}}  
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
@@ -203,45 +207,36 @@
                       Contact number
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      01132321234
+                      {{data['cwv2-general-contact-1-new-user']}}
                     </dd>
                   </div>
                   <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
-                       What can you help with?
+                      Extension number
                     </dt>
                     <dd class="govuk-summary-list__value">
-                     Employee details
+                      {{data['cwv2-contact-2-user-1']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Alternative number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv2-general-contact-3-new-user']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                       What can we contact them about?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv2-general-contact-reason']}}
                     </dd>
                   </div>
                 </dl>
               </div>
-            </div> -->
-   
-            <!-- <nav class="moj-pagination" id="pagination-label">
-
-              <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
-
-              <ul class="moj-pagination__list">
-                <a class="moj-pagination__link" href=""><span class="govuk-visually-hidden"> set of pages</span></a>
-                </li>
-
-                <li class="moj-pagination__item moj-pagination__item--active">1</li>
-
-                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=1">2</a>
-
-                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=3">3</a></li>
-
-                <li class="moj-pagination__item moj-pagination__item--dots">...</li>
-
-                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=5">5</a></li>
-
-                <li class="moj-pagination__item  moj-pagination__item--next">
-                  <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of
-                      pages</span></a>
-                </li>
-              </ul>
-            </nav> -->
+            </div>
 
           </form>
         </div>
