@@ -1,0 +1,59 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="/form-handler">
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="refb2-user-1-payroll-provider-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Select an account type
+                </h1>
+              </legend>
+
+              <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="refb2-general-contact" name="refb2-general-contact" type="radio"
+                    value="Individual~reference_files/employer_admin_b2/new_user_1/add-a-contact.html">
+                  <label class="govuk-label govuk-radios__label" for="refb2-general-contact">
+                    Individual person
+                  </label>
+                  <div id="refb2-general-contact-hint" class="govuk-hint govuk-radios__hint">
+                    Someone with their own contact numbe and email.
+                  </div>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="refb2-general-contact-2" name="refb2-general-contact" type="radio"
+                    value="Department~reference_files/employer_admin_b2/new_user_1/user-details-general-contact.html">
+                  <label class="govuk-label govuk-radios__label" for="refb2-general-contact-2">
+                    Department
+                  </label>
+                  <div id="refb2-general-contact-hint" class="govuk-hint govuk-radios__hint">
+                    A general contact for an area of the business.
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+          </div>
+
+        </form>
+        <!-- <a href="/authrefb2/existing-employer-old-user/change-details-user-1.html">Cancel</a> -->
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
