@@ -1,119 +1,94 @@
-{% extends "layout_dwp_unbranded.html" %}
+{% extends "layout_cm.html" %}
 
 {% block content %}
 
 <div class="govuk-width-container">
-  <!-- <a href="javascript:history.back()" class="govuk-back-link">Back</a> -->
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
     <main class="govuk-main-wrapper " id="main-content" role="main">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <form action="confirmation-page-user-2.html" method="get">
+          <form action="confirmation-page-general.html" method="get">
 
-            <h2 class="govuk-heading-l">Check your answers</h2>
+            <h2 class="govuk-heading-l">Check the details</h2>
 
             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Full name
+                  Department reference or name
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v2-first-name-user-2']}} {{data['siebel-v2-last-name-user-2']}}</p>
+                  <p class="govuk-body">{{data['cwv2-general-name-new-user']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="change-user-2-details.html">
+                  <a class="govuk-link" href="user-details-general-contact.html">
                     Change<span class="govuk-visually-hidden"> name</span>
                   </a>
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Email address
+                  Department email address
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v2-email-user-2']}}</p>
+                  <p class="govuk-body">{{data['cwv2-general-email-new-user']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="change-user-2-details.html">
+                  <a class="govuk-link" href="user-details-general-contact.html">
                     Change<span class="govuk-visually-hidden"> email</span>
                   </a>
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Contact number
+                  Department contact telephone number
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v2-contact-1-user-2']}}</p>
+                  <p class="govuk-body">{{data['cwv2-general-contact-1-new-user']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="change-user-2-details.html">
+                  <a class="govuk-link" href="user-details-general-contact.html">
                     Change<span class="govuk-visually-hidden"> contact number</span>
                   </a>
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Extension
+                  Department extension number
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v2-contact-2-user-2']}}</p>
+                  <p class="govuk-body">{{data['cwv2-contact-2-new']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="change-user-2-details.html">
+                  <a class="govuk-link" href="add-a-contact.html">
                     Change<span class="govuk-visually-hidden"> contact number</span>
                   </a>
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Alternative number
+                  Alternative telephone number
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v2-contact-3-user-2']}}</p>
+                  <p class="govuk-body">{{data['cwv2-general-contact-3-new-user']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="change-user-2-details.html">
+                  <a class="govuk-link" href="user-details-general-contact.html">
                     Change<span class="govuk-visually-hidden"> contact number</span>
                   </a>
                 </dd>
               </div>
+              
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Select if they are a third party payroll provider
+                  Select how they can help
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v2-user-2-payroll-provider']}}</p>
+                  <p class="govuk-body">{{data['cwv2-general-contact-reason']}}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="change-user-2-details.html">
-                    Change<span class="govuk-visually-hidden"> are you a payroll provider</span>
-                  </a>
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Select what they can help with
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v2-user-2-contact-reason']}}</p>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="change-user-2-details.html">
+                  <a class="govuk-link" href="user-details-general-contact.html">
                     Change<span class="govuk-visually-hidden"> contact reason</span>
-                  </a>
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Select if they are an administrator
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  <p class="govuk-body">{{data['siebel-v2-user-2-admin-user']}}</p>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="change-user-2-details.html">
-                    Change<span class="govuk-visually-hidden"> user type</span>
                   </a>
                 </dd>
               </div>
@@ -121,11 +96,11 @@
            
             <div class="govuk-form-group">
               <button class="govuk-button" data-module="govuk-button">
-                Confirm and save these details
+                Confirm and send
               </button> 
             </div>
           </form>
-          <a href="employer-details-none.html">Cancel</a>
+          <a href="/manage-contactscwv2/company-details-home.html">Cancel</a>
         </div>
       </div>
     </main>
