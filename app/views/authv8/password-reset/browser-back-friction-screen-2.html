@@ -1,0 +1,37 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds-from-desktop">
+
+                <form method="post" novalidate>
+
+                    <h1 class="govuk-heading-l">You cannot go back to the previous page</h1>
+
+                    <p class="govuk-body">You can:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>continue with your registration</li>
+                        <li>start again if you think you have made a mistake</li>
+                    </ul>
+
+                    <div class="govuk-button-group govuk-!-padding-top-5">
+                        <button type="submit" class="govuk-button" data-module="govuk-button">
+                          Continue
+                        </button>
+                        <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                          Start again
+                        </button>
+                      </div>
+                </form>
+
+            </div>
+        </div>
+    </main>
+</div>
+{% endblock %}
