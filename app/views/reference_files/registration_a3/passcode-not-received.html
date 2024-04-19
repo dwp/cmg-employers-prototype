@@ -1,0 +1,40 @@
+{% extends "layout_cm.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+a
+{% block content %}
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds-from-desktop">
+                <form action="/form-handler" method="post" novalidate>
+                    <h1 class="govuk-heading-l">If you have not received a one-time passcode</h1>
+
+                    <h2 class="govuk-heading-m">Change my email address</h2>
+
+                    <p class="govuk-body">We've sent a one-time passcode to:
+                        <strong>example.email@company.email.co.uk</strong></p>
+                    <p>You can <a href="reset-password.html" class="govuk-link">change the email address we send the
+                            one-time passcode to.</a></p>
+
+                    <h2 class="govuk-heading-m">If your email address is corrrect</h2>
+                    <p class="govuk-body">If you have not received a one-time passcode, contact:</p>
+
+
+                    <h3 class="govuk-heading-s">Employer Payments Team</h3>
+                    <ul class="govuk-list">
+                        <li>Telephone: 0800 232 1961</li>
+                        <li>Textphone: 18001 0800 171 2345</li>
+                        <li class="govuk-!-margin-top-5">Lines open Monday to Friday, 8am to 5pm</li>
+                    </ul>
+                    <p class="govukk-body"><a href="reset-password.html" class="govuk-link">Find out about call charges</a></p>
+                </form>
+
+            </div>
+        </div>
+    </main>
+</div>
+{% endblock %}
