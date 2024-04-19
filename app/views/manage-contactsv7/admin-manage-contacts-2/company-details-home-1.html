@@ -1,0 +1,425 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+{% include "manage-contactsv7/_nav-header.html" %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+          <form action="/form-handler" method="post" novalidate>
+
+            <h1 class="govuk-heading-l">Company details</h1>
+            
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  The Company Ltd. 
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Employer reference number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  501002271004
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+            </dl>
+            <h2 class="govuk-heading-m">Contact preferences</h2>
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact preference
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Receive letters online
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> contact preference</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  information@thecompany.co.uk
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> email address</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Postal address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  The Head Office </br>
+                  123 Down Road </br>
+                  Armley </br>
+                  Leeds </br>
+                  LS12 1QQ
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> postal address</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <h2 class="govuk-heading-m">Manage company contacts</h2>
+
+            <a href="new_user_1/add-a-contact.html" role="button" draggable="false" class="govuk-button"
+              data-module="govuk-button">
+              Add new contact
+            </a>
+           
+           <!--  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  John Stones 
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p><strong class="govuk-tag app-task-list__tag"
+                    id="contact-details-status">Admin</strong></p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <!-- <a class="govuk-link" href="user-view-alt.html">View details
+                    <span class="govuk-visually-hidden"> view user details</span>
+                  </a> -->
+                <!-- </dd>
+                <dd class="govuk-summary-list__actions"> -->
+                  <!-- <a class="govuk-link" href="user-view-alt.html">View details
+                    <span class="govuk-visually-hidden"> view user details</span>
+                  </a> -->
+                <!-- </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="/manage-contactsv7/user_1/view-user-details.html">View details
+                    <span class="govuk-visually-hidden"> view user details</span>
+                  </a>
+                </dd>
+              </div>
+
+            </dl>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Zoe Burns 
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p><strong class="govuk-tag govuk-tag--grey app-task-list__tag"
+                  id="contact-details-status">standard</strong></p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="user_2/delete-contact.html">Remove
+                    <span class="govuk-visually-hidden"> remove contact</span>
+                  </a>
+                </dd>               
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="user_2/confirmation-page-otp.html">Resend OTP
+                    <span class="govuk-visually-hidden"> resend invitation email</span>
+                  </a>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="user_2/view-user-details.html">View details
+                    <span class="govuk-visually-hidden"> view contact details</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Ben Raine
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag"
+                  id="contact-details-status">contact only</strong>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="user_3/delete-contact.html">Remove
+                    <span class="govuk-visually-hidden"> remove contact</span>
+                  </a>
+                </dd>               
+                <dd class="govuk-summary-list__actions"> -->
+                  <!-- <a class="govuk-link" href="user-view-alt-2.html">Resend OTP
+                    <span class="govuk-visually-hidden"> resend invitation email</span>
+                  </a> 
+                </dd> -->
+             <!--   <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="user_3/view-user-details.html">View details
+                    <span class="govuk-visually-hidden"> view contact details</span>
+                  </a>
+                </dd>
+              </div>
+            </dl> -->
+
+            <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                      View Jon Stones details
+                    </span>
+                    <p><strong class="govuk-tag app-task-list__tag"
+                      id="contact-details-status">Admin portal user</strong></p>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                  <table class="govuk-table">
+                    <a class="govuk-link" href="/manage-contactsv7/user_1/change-user-details.html">Change details
+                      <span class="govuk-visually-hidden"> view user details</span>
+                    </a>
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Email address</th>
+                        <td class="govuk-table__cell">john.stones@company.co.uk</td>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Contact number</th>
+                        <td class="govuk-table__cell">011323212345</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Extension number</th>
+                        <td class="govuk-table__cell">12345</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Do you work for a third party who manages payroll for this employer?</th>
+                        <td class="govuk-table__cell">No</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">What can you help with?</th>
+                        <td class="govuk-table__cell">Deductions, Payments</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">User access level</th>
+                        <td class="govuk-table__cell">Admin</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                      View Zoe Burns details
+                    </span>
+                    
+                    <p><strong class="govuk-tag govuk-tag--grey app-task-list__tag"
+                      id="contact-details-status">Standard portal user</strong></p>
+                  </h2>
+                </div>
+
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                  <table class="govuk-table">
+                    <a class="govuk-link" href="/manage-contactsv7/user_2/change-user-details.html">Change details
+                      <span class="govuk-visually-hidden"> view user details</span>
+                    </a>
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Email address</th>
+                        <td class="govuk-table__cell">zoe.burns@company.co.uk</td>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Contact number</th>
+                        <td class="govuk-table__cell">011323212543</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Extension number</th>
+                        <td class="govuk-table__cell">67891</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Alternative number</th>
+                        <td class="govuk-table__cell">07777777777</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Do you work for a third party who manages payroll for this employer?</th>
+                        <td class="govuk-table__cell">No</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">What can they help with?</th>
+                        <td class="govuk-table__cell">Deductions</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">User access level</th>
+                        <td class="govuk-table__cell">Standard user</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header"><a class="govuk-link" href="user_2/confirmation-page-otp.html">Send passocde
+                          <span class="govuk-visually-hidden"> resend invitation email</span>
+                        </a></th>
+                        <td class="govuk-table__cell"><p></p></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header"><a class="govuk-link" href="user_2/delete-contact.html">Remove this person
+                          <span class="govuk-visually-hidden"> remove contact</span>
+                        </a></th>
+                        <td class="govuk-table__cell"><p></p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                      View Ishmail Khan details
+                    </span>
+                    
+                    <p><strong class="govuk-tag govuk-tag--yellow app-task-list__tag"
+                      id="contact-details-status">Not validated to use the portal</strong></p>
+                  </h2>
+                </div>
+
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                <table class="govuk-table">
+                  <a class="govuk-link" href="/manage-contactsv7/user_3/change-user-details.html">Change details
+                    <span class="govuk-visually-hidden"> view user details</span>
+                  </a>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Email address</th>
+                      <td class="govuk-table__cell">ishamail.khan@company.co.uk</td>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Contact number</th>
+                      <td class="govuk-table__cell">01132329876</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Extension number</th>
+                      <td class="govuk-table__cell">12345</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Alternative number</th>
+                      <td class="govuk-table__cell">07777111111</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Do you work for a third party who manages payroll for this employer?</th>
+                      <td class="govuk-table__cell">No</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">What can they help with?</th>
+                      <td class="govuk-table__cell">Employee details</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">User access level</th>
+                      <td class="govuk-table__cell">Not validated</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header"><a class="govuk-link" href="user_2/confirmation-page-otp.html">Send passocde
+                        <span class="govuk-visually-hidden"> resend invitation email</span>
+                      </a></th>
+                      <td class="govuk-table__cell"><p></p></td>
+                    </tr>
+    
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header"><a class="govuk-link" href="user_2/delete-contact.html">Remove this person
+                        <span class="govuk-visually-hidden"> remove contact</span>
+                      </a></th>
+                      <td class="govuk-table__cell"><p></p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+              <!-- <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                      Writing well for specialists
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                  <p class='govuk-body'>This is the content for Writing well for specialists.</p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                      Know your audience
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                  <p class='govuk-body'>This is the content for Know your audience.</p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                      How people read
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                  <p class='govuk-body'>This is the content for How people read.</p>
+                </div>
+              </div>
+            </div> -->
+   
+            <nav class="moj-pagination" id="pagination-label">
+
+              <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+              <ul class="moj-pagination__list">
+                <a class="moj-pagination__link" href=""><span class="govuk-visually-hidden"> set of pages</span></a>
+                </li>
+
+                <li class="moj-pagination__item moj-pagination__item--active">1</li>
+
+                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=1">2</a>
+
+                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=3">3</a></li>
+
+                <li class="moj-pagination__item moj-pagination__item--dots">...</li>
+
+                <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=5">5</a></li>
+
+                <li class="moj-pagination__item  moj-pagination__item--next">
+                  <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of
+                      pages</span></a>
+                </li>
+              </ul>
+            </nav>
+
+          </form>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}
