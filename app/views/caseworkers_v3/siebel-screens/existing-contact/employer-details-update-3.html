@@ -1,0 +1,313 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-full">
+
+          <form action="/form-handler" method="post" novalidate>
+
+            <h1 class="govuk-heading-l">AB Cars Ltd</h1>
+
+            <h2 class="govuk-heading-m">Employer contact details</h2>
+            
+            <dl class="govuk-summary-list">
+              <!-- <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  The Company Ltd. 
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div> -->
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Employer reference number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  501002271004
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+           
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact preference
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Email and postal
+                </dd>
+                <!-- <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> contact preference</span>
+                  </a>
+                </dd> -->
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  information@abcars.co.uk
+                </dd>
+                <!-- <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> email address</span>
+                  </a>
+                </dd> -->
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Postal address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  The Head Office </br>
+                  123 Down Road </br>
+                  Armley </br>
+                  Leeds </br>
+                  LS12 1QQ
+                </dd>
+                <!-- <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> postal address</span>
+                  </a>
+                </dd> -->
+              </div>
+            </dl>
+          </div> <!-- govuk-grid-column-two-thirds -->
+
+          
+            <h2 class="govuk-heading-m">Manage employer contacts</h2>
+
+            <a href="add-a-contact.html" role="button" draggable="false" class="govuk-button"
+              data-module="govuk-button">
+              Add new contact
+            </a>
+           
+            
+            <div class="govuk-summary-card">
+              <div class="govuk-summary-card__title-wrapper">
+                <h2 class="govuk-summary-card__title">Zoe Burns</h2><strong class="govuk-tag app-task-list__tag
+                ">Administrator</strong>
+                <ul class="govuk-summary-card__actions">
+                   <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                    Change details<span class="govuk-visually-hidden"> of Zoe Burns</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="govuk-summary-card__content">
+                <dl class="govuk-summary-list">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Account status
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Registered
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Email address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      zoe.burns@abcars.co.uk
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      01132320987
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Extension number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      6789
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Alternative number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      07777777777
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Are they a third party provider?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                     No
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                       What can we contact them about?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Sending Child Maintenance payments to DWP
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+            
+            <div class="govuk-summary-card">
+              <div class="govuk-summary-card__title-wrapper">
+                <h2 class="govuk-summary-card__title">{{data['cwv3-general-name-new-user']}}</h2> <strong class="govuk-tag app-task-list__tag govuk-tag--yellow
+                ">Department</strong>
+                <ul class="govuk-summary-card__actions">
+                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                    Change details<span class="govuk-visually-hidden"> of user 3</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="govuk-summary-card__content">
+                <dl class="govuk-summary-list">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Account status
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Registered
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Email address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv3-general-email-new-user']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv3-general-contact-1-new-user']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Extension number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv3-contact-2-user-1']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Alternative number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv3-general-contact-3-new-user']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                       Select what they can help with
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv3-general-contact-reason']}}
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+            <div class="govuk-summary-card">
+              <div class="govuk-summary-card__title-wrapper">
+                <h2 class="govuk-summary-card__title">Jackie Smith</h2> <strong class="govuk-tag app-task-list__tag govuk-tag--green
+                ">Standard</strong>
+                <ul class="govuk-summary-card__actions">
+                   <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                    Change details<span class="govuk-visually-hidden"> of Jackie Smith</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="govuk-summary-card__content">
+                <dl class="govuk-summary-list">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Account status
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Registered
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Email address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      jackie.smith@abcars.co.uk
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      01132324567
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Extension number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      5432
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Alternative number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      07777777778
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Are they a third party provider?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                     No
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                       What can we contact them about?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Sending Child Maintenance payments to DWP
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}

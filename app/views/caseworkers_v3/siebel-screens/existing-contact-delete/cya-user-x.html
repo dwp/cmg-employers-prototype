@@ -1,0 +1,134 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <!-- <a href="javascript:history.back()" class="govuk-back-link">Back</a> -->
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <form action="confirmation-page-user-3.html" method="get">
+
+            <h2 class="govuk-heading-l">Check your answers</h2>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Full name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['siebel-v3-first-name-user-3']}} {{data['siebel-v3-last-name-user-3']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-user-3-details.html">
+                    Change<span class="govuk-visually-hidden"> name</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['siebel-v3-email-user-3']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-user-3-details.html">
+                    Change<span class="govuk-visually-hidden"> email</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['siebel-v3-contact-1-user-3']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-user-3-details.html">
+                    Change<span class="govuk-visually-hidden"> contact number</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Extension
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['siebel-v3-contact-2-user-3']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-user-3-details.html">
+                    Change<span class="govuk-visually-hidden"> contact number</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Alternative number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['siebel-v3-contact-3-user-3']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-user-3-details.html">
+                    Change<span class="govuk-visually-hidden"> contact number</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Are they a third party that manages the payroll for this employer?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['siebel-v3-user-3-payroll-provider']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-user-3-details.html">
+                    Change<span class="govuk-visually-hidden"> are you a payroll provider</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  What can we contact them about?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['siebel-v3-user-3-contact-reason']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-user-3-details.html">
+                    Change<span class="govuk-visually-hidden"> contact reason</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Can this person manage other peoples details for this employer?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{{data['siebel-v3-user-3-admin-user']}}</p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-user-3-details.html">
+                    Change<span class="govuk-visually-hidden"> user type</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+           
+            <div class="govuk-form-group">
+              <button class="govuk-button" data-module="govuk-button">
+                Confirm and save these details
+              </button> 
+            </div>
+          </form>
+          <a href="employer-details-none.html">Cancel</a>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}
