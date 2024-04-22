@@ -1,0 +1,93 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <!-- <a href="javascript:history.back()" class="govuk-back-link">Back</a> -->
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Do you want to remove this contact?</h1>
+
+        <form action="confirmation-page-user-2-delete.html" method="get">
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">Jackie Smith</p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Email
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">jackie.smith@abcars.co.uk</p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">01132324567</p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Extension number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">5432</p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Alternative number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">07777777778/p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Select if they are a third party payroll provider
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">No</p>
+              </dd>
+            </div>
+            <!-- <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Select what they can help with
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">Deductions that have or should have been taken from employees pay, Sending Child Maintenance payments to DWP, Individual employee details</p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Select if this person is an administrator
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body"></p>
+              </dd>
+            </div> -->
+          </dl>
+
+          <button class="govuk-button govuk-button--warning" data-module="govuk-button">
+            Remove contact
+          </button>
+
+        </form>
+        <a href="employer-details-none.html">Cancel</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
