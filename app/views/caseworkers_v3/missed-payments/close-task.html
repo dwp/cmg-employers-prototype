@@ -1,0 +1,189 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+                <form action="confirmation-page-close-task.html" method="get">
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                                <h1 class="govuk-fieldset__heading">
+                                    Why you are closing this task?
+                                </h1>
+                            </legend>
+
+                            <div class="govuk-radios" data-module="govuk-radios">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="reasons-1" name="reasons" type="radio"
+                                        value="" data-aria-controls="conditional-reasons-1">
+                                    <label class="govuk-label govuk-radios__label" for="reasons-1">
+                                        Employer has sent a payment that matches old DEO rate
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                                    id="conditional-reasons-1">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="reasons-1-details">
+                                            Give details
+                                        </label>
+                                        <input class="govuk-input" id="reasons-1-details" name="reasons-1-details"
+                                            type="text" spellcheck="false" autocomplete="">
+                                    </div>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="reasons-2" name="reasons" type="radio"
+                                        value="phone" data-aria-controls="conditional-reasons-2">
+                                    <label class="govuk-label govuk-radios__label" for="reasons-2">
+                                        Employer has not taken the first deduction for a new DEO
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                                    id="conditional-reasons-2">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="reasons-2-details">
+                                            Give details
+                                        </label>
+                                        <input class="govuk-input" id="reasons-2-details" name="reasons-2-details"
+                                            type="text" autocomplete="">
+                                    </div>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="reasons-3" name="reasons" type="radio"
+                                        value="" data-aria-controls="conditional-reasons-3">
+                                    <label class="govuk-label govuk-radios__label" for="contact-3">
+                                        Employee with a DEO has left the employer
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                                    id="conditional-reasons-3">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="reasons-3-details">
+                                            Give details
+                                        </label>
+                                        <input class="govuk-input" id="reasons-3-details" name="reasons-3-details"
+                                            type="text" autocomplete="">
+                                    </div>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="reasons-4" name="reasons" type="radio"
+                                        value="text" data-aria-controls="conditional-reasons-4">
+                                    <label class="govuk-label govuk-radios__label" for="contact-4">
+                                        Employer has applied protective earnings rules correctly
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                                    id="conditional-reasons-4">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="reasons-4-details">
+                                            Give details
+                                        </label>
+                                        <input class="govuk-input" id="reasons-4-details" name="reasons-4-details"
+                                            type="text" autocomplete="">
+                                    </div>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="reasons-5" name="reasons" type="radio"
+                                        value="text" data-aria-controls="conditional-reasons-5">
+                                    <label class="govuk-label govuk-radios__label" for="contact-3">
+                                        Employer has sent an unexpected amount
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                                    id="conditional-reasons-5">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="reasons-5-details">
+                                            Give details
+                                        </label>
+                                        <input class="govuk-input" id="reasons-5-details" name="reasons-5-details"
+                                            type="text" autocomplete="">
+                                    </div>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="reasons-6" name="reasons" type="radio"
+                                        value="text" data-aria-controls="conditional-reasons-6">
+                                    <label class="govuk-label govuk-radios__label" for="reasons-6">
+                                        Employer has non monthly payroll - old style DEO
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                                    id="conditional-reasons-6">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="reasons-6-details">
+                                            Give details
+                                        </label>
+                                        <input class="govuk-input" id="reasons-6-details" name="reasons-6-details"
+                                            type="text" autocomplete="">
+                                    </div>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="reasons-7" name="reasons" type="radio"
+                                        value="text" data-aria-controls="conditional-reasons-7">
+                                    <label class="govuk-label govuk-radios__label" for="reasons-7">
+                                        Employer missing payment check has been run at the wrong time - old style DEO
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                                    id="conditional-reasons-7">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="reasons-7-details">
+                                            Give details
+                                        </label>
+                                        <input class="govuk-input" id="reasons-7-details" name="reasons-7-details"
+                                            type="text" autocomplete="">
+                                    </div>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="reasons-8" name="reasons" type="radio"
+                                        value="text" data-aria-controls="conditional-reasons-8">
+                                    <label class="govuk-label govuk-radios__label" for="reasons-8">
+                                        Other reason
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                                    id="conditional-reasons-8">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="reasons-8-details">
+                                            Give details
+                                        </label>
+                                        <input class="govuk-input" id="reasons-8-details" name="reasons-8-details"
+                                            type="text" autocomplete="">
+                                    </div>
+                                </div>
+                                <!--  <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="reasons-9" name="reasons" type="radio" value="text" data-aria-controls="conditional-reasons-9">
+                            <label class="govuk-label govuk-radios__label" for="reasons-9">
+                                Task refferred to Team Leader
+                            </label>
+                          </div>
+                          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-reasons-9">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label" for="reasons-9-details">
+                                Give details
+                              </label>
+                              <input class="govuk-input" id="reasons-9-details" name="reasons-9-details" type="text" autocomplete="">
+                            </div>
+                          </div> -->
+
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+
+                </form>
+
+            </div> <!-- govuk-grid-column-one-half -->
+        </div> <!-- govuk-grid-row -->
+
+
+    </main>
+</div> <!-- govuk-width-container -->
+{% endblock %}
