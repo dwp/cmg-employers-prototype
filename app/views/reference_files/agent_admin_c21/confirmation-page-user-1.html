@@ -1,0 +1,30 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">Account update complete</h1>
+        </div>
+        <h2 class="govuk-heading-m">What happens next</h2>
+        <p class="govuk-body">
+          We've sent a confirmation email, including a one-time passcode and a link to the new service, to the new user. This passcode will be valid for 15
+          minutes.
+        </p>
+       
+        <a href="employer-details-update-1.html" role="button" draggable="false"
+          class="govuk-button" data-module="govuk-button">Return to employer account</a>
+
+      </div>
+    </div>
+</div>
+</main>
+</div>
+
+{% endblock %}
