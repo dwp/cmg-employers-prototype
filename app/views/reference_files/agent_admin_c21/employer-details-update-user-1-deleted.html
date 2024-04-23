@@ -1,0 +1,123 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-full">
+
+          <form action="/form-handler" method="post" novalidate>
+
+            <h1 class="govuk-heading-l">AB Cars Ltd</h1>
+
+            <h2 class="govuk-heading-m">Employer contact details</h2>
+            
+            <dl class="govuk-summary-list">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Employer reference number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  501002271004
+                </dd>
+              </div>
+           
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact preference
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Email and postal
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  information@abcars.co.uk
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Postal address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  The Head Office </br>
+                  123 Down Road </br>
+                  Armley </br>
+                  Leeds </br>
+                  LS12 1QQ
+                </dd>
+              </div>
+            </dl>
+
+          <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title"
+            data-module="govuk-notification-banner">
+            <div class="govuk-notification-banner__header">
+              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                Important
+              </h2>
+            </div>
+            <div class="govuk-notification-banner__content">
+              <p class="govuk-notification-banner__heading">
+                You have outstanding employer contacts to review.
+              </p>
+            </div>
+          </div>
+
+          <dl class="govuk-summary-list">
+             <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Jackie Smith
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="delete-contact-2.html">
+                  Delete<span class="govuk-visually-hidden"> details</span>
+                </a>
+                &nbsp;
+                <a class="govuk-link" href="general-contact-user-2.html">
+                  Review<span class="govuk-visually-hidden"> details</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Payroll Payroll
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Delete<span class="govuk-visually-hidden"> details</span>
+                </a>
+                &nbsp;
+                <a class="govuk-link" href="general-contact-user-3.html">
+                  Review<span class="govuk-visually-hidden"> details</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+         
+            <h2 class="govuk-heading-m">Manage employer contacts</h2>
+
+            <a href="add-a-contact.html" role="button" draggable="false" class="govuk-button"
+              data-module="govuk-button">
+              Add new contact
+            </a>
+
+            <h3 class="govuk-heading-s">No contacts to display</h3>
+            
+          </form>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}
