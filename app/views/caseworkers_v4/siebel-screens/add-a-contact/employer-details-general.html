@@ -1,0 +1,250 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-full">
+
+          <form action="/form-handler" method="post" novalidate>
+
+            <h1 class="govuk-heading-l">AB Cars Ltd</h1>
+
+            <h2 class="govuk-heading-m">Employer contact details</h2>
+            
+            <dl class="govuk-summary-list">
+              <!-- <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  The Company Ltd. 
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div> -->
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Employer reference number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  501002271004
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+           
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact preference
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Email and postal
+                </dd>
+                <!-- <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> contact preference</span>
+                  </a>
+                </dd> -->
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  information@abcars.co.uk
+                </dd>
+                <!-- <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> email address</span>
+                  </a>
+                </dd> -->
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Postal address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  The Head Office </br>
+                  123 Down Road </br>
+                  Armley </br>
+                  Leeds </br>
+                  LS12 1QQ
+                </dd>
+                <!-- <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> postal address</span>
+                  </a>
+                </dd> -->
+              </div>
+            </dl>
+          </div> <!-- govuk-grid-column-two-thirds -->
+
+         
+            <h2 class="govuk-heading-m">Manage employer contacts</h2>
+
+            <a href="general-contact.html.html" role="button" draggable="false" class="govuk-button"
+              data-module="govuk-button">
+              Add new contact
+            </a>
+           
+            
+            <div class="govuk-summary-card">
+              <div class="govuk-summary-card__title-wrapper">
+                <h2 class="govuk-summary-card__title">{{data['siebel-v3-first-name-new']}} {{data['siebel-v3-last-name-new']}} &nbsp; <strong class="govuk-tag app-task-list__tag
+                  ">Administrator</strong></h2>
+                <ul class="govuk-summary-card__actions">
+                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="send-otp-2.html">
+                    Resend passcode<span class="govuk-visually-hidden"> of University of Bristol</span>
+                    </a>
+                  </li>
+                  <!-- <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                    Update account status<span class="govuk-visually-hidden"> of new user</span>
+                    </a>
+                  </li> -->
+                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="change-user-1-details.html">
+                    Change details<span class="govuk-visually-hidden"> of new user</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="govuk-summary-card__content">
+                <dl class="govuk-summary-list">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Account status
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Registered
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Email address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v3-email-new']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v3-contact-1-new']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Extension number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v3-contact-2-new']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Alternative number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v3-contact-3-new']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Are they a third party provider?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v3-new-user-payroll-provider']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                       What can we contact them about?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['siebel-v3-new-user-contact-reason']}}
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="govuk-summary-card">
+              <div class="govuk-summary-card__title-wrapper">
+                <h2 class="govuk-summary-card__title govuk-!-padding-rght-15">{{data['cwv3-general-name-new-user']}} &nbsp; <strong class="govuk-tag app-task-list__tag
+                  govuk-tag--yellow">Department</strong> </h2> 
+                <ul class="govuk-summary-card__actions">
+                  <!-- <li class="govuk-summary-card__action"> <a class="govuk-link" href="send-otp.html">
+                    Resend passcode<span class="govuk-visually-hidden"> of University of Bristol</span>
+                    </a>
+                  </li> -->
+                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                      Change details<span class="govuk-visually-hidden"> of John Stones</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="govuk-summary-card__content">
+                <dl class="govuk-summary-list">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Account status
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Registered
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Email address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv3-general-email-new-user']}}  
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv3-general-contact-1-new-user']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Extension number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv3-contact-2-user-1']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Alternative number
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv3-general-contact-3-new-user']}}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                       What can we contact them about?
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      {{data['cwv3-general-contact-reason']}}
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}
