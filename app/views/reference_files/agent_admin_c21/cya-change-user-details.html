@@ -16,10 +16,23 @@
 
             <div class="govuk-summary-list__row">
               <dt class="govuk-summary-list__key">
-                Name
+                First name
               </dt>
               <dd class="govuk-summary-list__value">
-                <p class="govuk-body">{{ data['siebel-c21-first-name-user-1'] }} {{ data['siebel-c21-last-name-user-1'] }}</p>
+                <p class="govuk-body">{{ data['siebel-c21-first-name-user-1'] }}</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-user-details.html">
+                  Change<span class="govuk-visually-hidden"> contact details</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Last name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{ data['siebel-c21-last-name-user-1'] }}</p>
               </dd>
               <dd class="govuk-summary-list__actions">
                 <a class="govuk-link" href="change-user-details.html">
