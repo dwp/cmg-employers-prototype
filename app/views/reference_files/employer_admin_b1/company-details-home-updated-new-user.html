@@ -47,11 +47,11 @@
               <dd class="govuk-summary-list__value">
                 Receive letters online
               </dd>
-              <dd class="govuk-summary-list__actions">
+              <!-- <dd class="govuk-summary-list__actions">
                 <a class="govuk-link" href="#">
                   Change<span class="govuk-visually-hidden"> contact preference</span>
                 </a>
-              </dd>
+              </dd> -->
             </div>
             <div class="govuk-summary-list__row">
               <dt class="govuk-summary-list__key">
@@ -60,11 +60,11 @@
               <dd class="govuk-summary-list__value">
                 information@thecompany.co.uk
               </dd>
-              <dd class="govuk-summary-list__actions">
+              <!-- <dd class="govuk-summary-list__actions">
                 <a class="govuk-link" href="#">
                   Change<span class="govuk-visually-hidden"> email address</span>
                 </a>
-              </dd>
+              </dd> -->
             </div>
             <div class="govuk-summary-list__row">
               <dt class="govuk-summary-list__key">
@@ -77,11 +77,11 @@
                 Leeds </br>
                 LS12 1QQ
               </dd>
-              <dd class="govuk-summary-list__actions">
+              <!-- <dd class="govuk-summary-list__actions">
                 <a class="govuk-link" href="#">
                   Change<span class="govuk-visually-hidden"> postal address</span>
                 </a>
-              </dd>
+              </dd> -->
             </div>
           </dl>
       </div> <!-- govuk-grid-column-two-thirds -->
@@ -97,15 +97,15 @@
 
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
-            <h2 class="govuk-summary-card__title govuk-!-width-one-quarter">John Stones </h2><strong class="govuk-tag app-task-list__tag "
-              id="contact-details-status">Administrator</strong>
+            <h2 class="govuk-summary-card__title">John Stones &nbsp; <strong class="govuk-tag app-task-list__tag "
+              id="contact-details-status">Administrator</strong></h2>
             <ul class="govuk-summary-card__actions">
               <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
-                  View more details<span class="govuk-visually-hidden"> of John Stones</span>
+                  Resend passcode<span class="govuk-visually-hidden"> of John Stones</span>
                 </a>
               </li>
               <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
-                  Change details<span class="govuk-visually-hidden"> of John Stones</span>
+                  View more details<span class="govuk-visually-hidden"> of John Stones</span>
                 </a>
               </li>
             </ul>
@@ -130,7 +130,7 @@
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  What can you help with?
+                  Select what you can help with
                 </dt>
                 <dd class="govuk-summary-list__value">
                   Individual employee details
@@ -142,18 +142,19 @@
 
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
-            <h2 class="govuk-summary-card__title govuk-!-width-one-quarter">{{data['refb1-first-name-new']}} {{data['refb1-last-name-new']}} </h2>
-            <strong class="govuk-tag app-task-list__tag govuk-tag--green " id="contact-details-status">Standard</strong>
+            <h2 class="govuk-summary-card__title">{{data['refb1-first-name-new']}} {{data['refb1-last-name-new']}} &nbsp;
+            <strong class="govuk-tag app-task-list__tag govuk-tag--green " id="contact-details-status">Standard</strong></h2>
             <ul class="govuk-summary-card__actions">
+              <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                Resend passcode<span class="govuk-visually-hidden"> of John Stones</span>
+              </a>
+            </li>
               <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
                   View more details<span class="govuk-visually-hidden"> of {{data['refb1-first-name-new']}}
                     {{data['refb1-last-name-new']}}</span>
                 </a>
               </li>
-              <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
-                  Change details<span class="govuk-visually-hidden"> of John Stones</span>
-                </a>
-              </li>
+              
             </ul>
           </div>
           <div class="govuk-summary-card__content">
@@ -176,7 +177,7 @@
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  What can they help with?
+                  Select what they can help with
                 </dt>
                 <dd class="govuk-summary-list__value">
                   {{data['refb1-new-user-contact-reason']}}
