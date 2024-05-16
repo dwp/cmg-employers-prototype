@@ -16,10 +16,23 @@
 
             <div class="govuk-summary-list__row">
               <dt class="govuk-summary-list__key">
-                Full name
+                First name
               </dt>
               <dd class="govuk-summary-list__value">
-                <p class="govuk-body">{{ data['b31-v1-first-name-user-2'] }} {{ data['b31-v1-last-name-user-2'] }}</p>
+                <p class="govuk-body">{{ data['b31-v1-first-name-user-2'] }}</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-user-details.html">
+                  Change<span class="govuk-visually-hidden"> contact details</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Last name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{ data['b31-v1-last-name-user-2'] }}</p>
               </dd>
               <dd class="govuk-summary-list__actions">
                 <a class="govuk-link" href="change-user-details.html">
@@ -122,7 +135,7 @@
 
           <div class="govuk-form-group">
             <button class="govuk-button" data-module="govuk-button">
-              Confirm and send
+              Confirm and save
             </button>
           </div>
 
