@@ -2,246 +2,195 @@
 
 {% block content %}
 
-{% include "reference_files/employer_admin_b31/_nav-header.html" %}
+{% include "reference_files/employer_admin_b7/_nav-header.html" %}
 
 <div class="govuk-width-container">
- 
-    <main class="govuk-main-wrapper " id="main-content" role="main">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-full">
 
-          <form action="/form-handler" method="post" novalidate>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
 
-            <h1 class="govuk-heading-l">Company details</h1>
-            
-            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Name
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  The Company Ltd. 
-                </dd>
-                <dd class="govuk-summary-list__actions">
+        <form action="/form-handler" method="post" novalidate>
 
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Employer reference number
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  501002271004
-                </dd>
-                <dd class="govuk-summary-list__actions">
+          <h1 class="govuk-heading-l">Company details</h1>
 
-                </dd>
-              </div>
-            </dl>
-            <h2 class="govuk-heading-m">Contact preferences</h2>
-            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Contact preference
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  Receive letters online
-                </dd>
-                <dd class="govuk-summary-list__actions">
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                The Company Ltd.
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Employer reference number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                501002271004
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+          </dl>
+          <h2 class="govuk-heading-m">Contact preferences</h2>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact preference
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Receive letters online
+              </dd>
+              <!-- <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#">
                     Change<span class="govuk-visually-hidden"> contact preference</span>
                   </a>
-                </dd>
-              </div>
+                </dd> -->
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Email address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                information@thecompany.co.uk
+              </dd>
+              <!-- <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> email address</span>
+                  </a>
+                </dd> -->
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Postal address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                The Head Office </br>
+                123 Down Road </br>
+                Armley </br>
+                Leeds </br>
+                LS12 1QQ
+              </dd>
+              <!-- <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> postal address</span>
+                  </a>
+                </dd> -->
+            </div>
+          </dl>
+      </div> <!-- govuk-grid-column-two-thirds -->
+
+      <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-m">Manage company contacts</h1>
+
+        <a href="new_user_1/add-a-contact.html" role="button" draggable="false" class="govuk-button"
+          data-module="govuk-button">
+          Add new contact
+        </a>
+
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">John Stones &nbsp; <strong class="govuk-tag app-task-list__tag "
+                id="contact-details-status">Administrator</strong></h2>
+            <ul class="govuk-summary-card__actions">
+              <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                  Resend passcode<span class="govuk-visually-hidden"> of University of Bristol</span>
+                </a>
+              </li>
+              <li class="govuk-summary-card__action"> <a class="govuk-link" href="user_1/view-user-details.html">
+                  View details<span class="govuk-visually-hidden"> of John Stones</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="govuk-summary-card__content">
+            <dl class="govuk-summary-list">
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
                   Email address
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  information@thecompany.co.uk
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="#">
-                    Change<span class="govuk-visually-hidden"> email address</span>
-                  </a>
+                  john.stones@company.co.uk
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Postal address
+                  Contact number
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  The Head Office </br>
-                  123 Down Road </br>
-                  Armley </br>
-                  Leeds </br>
-                  LS12 1QQ
+                  01132321234
                 </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="#">
-                    Change<span class="govuk-visually-hidden"> postal address</span>
-                  </a>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Seelect what can you help with
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Individual employee details
                 </dd>
               </div>
             </dl>
-          </div> <!-- govuk-grid-column-two-thirds -->
-
-          <div class="govuk-grid-column-full">
-
-            <h1 class="govuk-heading-m">Manage company contacts</h1>
-
-            <a href="new_user_1/add-a-contact.html" role="button" draggable="false" class="govuk-button"
-              data-module="govuk-button">
-              Add new contact
-            </a>
-
-            <!-- <div class="govuk-summary-card">
-              <div class="govuk-summary-card__title-wrapper">
-                <h2 class="govuk-summary-card__title">Zoe Burns</h2>
-                <ul class="govuk-summary-card__actions">
-                 <li class="govuk-summary-card__action"> <a class="govuk-link" href="user_2/view-user-details.html">
-                    View more details<span class="govuk-visually-hidden"> of Zoe Burns</span>
-                    </a>
-                  </li>
-                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="user_2/change-user-details.html">
-                    Change details<span class="govuk-visually-hidden"> of Zoe Burns</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="govuk-summary-card__content">
-                <dl class="govuk-summary-list">
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      Email address
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      zoe.burns@company.co.uk
-                    </dd>
-                  </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      Contact number
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      01132320987
-                    </dd>
-                  </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                       What can you help with?
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      Payments
-                    </dd>
-                  </div>
-                </dl>
-              </div>
-            </div> -->
-
-            <div class="govuk-summary-card">
-              <div class="govuk-summary-card__title-wrapper">
-                <h2 class="govuk-summary-card__title">John Stones </h2><strong class="govuk-tag app-task-list__tag "
-                  id="contact-details-status">Administrator</strong>
-                <ul class="govuk-summary-card__actions">
-                  <!-- <li class="govuk-summary-card__action"> <a class="govuk-link" href="">
-                    Send passcode<span class="govuk-visually-hidden"> of University of Bristol</span>
-                    </a>
-                  </li> -->
-                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="user_1/view-user-details.html">
-                      View more details<span class="govuk-visually-hidden"> of John Stones</span>
-                    </a>
-                  </li>
-                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="user_1/change-user-details.html">
-                      Change details<span class="govuk-visually-hidden"> of John Stones</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="govuk-summary-card__content">
-                <dl class="govuk-summary-list">
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      Email address
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      john.stones@company.co.uk
-                    </dd>
-                  </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      Contact number
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      01132321234
-                    </dd>
-                  </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                       What can you help with?
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                     Employee details
-                    </dd>
-                  </div>
-                </dl>
-              </div>
-            </div>
-
-            <div class="govuk-summary-card">
-              <div class="govuk-summary-card__title-wrapper">
-                <h2 class="govuk-summary-card__title">{{data['v7-first-name-new']}} {{data['v7-last-name-new']}} </h2><strong class="govuk-tag app-task-list__tag govuk-tag--green "
-                id="contact-details-status">Standard</strong>
-                <ul class="govuk-summary-card__actions">
-                  <!-- <li class="govuk-summary-card__action"> <a class="govuk-link" href="">
-                    Send passcode<span class="govuk-visually-hidden"> of University of Bristol</span>
-                    </a>
-                  </li> -->
-                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
-                      View more details<span class="govuk-visually-hidden"> of {{data['v7-first-name-new']}} {{data['v7-last-name-new']}}</span>
-                    </a>
-                  </li>
-                  <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
-                      Change details<span class="govuk-visually-hidden"> of John Stones</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="govuk-summary-card__content">
-                <dl class="govuk-summary-list">
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      Email address
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      {{data['v7-email-new']}}
-                    </dd>
-                  </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      Contact number
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      {{data['v7-contact-1-new']}}
-                    </dd>
-                  </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                       What can you help with?
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      {{data['v7-new-user-contact-reason']}}
-                    </dd>
-                  </div>
-                </dl>
-              </div>
-            </div>
-           
-           
-               </form>
+          </div>
         </div>
+
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">{{data['b7-first-name-new']}} {{data['b7-last-name-new']}} &nbsp;
+              <strong class="govuk-tag app-task-list__tag govuk-tag--green "
+                id="contact-details-status">Standard</strong></h2>
+            <ul class="govuk-summary-card__actions">
+              <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                  Resend passcode<span class="govuk-visually-hidden"> of University of Bristol</span>
+                </a>
+              </li>
+              <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+                  View details<span class="govuk-visually-hidden"> of {{data['b7-first-name-new']}}
+                    {{data['b7-last-name-new']}}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="govuk-summary-card__content">
+            <dl class="govuk-summary-list">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{data['b7-email-new']}}
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{data['b7-contact-1-new']}}
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Select what they can help with
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{data['b7-new-user-contact-reason']}}
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        </form>
       </div>
-    </main>
+    </div>
+  </main>
 </div>
 
 {% endblock %}
