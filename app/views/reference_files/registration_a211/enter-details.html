@@ -10,9 +10,9 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds-from-desktop">
-
-        <h1 class="govuk-heading-l">Register to use the Child Maintenance Employer Service </h1>
         <form action="enter-passcode.html" method="get" novalidate>
+        <!-- <h1 class="govuk-heading-l">Enter your email address to register to use the Child Maintenance Employer Service </h1>
+       
           <div class="govuk-form-group">
             <label class="govuk-label govuk-!-margin-bottom-0" for="ern">Employer reference number (ERN)</label>
             <div id="ern-hint" class="govuk-hint">
@@ -36,6 +36,18 @@ GOV.UK Prototype Kit
             <div id="email-hint" class="govuk-hint">You'll use your work email address to sign in to the service. This email should not be a shared inbox.</div>
             <input class="govuk-input" id="email" name="email" type="email" spellcheck="false"
               aria-describedby="password-hint">
+          </div> -->
+
+          <div class="govuk-form-group">
+            <h1 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--l" for="event-name">
+                Enter your email address to register to use the Child Maintenance Employer Service 
+              </label>
+            </h1>
+            <div id="event-name-hint" class="govuk-hint">
+              You'll use your work email address to sign in to the service. This email should not be a shared inbox.
+            </div>
+            <input class="govuk-input" id="event-name" name="eventName" type="text" aria-describedby="event-name-hint">
           </div>
 
       <button class="govuk-button" data-module="govuk-button">
