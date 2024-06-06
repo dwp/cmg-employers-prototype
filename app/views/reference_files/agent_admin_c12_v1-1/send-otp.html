@@ -1,0 +1,28 @@
+{% extends "layout_cm.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+        <form action="confirmation-page-otp.html" method="get" novalidate>
+
+          <h1 class="govuk-heading-l ">Send a passcode to:
+
+            <h2 class="govuk-heading-m"> <strong>{{data['siebel-c11-email-new']}}</strong> </h2>
+
+          <button class="govuk-button" data-module="govuk-button">
+           Send passcode
+          </button>
+          
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
