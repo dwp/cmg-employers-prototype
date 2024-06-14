@@ -11,44 +11,34 @@ GOV.UK Prototype Kit
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
 
-                <h1 class="govuk-heading-l">When was the call made?</h1>
+                <h1 class="govuk-heading-l">Record the call details</h1>
+
+                <h2 class="govuk-heading-s">Date and time of call</h2>
+                <p class="govuk-body">Monday 20 May - 15:45</p>
 
                 <div class="govuk-form-group">
-                    <fieldset class="govuk-fieldset" role="group" aria-describedby="employercall">
-                      <legend class="govuk-fieldset__legend">
-                      
-                      </legend>
-                      <div id="passport-issued-hint" class="govuk-hint">
-                        For example, 27 3 2007
-                      </div>
-                      <div class="govuk-date-input" id="employercall">
-                        <div class="govuk-date-input__item">
-                          <div class="govuk-form-group">
-                            <label class="govuk-label govuk-date-input__label" for="employercall-day">
-                              Day
-                            </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="employercall-day" name="employercall-day" type="text" inputmode="numeric">
-                          </div>
-                        </div>
-                        <div class="govuk-date-input__item">
-                          <div class="govuk-form-group">
-                            <label class="govuk-label govuk-date-input__label" for="employercall-month">
-                              Month
-                            </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="employercall-month" name="employercall-month" type="text" inputmode="numeric">
-                          </div>
-                        </div>
-                        <div class="govuk-date-input__item">
-                          <div class="govuk-form-group">
-                            <label class="govuk-label govuk-date-input__label" for="employercall-year">
-                              Year
-                            </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="employercall-year" name="employercall-year" type="text" inputmode="numeric">
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </div>
+                  <label class="govuk-label govuk-label--s" for="width-20">
+                    Which number did you call?
+                  </label>
+                  <input class="govuk-input govuk-input--width-20" id="width-20" name="width20" type="text">
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-label--s" for="sort">
+                    Select a category
+                  </label>
+                  <!-- <div id="location-hint" class="govuk-hint">
+                    This can be different to where you went before
+                  </div> -->
+                  <select class="govuk-select" id="sort" name="sort">
+                    <option value="None" selected>None</option>
+                    <option value="Setting up DEO">Setting up DEO</option>
+                    <option value="DEO not received">DEO not received</option>
+                    <option value="Part payment received">Part payment received</option>
+                    <option value="Employee left the company">Employee left the company</option>
+                    <option value="Employer error">Employer error</option>                    
+                  </select>
+                </div>
 
                   <div class="govuk-form-group">
                     <h1 class="govuk-label-wrapper">
