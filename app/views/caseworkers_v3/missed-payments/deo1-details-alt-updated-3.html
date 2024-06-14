@@ -16,12 +16,12 @@ GOV.UK Prototype Kit
                     <ul class="govuk-tabs__list">
                         <li class="govuk-tabs__list-item ">
                             <a class="govuk-tabs__tab" href="#past-day">
-                                DEO details
+                                Payment details
                             </a>
                         </li>
                         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
                             <a class="govuk-tabs__tab" href="#past-week">
-                                DEO history
+                                DEO activity
                             </a>
                         </li>
                         <li class="govuk-tabs__list-item">
@@ -29,22 +29,15 @@ GOV.UK Prototype Kit
                                 Employer contacts
                             </a>
                         </li>
-                        <!--  <li class="govuk-tabs__list-item">
+                         <li class="govuk-tabs__list-item">
                         <a class="govuk-tabs__tab" href="#past-year">
-                          Past year
+                          Activity archive
                         </a>
-                      </li> -->
+                      </li>
                     </ul>
                     <div class="govuk-tabs__panel" id="past-day">
+                        <div class="govuk-heading-m">DEO payments</div>
                         <dl class="govuk-summary-list">
-                            <div class="govuk-summary-list__row">
-                                <dt class="govuk-summary-list__key">
-                                    Payroll frequency
-                                </dt>
-                                <dd class="govuk-summary-list__value">
-                                    Last working day of each month
-                                </dd>
-                            </div>
                             <div class="govuk-summary-list__row">
                                 <dt class="govuk-summary-list__key">
                                     DEO Start date
@@ -63,31 +56,7 @@ GOV.UK Prototype Kit
                             </div>
                             <div class="govuk-summary-list__row">
                                 <dt class="govuk-summary-list__key">
-                                    Date last payment deducted
-                                </dt>
-                                <dd class="govuk-summary-list__value">
-                                    30th September 2023
-                                </dd>
-                            </div>
-                            <div class="govuk-summary-list__row">
-                                <dt class="govuk-summary-list__key">
-                                    Amount deducted
-                                </dt>
-                                <dd class="govuk-summary-list__value">
-                                    £50
-                                </dd>
-                            </div>
-                            <div class="govuk-summary-list__row">
-                                <dt class="govuk-summary-list__key">
-                                    NET earnings - PAYE
-                                </dt>
-                                <dd class="govuk-summary-list__value">
-                                    £850
-                                </dd>
-                            </div>
-                            <div class="govuk-summary-list__row">
-                                <dt class="govuk-summary-list__key">
-                                    Date previous payment deducted
+                                    Date last payment received
                                 </dt>
                                 <dd class="govuk-summary-list__value">
                                     31st August 2023
@@ -95,10 +64,45 @@ GOV.UK Prototype Kit
                             </div>
                             <div class="govuk-summary-list__row">
                                 <dt class="govuk-summary-list__key">
-                                Previous amount deducted
+                                    Amount received
                                 </dt>
                                 <dd class="govuk-summary-list__value">
-                                    £100
+                                    £50
+                                </dd>
+                            </div>
+                        </dl>
+                        <div class="govuk-heading-m">RTI deductions</div>
+                        <dl class="govuk-summary-list">
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    Payroll frequency
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                   Weekly - last working day of each week
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    NET earnings - PAYE
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    £400 per week
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    Last CMS payment deducted
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    31st August 2023
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                Last CMS amount deducted
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    £50
                                 </dd>
                             </div>
                             <div class="govuk-summary-list__row">
@@ -106,7 +110,15 @@ GOV.UK Prototype Kit
                                     Previous NET earnings - PAYE
                                 </dt>
                                 <dd class="govuk-summary-list__value">
-                                    £1000
+                                    £400
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    Debt Management deductions
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    £0
                                 </dd>
                             </div>
                         </dl>
@@ -115,16 +127,17 @@ GOV.UK Prototype Kit
                     <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
                         <div class="govuk-summary-card">
                             <div class="govuk-summary-card__title-wrapper">
-                                <h2 class="govuk-summary-card__title">Contact 1</h2>
+                                <h2 class="govuk-summary-card__title">Zoe Burns &nbsp; <strong class="govuk-tag app-task-list__tag
+                                    ">Administrator</strong></h2>
                             </div>
                             <div class="govuk-summary-card__content">
                                 <dl class="govuk-summary-list">
                                     <div class="govuk-summary-list__row">
                                         <dt class="govuk-summary-list__key">
-                                            Name
+                                            Date added
                                         </dt>
                                         <dd class="govuk-summary-list__value">
-                                            Ishmail Hassan
+                                            21 May 2024
                                         </dd>
                                         <dd class="govuk-summary-list__actions">
 
@@ -135,7 +148,7 @@ GOV.UK Prototype Kit
                                             Email adress
                                         </dt>
                                         <dd class="govuk-summary-list__value">
-                                            ishmail.hassan@abcars.co.uk
+                                            zoe.burns@abcars.co.uk
                                         </dd>
                                         <dd class="govuk-summary-list__actions">
 
@@ -176,7 +189,7 @@ GOV.UK Prototype Kit
                                     </div>
                                     <div class="govuk-summary-list__row">
                                         <dt class="govuk-summary-list__key">
-                                            Are they a payroll provider?
+                                            Payroll provider
                                         </dt>
                                         <dd class="govuk-summary-list__value">
                                             No
@@ -187,7 +200,7 @@ GOV.UK Prototype Kit
                                     </div>
                                     <div class="govuk-summary-list__row">
                                         <dt class="govuk-summary-list__key">
-                                            What can we contact them about?
+                                            What they can help with
                                         </dt>
                                         <dd class="govuk-summary-list__value">
                                             Employee details
@@ -201,16 +214,17 @@ GOV.UK Prototype Kit
                         </div>
                         <div class="govuk-summary-card">
                             <div class="govuk-summary-card__title-wrapper">
-                                <h2 class="govuk-summary-card__title">Contact 2</h2>
+                                <h2 class="govuk-summary-card__title">Jackie Smith &nbsp; <strong class="govuk-tag app-task-list__tag govuk-tag--green
+                                    ">Standard</strong></h2>
                             </div>
                             <div class="govuk-summary-card__content">
                                 <dl class="govuk-summary-list">
                                     <div class="govuk-summary-list__row">
                                         <dt class="govuk-summary-list__key">
-                                            Name
+                                            Date added
                                         </dt>
                                         <dd class="govuk-summary-list__value">
-                                            Jackie Smith
+                                            13 March 2024
                                         </dd>
                                         <dd class="govuk-summary-list__actions">
 
@@ -262,7 +276,7 @@ GOV.UK Prototype Kit
                                     </div>
                                     <div class="govuk-summary-list__row">
                                         <dt class="govuk-summary-list__key">
-                                            Are they a payroll provider?
+                                            Payroll provider
                                         </dt>
                                         <dd class="govuk-summary-list__value">
                                             No
@@ -273,7 +287,7 @@ GOV.UK Prototype Kit
                                     </div>
                                     <div class="govuk-summary-list__row">
                                         <dt class="govuk-summary-list__key">
-                                            What can we contact them about?
+                                            What they can help with
                                         </dt>
                                         <dd class="govuk-summary-list__value">
                                             Payments
@@ -301,7 +315,7 @@ GOV.UK Prototype Kit
                                     <p class="govuk-caption-m">2 October 2023</p>
                                 </li>
                                 <li class="dwp-timeline__events--entry">
-                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action date</h2>
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
                                     <p class="govuk-caption-m govuk-!-margin-bottom-1">Follow up on 18 October 2023</p>
                                     <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="deo1-notes7.html"
                                       class="govuk-link">View
@@ -325,7 +339,7 @@ GOV.UK Prototype Kit
                                         <p class="govuk-caption-m">30 September 2023</p>
                                     </li>
                                     <li class="dwp-timeline__events--entry">
-                                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action date</h2>
+                                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
                                         <p class="govuk-caption-m govuk-!-margin-bottom-1">Follow up on 2 October 2023</p>
                                         <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="deo1-notes5.html"
                                                 class="govuk-link">View
@@ -347,7 +361,7 @@ GOV.UK Prototype Kit
                                         <p class="govuk-caption-m">30 September 2023</p>
                                     </li>
                                     <li class="dwp-timeline__events--entry">
-                                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action date</h2>
+                                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
                                         <p class="govuk-caption-m govuk-!-margin-bottom-1">Follow up on 1 September 2023</p>
                                         <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="deo1-notes3.html"
                                                 class="govuk-link">View
@@ -395,6 +409,86 @@ GOV.UK Prototype Kit
 
                     </div>
 
+                    <div class="govuk-tabs__panel" id="past-day">
+                        <h2 class="govuk-heading-m">DEO activity archive</h2>
+                        <div class="dwp-timeline">
+                            <ol class="dwp-timeline__events">
+                                <li class="dwp-timeline__events--entry">
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Missed payment</h2>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £50</p>
+                                    <p class="govuk-caption-m">30 September 2023</p>
+                                </li>
+                                <li class="dwp-timeline__events--entry">
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">Follow up on 2 October 2023</p>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="deo1-notes5.html"
+                                            class="govuk-link">View
+                                            notes</a></p>
+                                    <p class="govuk-caption-m">30 September 2023</p>
+                                </li>
+                                <li class="dwp-timeline__events--entry">
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">Date of call 30 September 2023</p>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="deo1-notes4.html"
+                                            class="govuk-link">View
+                                            notes</a></p>
+                                    <p class="govuk-caption-m">30 September 2023</p>
+                                </li>
+                                <li class="dwp-timeline__events--entry">
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Notification sent</h2>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">8205-Missed payment letter sent
+                                    </p>
+                                    <p class="govuk-caption-m">30 September 2023</p>
+                                </li>
+                                <li class="dwp-timeline__events--entry">
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">Follow up on 1 September 2023</p>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="deo1-notes3.html"
+                                            class="govuk-link">View
+                                            notes</a></p>
+                                    <p class="govuk-caption-m">31 August 2023</p>
+                                </li>
+                                <li class="dwp-timeline__events--entry">
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">Date of call 1 August 2023</p>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="deo1-notes2.html"
+                                            class="govuk-link">View
+                                            notes</a></p>
+                                    <p class="govuk-caption-m">1 August 2023</p>
+                                </li>
+                                <li class="dwp-timeline__events--entry">
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Missed payment</h2>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">No payment recevieved</p>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £0</p>
+                                    <p class="govuk-caption-m">31 July 2023</p>
+                                </li>
+                                <li class="dwp-timeline__events--entry">
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                                    <p class="govuk-caption-m">30 June 2023</p>
+                                </li>
+                                <li class="dwp-timeline__events--entry">
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">DEO start</h2>
+                                    <p class="govuk-caption-m">1 June 2023</p>
+                                </li>
+                                <li class="dwp-timeline__events--entry">
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1">Date of call 15 May 2023 </p>
+                                    <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="deo1-notes1.html"
+                                            class="govuk-link">View
+                                            notes</a></p>
+                                    <p class="govuk-caption-m">15 May 2023</p>
+                                </li>
+                                <li class="dwp-timeline__events--entry">
+                                    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">New DEO set up</h2>
+                                    <p class="govuk-caption-m">1 May 2023</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
                 </div> <!-- govuk-tabs -->
             </div> <!-- govuk-grid-column-two-thirds -->
             <div class="govuk-grid-column-one-quarter">
@@ -414,7 +508,7 @@ GOV.UK Prototype Kit
                     </li>
                     <hr class="govuk-section-break  govuk-section-break--m govuk-section-break--visible">
                     <li>
-                        <a class="govuk-link" href="#">Refer the employer to FIU</a>
+                        <a class="govuk-link" href="#">Send an email to the employer</a>
                     </li>
                     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
                     <li>
