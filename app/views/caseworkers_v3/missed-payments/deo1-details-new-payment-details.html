@@ -56,17 +56,20 @@ GOV.UK Prototype Kit
                             </a>
                         </li>
                         <li class="dwp-side-navigation__item">
-                            <a id="s-item-2" href="deo1-details-new-payment-deo-activity.html" class="dwp-side-navigation__link">
+                            <a id="s-item-2" href="deo1-details-new-payment-deo-activity.html"
+                                class="dwp-side-navigation__link">
                                 DEO activity
                             </a>
                         </li>
                         <li class="dwp-side-navigation__item">
-                            <a id="s-item-3" href="deo1-details-new-payment-deo-activity-archive.html" class="dwp-side-navigation__link">
+                            <a id="s-item-3" href="deo1-details-new-payment-deo-activity-archive.html"
+                                class="dwp-side-navigation__link">
                                 DEO activity archive
                             </a>
                         </li>
                         <li class="dwp-side-navigation__item">
-                            <a id="s-item-4" href="deo1-details-new-employer-contacts.html" class="dwp-side-navigation__link">
+                            <a id="s-item-4" href="deo1-details-new-employer-contacts.html"
+                                class="dwp-side-navigation__link">
                                 Employer contacts
                             </a>
                         </li>
@@ -112,100 +115,139 @@ GOV.UK Prototype Kit
 
             <div class="govuk-grid-column-three-quarters">
                 <h1 class="govuk-heading-l">Payment details</h1>
-                <div class="govuk-heading-m">DEO payments</div>
-                <dl class="govuk-summary-list">
-                    <div class="govuk-summary-list__row">
-                        <dt class="govuk-summary-list__key">
-                            DEO Start date
-                        </dt>
-                        <dd class="govuk-summary-list__value">
-                            31st March 2023
-                        </dd>
-                    </div>
-                    <div class="govuk-summary-list__row">
-                        <dt class="govuk-summary-list__key">
-                            DEO payment amount
-                        </dt>
-                        <dd class="govuk-summary-list__value">
-                            £100 per month
-                        </dd>
-                    </div>
-                    <div class="govuk-summary-list__row">
-                        <dt class="govuk-summary-list__key">
-                            Date last payment received
-                        </dt>
-                        <dd class="govuk-summary-list__value">
-                            31st August 2023
-                        </dd>
-                    </div>
-                    <div class="govuk-summary-list__row">
-                        <dt class="govuk-summary-list__key">
-                            Amount received
-                        </dt>
-                        <dd class="govuk-summary-list__value">
-                            £50
-                        </dd>
-                    </div>
-                </dl>
 
-                <div class="govuk-heading-m">RTI deductions</div>
-                <dl class="govuk-summary-list">
-                    <div class="govuk-summary-list__row">
-                        <dt class="govuk-summary-list__key">
-                            Payroll frequency
-                        </dt>
-                        <dd class="govuk-summary-list__value">
-                            Weekly - last working day of each week
-                        </dd>
-                    </div>
-                    <div class="govuk-summary-list__row">
-                        <dt class="govuk-summary-list__key">
-                            NET earnings - PAYE
-                        </dt>
-                        <dd class="govuk-summary-list__value">
-                            £400 per week
-                        </dd>
-                    </div>
-                    <div class="govuk-summary-list__row">
-                        <dt class="govuk-summary-list__key">
-                            Last CMS payment deducted
-                        </dt>
-                        <dd class="govuk-summary-list__value">
-                            31st August 2023
-                        </dd>
-                    </div>
-                    <div class="govuk-summary-list__row">
-                        <dt class="govuk-summary-list__key">
-                            Last CMS amount deducted
-                        </dt>
-                        <dd class="govuk-summary-list__value">
-                            £50
-                        </dd>
-                    </div>
-                    <div class="govuk-summary-list__row">
-                        <dt class="govuk-summary-list__key">
-                            Previous NET earnings - PAYE
-                        </dt>
-                        <dd class="govuk-summary-list__value">
-                            £400
-                        </dd>
-                    </div>
-                    <div class="govuk-summary-list__row">
-                        <dt class="govuk-summary-list__key">
-                            Debt Management deductions
-                        </dt>
-                        <dd class="govuk-summary-list__value">
-                            £0
-                        </dd>
-                    </div>
-                </dl>
-            </div>
+                <div class="govuk-tabs" data-module="govuk-tabs">
+                    <h2 class="govuk-tabs__title">
+                        Contents
+                    </h2>
+                    <ul class="govuk-tabs__list">
+                        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                            <a class="govuk-tabs__tab" href="#past-day">
+                                DEO payments
+                            </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                            <a class="govuk-tabs__tab" href="#past-week">
+                                RTI deductions
+                            </a>
+                        </li>
+                        <!--  <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#past-month">
+                      Past month
+                    </a>
+                  </li>
+                  <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#past-year">
+                      Past year
+                    </a>
+                  </li> -->
+                    </ul>
+                    <div class="govuk-tabs__panel" id="past-day">
+                        <h2 class="govuk-heading-m">DEO payments</h2>
+                        <dl class="govuk-summary-list">
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    DEO Start date
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    31st March 2023
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    DEO payment amount
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    £100 per month
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    Date last payment received
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    31st August 2023
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    Amount received
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    £50
+                                </dd>
+                            </div>
+                        </dl>
+                    </div> <!-- govuk-tabs__panel -->
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+                        <h2 class="govuk-heading-m">RTI deductions</h2>
+                        <dl class="govuk-summary-list">
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    Payroll frequency
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    Weekly - last working day of each week
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    NET earnings - PAYE
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    £400 per week
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    Last CMS payment deducted
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    31st August 2023
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    Last CMS amount deducted
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    £50
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    Previous NET earnings - PAYE
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    £400
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    Debt Management deductions
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    £0
+                                </dd>
+                            </div>
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                    Pension deductions
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    £25
+                                </dd>
+                            </div>
+                        </dl>
+                    </div> <!-- govuk-tabs__panel -->
+                    
+                </div> <!-- govuk-tabs -->
 
-        </div> <!-- govuk-grid-column-three-quarters -->
+            </div> <!-- govuk-grid-column-three-quarters -->
 
-</div> <!-- govuk-grid-row -->
+        </div> <!-- govuk-grid-row -->
 
 
-</main>
+    </main>
 </div> <!-- govuk-width-container -->
 {% endblock %}
