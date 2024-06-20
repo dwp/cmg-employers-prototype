@@ -12,33 +12,6 @@ GOV.UK Prototype Kit
             <div class="govuk-grid-column-one-quarter">
 
                 <h2 class="govuk-heading-s">Page navigation</h2>
-                <!-- <ul class="govuk-list">
-                    <li>
-                        <a class="govuk-link" href="employer-call1.html">Make a call to the employer</a>
-                    </li>
-                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-                    <li>
-                        <a class="govuk-link" href="nad1.html">Set a next action date</a>
-                    </li>
-                    <hr class="govuk-section-break  govuk-section-break--m govuk-section-break--visible">
-                    <li>
-                        <a class="govuk-link" href="send-notification.html">Send a letter</a>
-                    </li>
-                    <hr class="govuk-section-break  govuk-section-break--m govuk-section-break--visible">
-                    <li>
-                        <a class="govuk-link" href="#">Send an email to the employer</a>
-                    </li>
-                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-                    <li>
-                        <a class="govuk-link" href="close-task.html">Close this task</a>
-                    </li>
-                    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-                    <li>
-                        <a class="govuk-link" href="view-tasks.html">Go back to tasks list</a>
-                    </li>
-
-                </ul> -->
-
                 <button class="dwp-side-navigation__button" data-module="dwp-side-navigation"
                     data-target="dwp-side-navigation-panel" data-label-hide="Hide navigation"
                     data-label-show="Show navigation" aria-expanded="false">
@@ -51,12 +24,14 @@ GOV.UK Prototype Kit
                     aria-label="Side" role="navigation">
                     <ul class="dwp-side-navigation__list">
                         <li class="dwp-side-navigation__item">
-                            <a id="s-item-1" href="deo1-details-new-payment-details.html" class="dwp-side-navigation__link">
+                            <a id="s-item-1" href="deo1-details-new-payment-details.html"
+                                class="dwp-side-navigation__link">
                                 Payment details
                             </a>
                         </li>
                         <li class="dwp-side-navigation__item">
-                            <a id="s-item-2" href="deo1-details-new-payment-deo-activity.html" class="dwp-side-navigation__link">
+                            <a id="s-item-2" href="deo1-details-new-payment-deo-activity.html"
+                                class="dwp-side-navigation__link">
                                 DEO activity
                             </a>
                         </li>
@@ -66,18 +41,20 @@ GOV.UK Prototype Kit
                             </a>
                         </li>
                         <li class="dwp-side-navigation__item">
-                            <a id="s-item-4" href="deo1-details-new-employer-contacts.html" class="dwp-side-navigation__link">
+                            <a id="s-item-4" href="deo1-details-new-employer-contacts.html"
+                                class="dwp-side-navigation__link">
                                 Employer contacts
                             </a>
                         </li>
-                        <!-- <li class="dwp-side-navigation__item">
-                            <a id="s-item-5" href="#s-item-5" class="dwp-side-navigation__link">
-                                Item 5
+                        <li class="dwp-side-navigation__item">
+                            <a id="s-item-5" href="view-tasks.html" class="dwp-side-navigation__link">
+                                Go back to tasks list
                             </a>
-                        </li> -->
+                        </li>
                     </ul>
                 </nav>
-                <h2 class="govuk-heading-s">What do you want to do next?</h2>
+
+                <h2 class="govuk-heading-s">Select the next action</h2>
                 <nav data-module="dwp-side-navigation-panel" class="dwp-side-navigation dwp-side-navigation--mobile"
                     aria-label="Side" role="navigation">
                     <ul class="dwp-side-navigation__list">
@@ -101,223 +78,365 @@ GOV.UK Prototype Kit
                                 Close this task
                             </a>
                         </li>
-                        <li class="dwp-side-navigation__item">
-                            <a id="s-item-5" href="view-tasks.html" class="dwp-side-navigation__link">
-                                Go back to tasks list
-                            </a>
-                        </li>
                     </ul>
                 </nav>
+                <form action="#" method="post" novalidate="">
+                    <div class="govuk-form-group">
+                        <h2 class="govuk-heading-m">Filters</h2>
+                        <div id="filter-hint" class="govuk-hint moj-search__hint ">
+                            Select one or more of the filters from the list and apply.
+                        </div>
+                        <fieldset class="govuk-fieldset">
+                            <h3 class="govuk-heading-s">
+                                Activities
+                            </h3>
+                            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox"
+                                    checked="true" value="all-referrals">
+                                    <label class="govuk-label govuk-checkboxes__label" for="status">
+                                        All activities
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox"
+                                        value="active-referrals">
+                                    <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                                        Call to employer
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status-3" name="status" type="checkbox"
+                                         value="pending-referrals">
+                                    <label class="govuk-label govuk-checkboxes__label" for="status-3">
+                                        Next action due date
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status-4" name="status" type="checkbox"
+                                        value="returned-referrals">
+                                    <label class="govuk-label govuk-checkboxes__label" for="status-4">
+                                        Missed payment
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox"
+                                            value="completed-referrals">
+                                        <label class="govuk-label govuk-checkboxes__label" for="status-5">
+                                            Payment received
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                            <legend class="govuk-heading-s">
+                                Activity date
+                            </legend>
+                            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox"
+                                    checked="true" value="all">
+                                    <label class="govuk-label govuk-checkboxes__label" for="status">
+                                        All dates
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox"
+                                        value="24">
+                                    <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                                        Previous 24 hours
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status-3" name="status" type="checkbox"
+                                        value="MOD">
+                                    <label class="govuk-label govuk-checkboxes__label" for="status-3">
+                                        Last 7 days
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status-4" name="status" type="checkbox"
+                                        value="DfT">
+                                    <label class="govuk-label govuk-checkboxes__label" for="status-4">
+                                        Last 30 days
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox"
+                                            value="hmrc">
+                                        <label class="govuk-label govuk-checkboxes__label" for="status">
+                                            Last 60 days
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox"
+                                            value="hmrc">
+                                        <label class="govuk-label govuk-checkboxes__label" for="status">
+                                            Custom dates
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <br>
+
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+
+                            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox"
+                                        value="hmrc">
+
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox"
+                                        value="employment-tribunal">
+
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status-3" name="status" type="checkbox"
+                                        value="MOD">
+
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="status-4" name="status" type="checkbox"
+                                        value="DfT">
+
+                                </div>
+
+                            </div>
+                        </fieldset><br>
+                        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                            Apply filters
+                        </button>
+                        <p>
+                            <a href="#">Clear filters</a>
+                        </p>
+                    </div>
+                </form>
             </div> <!-- govuk-grid-column-one-quarter -->
             <div class="govuk-grid-column-three-quarters">
-            <h1 class="govuk-heading-l">DEO activity archive</h1>
-            <div class="dwp-timeline">
-                <ol class="dwp-timeline__events">
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">17 May 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">10 May 2024 - 14:15</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>                        
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">10 May 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £50</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">8 May 2024 - 14:30</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Notification sent</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">8205-Missed part payment letter sent</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">8 May 2024 - 14:15</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>                        
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">7 May 2024 - 11:55</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>                        
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">7 May 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Missed payment</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Part payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £50</p>                   
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">30 April 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">23 April 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">16 April 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">9 April 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">7 April 2024 - 12:45</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">2 April 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">2 April 2024</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><strong class="govuk-tag govuk-tag--red">NADD-due</strong></p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">28 March 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">27 March 2024 - 16:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Follow up on 2 April 2024</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>                       
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">27 March 2024 - 15:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>                        
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">26 March 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Missed payment</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £0</p>                       
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">19 March 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">12 March 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">5 March 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">28 February 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">21 February 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £150</p>                        
-                    </li>                    
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">21 February 2024 - 09:45
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">21 February 2024</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><strong
-                                class="govuk-tag govuk-tag--red"> NADD-due</strong></p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">14 February 2024 - 16:15</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Letter sent</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">8205-Missed part payment letter sent </p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">14 Fberuary 2024 - 16:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Follow up on 21 June 2023</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>                      
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">14 February 2024 - 15:30</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>                        
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>
+
+                <h1 class="govuk-heading-l">DEO activity archive</h1>
+                <div class="dwp-timeline">
+                    <ol class="dwp-timeline__events">
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">17 May 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
                         </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">14 February 2024</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Missed payment</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Part payment recevieved</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £25</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">7 February 2024 - 09:00</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>                        
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">1 February 2024</p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">DEO start</h2>                       
-                    </li>
-                    <li class="dwp-timeline__events--entry">
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1">15 January 2024 - 13:50 </p>
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
-                        <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#"
-                                class="govuk-link">View notes</a></p>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">10 May 2024 - 14:15</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
                         </li>
-                    <li class="dwp-timeline__events--entry">
-                        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">New DEO set up</h2>
-                        <p class="govuk-caption-m">1 January 2024</p>
-                    </li>
-                </ol>
-            </div>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">10 May 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £50</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">8 May 2024 - 14:30</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Notification sent</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">8205-Missed part payment letter sent</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">8 May 2024 - 14:15</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">7 May 2024 - 11:55</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">7 May 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Missed payment</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Part payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £50</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">30 April 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">23 April 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">16 April 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">9 April 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">7 April 2024 - 12:45</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">2 April 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">2 April 2024</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><strong
+                                    class="govuk-tag govuk-tag--red">NADD-due</strong></p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">28 March 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">27 March 2024 - 16:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Follow up on 2 April 2024</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">27 March 2024 - 15:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">26 March 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Missed payment</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £0</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">19 March 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">12 March 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">5 March 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">28 February 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">21 February 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £150</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">21 February 2024 - 09:45
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">21 February 2024</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><strong class="govuk-tag govuk-tag--red">
+                                    NADD-due</strong></p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">14 February 2024 - 16:15</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Letter sent</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">8205-Missed part payment letter sent </p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">14 Fberuary 2024 - 16:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Next action due date</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Follow up on 21 June 2023</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">14 February 2024 - 15:30</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">14 February 2024</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Missed payment</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Part payment recevieved</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £25</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">7 February 2024 - 09:00</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Payment received</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment from AB Cars Ltd</p>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">Payment amount: £100</p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">1 February 2024</p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">DEO start</h2>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1">15 January 2024 - 13:50 </p>
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Call to employer</h2>
+                            <p class="govuk-caption-m govuk-!-margin-bottom-1"><a href="#" class="govuk-link">View
+                                    notes</a></p>
+                        </li>
+                        <li class="dwp-timeline__events--entry">
+                            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">New DEO set up</h2>
+                            <p class="govuk-caption-m">1 January 2024</p>
+                        </li>
+                    </ol>
+                </div>
 
-        </div> <!-- govuk-grid-column-three-quarters -->
+            </div> <!-- govuk-grid-column-three-quarters -->
 
-</div> <!-- govuk-grid-row -->
+        </div> <!-- govuk-grid-row -->
 
 
-</main>
+    </main>
 </div> <!-- govuk-width-container -->
 {% endblock %}
