@@ -1,0 +1,41 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <!-- <a href="javascript:history.back()" class="govuk-back-link">Back</a> -->
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Do you want to remove the correspondence address?</h1>
+
+        <form action="confirmation-page-correspondence-remove.html" method="get">
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Correspondence address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">{{data['siebel-v4-correspondence-address-line-1-change']}} </br>
+                  {{data['siebel-v4-correspondence-address-line-2-change']}}</br>
+                  {{data['siebel-v4-correspondence-address-line-3-change']}}</br>
+                  {{data['siebel-v4-correspondence-address-town-change']}}</br>
+                  {{data['siebel-v4-correspondence-address-postcode-change']}}</p>
+              </dd>
+            </div>
+          </dl>
+
+          <button class="govuk-button govuk-button--warning" data-module="govuk-button">
+            Remove address
+          </button>
+
+        </form>
+        <a href="employer-details-updated-2.html">Cancel</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
