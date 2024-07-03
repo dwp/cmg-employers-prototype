@@ -1,0 +1,71 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="cya-correspondence-change.html" method="get">
+
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              <h1 class="govuk-fieldset__heading-l">
+                Correspondence address
+              </h1>
+            </legend>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="siebel-v4-correspondence-address-line-1-change">
+                Address line 1
+              </label>
+              <input class="govuk-input" id="siebel-v4-correspondence-address-line-1-change" name="siebel-v4-correspondence-address-line-1-change"
+                type="text" autocomplete="" value="{{data['siebel-v4-correspondence-address-line-1']}}">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="siebel-v4-correspondence-address-line-2-change">
+                Address line 2 (optional)
+              </label>
+              <input class="govuk-input" id="siebel-v4-correspondence-address-line-2-change" name="siebel-v4-correspondence-address-line-2-change"
+                type="text" autocomplete="" value="{{data['siebel-v4-correspondence-address-line-2']}}">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="siebel-v4-correspondence-address-line-3-change">
+                Address line 3 (optional)
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="siebel-v4-correspondence-address-line-3-change"
+                name="siebel-v4-correspondence-address-line-3-change" type="text" value="{{data['siebel-v4-correspondence-address-line-3']}}">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="siebel-v4-correspondence-address-town-change">
+                Town or city
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="siebel-v4-correspondence-address-town-change"
+                name="siebel-v4-correspondence-address-town-change" type="text" autocomplete="" value="{{data['siebel-v4-correspondence-address-town']}}">
+            </div>
+            <!-- <div class="govuk-form-group">
+              <label class="govuk-label" for="address-county">
+                County (optional)
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+            </div> -->
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="siebel-v4-correspondence-address-postcode-change">
+                Postcode
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="siebel-v4-correspondence-address-postcode-change"
+                name="siebel-v4-correspondence-address-postcode-change" type="text" autocomplete="postal-code" value="{{data['siebel-v4-correspondence-address-postcode']}}">
+            </div>
+          </fieldset>
+
+          <input type="submit" class="govuk-button" value="Save and continue" id="submit">
+        </form>
+        <a href="employer-details.html">Cancel</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
