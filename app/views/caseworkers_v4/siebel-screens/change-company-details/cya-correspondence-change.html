@@ -1,0 +1,49 @@
+{% extends "layout_dwp_unbranded.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <!-- <a href="javascript:history.back()" class="govuk-back-link">Back</a> -->
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <form action="confirmation-page-change.html" method="get">
+
+            <h2 class="govuk-heading-l">Check your answers</h2>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Correspondence address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">
+                    {{data['siebel-v4-correspondence-address-line-1-change']}}</br>
+                    {{data['siebel-v4-correspondence-address-line-2-change']}}</br>
+                    {{data['siebel-v4-correspondence-address-line-3-change']}}</br>
+                    {{data['siebel-v4-correspondence-address-town-change']}}</br>
+                    {{data['siebel-v4-correspondence-address-postcode-change']}}
+                  </p>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="change-company-details.html">
+                    Change<span class="govuk-visually-hidden"> address</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+           
+            <div class="govuk-form-group">
+              <button class="govuk-button" data-module="govuk-button">
+                Confirm and save these details
+              </button> 
+            </div>
+          </form>
+          <a href="employer-details.html">Cancel</a>
+        </div>
+      </div>
+    </main>
+</div>
+
+{% endblock %}
