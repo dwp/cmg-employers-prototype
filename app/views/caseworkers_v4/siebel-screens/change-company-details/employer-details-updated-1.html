@@ -73,12 +73,21 @@
                   Correspondence address
                 </dt>
                 <dd class="govuk-summary-list__value">
-  
+                  {{data['siebel-v4-correspondence-address-line-1']}} </br>
+                  {{data['siebel-v4-correspondence-address-line-2']}}</br>
+                  {{data['siebel-v4-correspondence-address-line-3']}}</br>
+                  {{data['siebel-v4-correspondence-address-town']}}</br>
+                  {{data['siebel-v4-correspondence-address-postcode']}}
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="correspondence-address.html">
-                    Add<span class="govuk-visually-hidden"> postal address</span>
-                  </a>
+                  <ul class="govuk-summary-list__actions-list">
+                    <li class="govuk-summary-list__actions-list-item">
+                      <a class="govuk-link" href="correspondence-address-change.html">Change<span class="govuk-visually-hidden"> contact details</span></a>
+                    </li>
+                    <li class="govuk-summary-list__actions-list-item">
+                      <a class="govuk-link" href="#">Delete<span class="govuk-visually-hidden"> contact details</span></a>
+                    </li>
+                  </ul>
                 </dd>
               </div>
             </dl>
