@@ -4,306 +4,333 @@
 Manage Employer Deductions
 {% endblock %}
 
+{% block beforeContent %}
+<nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/index-ref.html">Reference files</a>
+      </li>
+      <!-- <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index-registration-a1.html">Screens for A1</a>
+      </li> -->
+    </ol>
+  </nav>
+{% endblock %}
+
 {% block content %}
+
 <div class="govuk-width-container">
-    <a href="index.html" class="govuk-back-link">Back to main Home page</a>
-    <h1 class="govuk-heading-l">
-        Manage Employer Deductions (MED) reference files for Jira stories
-    </h1>
-    <div class="govuk-tabs" data-module="govuk-tabs">
-        <h2 class="govuk-tabs__title">
-            Contents
-        </h2>
-        <ul class="govuk-tabs__list">
-            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                <a class="govuk-tabs__tab" href="#past-day">
-                    'A' journeys
-                </a>
-            </li>
-            <li class="govuk-tabs__list-item">
-                <a class="govuk-tabs__tab" href="#past-week">
-                    'B' journeys
-                </a>
-            </li>
-            <li class="govuk-tabs__list-item">
-                <a class="govuk-tabs__tab" href="#past-month">
-                    'C' journeys
-                </a>
-            </li>
-            <li class="govuk-tabs__list-item">
-                <a class="govuk-tabs__tab" href="#past-year">
-                    May 'release' journeys
-                </a>
-            </li>
-        </ul>
-        <div class="govuk-tabs__panel" id="past-day">
-            <h2 class="govuk-heading-l">'A' journeys - Registration authentication</h2>
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+        <!-- <a href="index.html" class="govuk-back-link">Back to main Home page</a> -->
+        <h1 class="govuk-heading-l">
+                Manage Employer Deductions (MED) reference files for Jira stories
+        </h1>
+        <div class="govuk-tabs" data-module="govuk-tabs">
+                <h2 class="govuk-tabs__title">
+                        Contents
+                </h2>
+                <ul class="govuk-tabs__list">
+                        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                                <a class="govuk-tabs__tab" href="#past-day">
+                                        'A' journeys
+                                </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                                <a class="govuk-tabs__tab" href="#past-week">
+                                        'B' journeys
+                                </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                                <a class="govuk-tabs__tab" href="#past-month">
+                                        'C' journeys
+                                </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                                <a class="govuk-tabs__tab" href="#past-year">
+                                        May 'release' journeys
+                                </a>
+                        </li>
+                </ul>
+                <div class="govuk-tabs__panel" id="past-day">
+                        <h2 class="govuk-heading-l">'A' journeys - Registration authentication</h2>
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
 
-            <p>Registration journey (A1).</p>
-            <p>Standard sign in journey when the employer is not on the whitelist.</p>
-            <p class="govuk-body"><a href="reference_files/registration_a1/index-registration-a1.html"
-                    class="govuk-link">View files</a></p>
+                        <p>Registration journey (A1).</p>
+                        <p>Standard sign in journey when the employer is not on the whitelist.</p>
+                        <p class="govuk-body"><a href="reference_files/registration_a1/index-registration-a1.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
-            <p>Registration journey (A5).</p>
-            <p>Issues with the one-time passcode. Passcode expired and not recevied due to incorrect email address.</p>
-            <p class="govuk-body"><a href="reference_files/registration_a5/index-registration-a5.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
+                        <p>Registration journey (A5).</p>
+                        <p>Issues with the one-time passcode. Passcode expired and not recevied due to incorrect email
+                                address.</p>
+                        <p class="govuk-body"><a href="reference_files/registration_a5/index-registration-a5.html"
+                                        class="govuk-link">View files</a></p>
 
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
-            <p>Registration journey (A4).</p>
-            <p>Standard sign in once a contact has registered, using email and password.</p>
-            <p class="govuk-body"><a href="reference_files/registration_a4/index-registration-a4.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
+                        <p>Registration journey (A4).</p>
+                        <p>Standard sign in once a contact has registered, using email and password.</p>
+                        <p class="govuk-body"><a href="reference_files/registration_a4/index-registration-a4.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
-            <p>Registration journey (A3).</p>
-            <p>Passsword reset journey.</p>
-            <p class="govuk-body"><a href="reference_files/registration_a3/index-registration-a3.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
+                        <p>Registration journey (A3).</p>
+                        <p>Passsword reset journey.</p>
+                        <p class="govuk-body"><a href="reference_files/registration_a3/index-registration-a3.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
-            <p>Registration journey (A231).</p>
-            <p>Second person tries to register and is told to contact the Admin user for the account.</p>
-            <p class="govuk-body"><a href="reference_files/registration_a231/index-registration-a231.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
+                        <p>Registration journey (A231).</p>
+                        <p>Second person tries to register and is told to contact the Admin user for the account.</p>
+                        <p class="govuk-body"><a href="reference_files/registration_a231/index-registration-a231.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
-            <p>Registration journey (A22).</p>
-            <p>First person registers and the email is held in TCMO.</p>
-            <p class="govuk-body"><a href="reference_files/registration_a22/index-registration-a22.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
+                        <p>Registration journey (A22).</p>
+                        <p>First person registers and the email is held in TCMO.</p>
+                        <p class="govuk-body"><a href="reference_files/registration_a22/index-registration-a22.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
-            <p>Registration journey (A211).</p>
-            <p>First person registers and the email is not held in TCMO.</p>
-            <p class="govuk-body"><a href="reference_files/registration_a211/index-registration-a211.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v1</h2>
+                        <p>Registration journey (A211).</p>
+                        <p>First person registers and the email is not held in TCMO.</p>
+                        <p class="govuk-body"><a href="reference_files/registration_a211/index-registration-a211.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v0</h2>
-            <p>Tactical Registration journey.</p>
-            <p class="govuk-body"><a href="reference_files/registration_2/index-registration-v1.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Authenticate v0</h2>
+                        <p>Tactical Registration journey.</p>
+                        <p class="govuk-body"><a href="reference_files/registration_2/index-registration-v1.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-        </div>
+                </div>
 
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
-            <h2 class="govuk-heading-l">'B' journeys - Registration authentication - Employer Portal view</h2>
+                <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+                        <h2 class="govuk-heading-l">'B' journeys - Registration authentication - Employer Portal view
+                        </h2>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
-            <p>Registration journey (B7).</p>
-            <p>Adminstrator makes changes to a contacts details which activates sending an OTP & Administrator resends an  OTP for a contact</p>
-            <p class="govuk-body"><a href="reference_files/employer_admin_b7/index-registration-b7.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
+                        <p>Registration journey (B7).</p>
+                        <p>Adminstrator makes changes to a contacts details which activates sending an OTP &
+                                Administrator resends an OTP for a contact</p>
+                        <p class="govuk-body"><a href="reference_files/employer_admin_b7/index-registration-b7.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
-            <p>Registration journey (B5).</p>
-            <p>Admin level contact creates, edits and deletes a Department contact - in 3 parts</p>
-            <p class="govuk-body"><a href="reference_files/employer_admin_b5/index-registration-b5.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
+                        <p>Registration journey (B5).</p>
+                        <p>Admin level contact creates, edits and deletes a Department contact - in 3 parts</p>
+                        <p class="govuk-body"><a href="reference_files/employer_admin_b5/index-registration-b5.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
-            <p>Registration journey (B4).</p>
-            <p>Standard level contact views and edits their own details</p>
-            <p class="govuk-body"><a href="reference_files/employer_admin_b4/index-registration-b4.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
+                        <p>Registration journey (B4).</p>
+                        <p>Standard level contact views and edits their own details</p>
+                        <p class="govuk-body"><a href="reference_files/employer_admin_b4/index-registration-b4.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
-            <p>Registration journey (B32).</p>
-            <p>Administrator deletes an exisitng Individual contact account</p>
-            <p class="govuk-body"><a href="reference_files/employer_admin_b32/index-registration-b32.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
+                        <p>Registration journey (B32).</p>
+                        <p>Administrator deletes an exisitng Individual contact account</p>
+                        <p class="govuk-body"><a href="reference_files/employer_admin_b32/index-registration-b32.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
-            <p>Registration journey (B31).</p>
-            <p>Administrator makes changes/edits to an exisitng Individual contact account</p>
-            <p class="govuk-body"><a href="reference_files/employer_admin_b31/index-registration-b31.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
+                        <p>Registration journey (B31).</p>
+                        <p>Administrator makes changes/edits to an exisitng Individual contact account</p>
+                        <p class="govuk-body"><a href="reference_files/employer_admin_b31/index-registration-b31.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
-            <p>Registration journey (B2).</p>
-            <p>Add a new employer contact, email already held as the user has been added to another employer account</p>
-            <p class="govuk-body"><a href="reference_files/employer_admin_b2/index-registration-b2.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
+                        <p>Registration journey (B2).</p>
+                        <p>Add a new employer contact, email already held as the user has been added to another employer
+                                account</p>
+                        <p class="govuk-body"><a href="reference_files/employer_admin_b2/index-registration-b2.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
-            <p>Registration journey (B1).</p>
-            <p>Add a new employer contact, no email held</p>
-            <p class="govuk-body"><a href="reference_files/employer_admin_b1/index-registration-b1.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1</h2>
+                        <p>Registration journey (B1).</p>
+                        <p>Add a new employer contact, no email held</p>
+                        <p class="govuk-body"><a href="reference_files/employer_admin_b1/index-registration-b1.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-        </div>
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                </div>
 
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
-            <h2 class="govuk-heading-l">'C' journeys for creating and adding contacts to an employer account - Agent
-                view</h2>
+                <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+                        <h2 class="govuk-heading-l">'C' journeys for creating and adding contacts to an employer account
+                                - Agent
+                                view</h2>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
-            <p>Registration journey (C32).</p>
-            <p>Agent edits and deletes a 'Department' contact on an employer account</p>
-            <p class="govuk-body"><a href="reference_files/agent_admin_c32_v1-1/index-registration-c32.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
+                        <p>Registration journey (C32).</p>
+                        <p>Agent edits and deletes a 'Department' contact on an employer account</p>
+                        <p class="govuk-body"><a href="reference_files/agent_admin_c32_v1-1/index-registration-c32.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
-            <p>Registration journey (C31).</p>
-            <p>Agent edits and deletes an 'Individual' contact on an employer account</p>
-            <p class="govuk-body"><a href="reference_files/agent_admin_c31_v1-1/index-registration-c31.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
+                        <p>Registration journey (C31).</p>
+                        <p>Agent edits and deletes an 'Individual' contact on an employer account</p>
+                        <p class="govuk-body"><a href="reference_files/agent_admin_c31_v1-1/index-registration-c31.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
-            <p>Registration journey (C22).</p>
-            <p>Agent adds an 'Individual' contact to an employer account migrated from Siebel</p>
-            <p class="govuk-body"><a href="reference_files/agent_admin_c22_v1-1/index-registration-c22.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
+                        <p>Registration journey (C22).</p>
+                        <p>Agent adds an 'Individual' contact to an employer account migrated from Siebel</p>
+                        <p class="govuk-body"><a href="reference_files/agent_admin_c22_v1-1/index-registration-c22.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
-            <p>Registration journey (C21).</p>
-            <p>Agent adds a 'Department' contact to an employer account migrated from Siebel</p>
-            <p class="govuk-body"><a href="reference_files/agent_admin_c21_v1-1/index-registration-c21.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
+                        <p>Registration journey (C21).</p>
+                        <p>Agent adds a 'Department' contact to an employer account migrated from Siebel</p>
+                        <p class="govuk-body"><a href="reference_files/agent_admin_c21_v1-1/index-registration-c21.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
-            <p>Registration journey (C12).</p>
-            <p>Agent adds a new 'Department' contact to an employer account</p>
-            <p class="govuk-body"><a href="reference_files/agent_admin_c12_v1-1/index-registration-c12.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
+                        <p>Registration journey (C12).</p>
+                        <p>Agent adds a new 'Department' contact to an employer account</p>
+                        <p class="govuk-body"><a href="reference_files/agent_admin_c12_v1-1/index-registration-c12.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
-            <p>Registration journey (C11).</p>
-            <p>Agent adds a new 'Individual' contact to an employer account</p>
-            <p class="govuk-body"><a href="reference_files/agent_admin_c11_v1-1/index-registration-c11.html"
-                    class="govuk-link">View files</a></p>
+                        <h2 class="govuk-heading-s">Reference files to support Jira stories for Registation v1.1</h2>
+                        <p>Registration journey (C11).</p>
+                        <p>Agent adds a new 'Individual' contact to an employer account</p>
+                        <p class="govuk-body"><a href="reference_files/agent_admin_c11_v1-1/index-registration-c11.html"
+                                        class="govuk-link">View files</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <h2 class="govuk-heading-m"><a href="index-ref-files-archived.html">View archived Reference Files</a>
-            </h2>
+                        <h2 class="govuk-heading-m"><a href="index-ref-files-archived.html">View archived Reference
+                                        Files</a>
+                        </h2>
 
-        </div>
+                </div>
 
-        <div class="govuk-tabs__panel" id="past-year">
-            <h2 class="govuk-heading-l">May 'release' - Registration authentication</h2>
+                <div class="govuk-tabs__panel" id="past-year">
+                        <h2 class="govuk-heading-l">May 'release' - Registration authentication</h2>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <p>Employer self-serve registation and on 'Whitelist' -  Standard contact</p>
-            <h3 class="govuk-heading-s">User screen flow</h3>
-            <p><a href="/public/pdfs/may-release-whitelist-contacts-standard-user.pdf" class="govuk-link">Screenflow (opens a pdf
-                    file)</a></p>
+                        <p>Employer self-serve registation and on 'Whitelist' - Standard contact</p>
+                        <h3 class="govuk-heading-s">User screen flow</h3>
+                        <p><a href="/public/pdfs/may-release-whitelist-contacts-standard-user.pdf"
+                                        class="govuk-link">Screenflow (opens a pdf
+                                        file)</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <p>Employer self-serve registation and on 'Whitelist' - Administator contact</p>
-            <h3 class="govuk-heading-s">User screen flow</h3>
-            <p><a href="/public/pdfs/may-release-whitelist-contacts.pdf" class="govuk-link">Screenflow (opens a pdf
-                    file)</a></p>
+                        <p>Employer self-serve registation and on 'Whitelist' - Administator contact</p>
+                        <h3 class="govuk-heading-s">User screen flow</h3>
+                        <p><a href="/public/pdfs/may-release-whitelist-contacts.pdf" class="govuk-link">Screenflow
+                                        (opens a pdf
+                                        file)</a></p>
 
-            <!--  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <!--  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
             <p>Employer self-serve registation 'Whitelist' expired for all registration journeys</p>
             <h3 class="govuk-heading-s">User screen flow</h3>
             <p><a href="/public/pdfs/may-release-whitelist-expired.pdf" class="govuk-link">Screenflow (opens a pdf file)</a></p> -->
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <p>Employer registation - account set up by CMG agent - Admin user</p>
-            <h3 class="govuk-heading-s">User screen flow</h3>
-            <p><a href="/public/pdfs/may-release-agent-creates-admin-contact-and-registation.pdf"
-                    class="govuk-link">Screenflow (opens a pdf file)</a></p>
+                        <p>Employer registation - account set up by CMG agent - Admin user</p>
+                        <h3 class="govuk-heading-s">User screen flow</h3>
+                        <p><a href="/public/pdfs/may-release-agent-creates-admin-contact-and-registation.pdf"
+                                        class="govuk-link">Screenflow (opens a pdf file)</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <p>Employer registation - account set up by CMG agent - Standard user</p>
-            <h3 class="govuk-heading-s">User screen flow</h3>
-            <p><a href="/public/pdfs/may-release-agent-creates-standard-contact-and-registration.pdf"
-                    class="govuk-link">Screenflow (opens a pdf file)</a></p>
+                        <p>Employer registation - account set up by CMG agent - Standard user</p>
+                        <h3 class="govuk-heading-s">User screen flow</h3>
+                        <p><a href="/public/pdfs/may-release-agent-creates-standard-contact-and-registration.pdf"
+                                        class="govuk-link">Screenflow (opens a pdf file)</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <p>Employer registation - account set up by CMG agent - Department contact</p>
-            <h3 class="govuk-heading-s">User screen flow</h3>
-            <p><a href="/public/pdfs/may-release-agent-creates-new-department-contact.pdf"
-                    class="govuk-link">Screenflow (opens a pdf file)</a></p>
+                        <p>Employer registation - account set up by CMG agent - Department contact</p>
+                        <h3 class="govuk-heading-s">User screen flow</h3>
+                        <p><a href="/public/pdfs/may-release-agent-creates-new-department-contact.pdf"
+                                        class="govuk-link">Screenflow (opens a pdf file)</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <p>Employer registation - account migrated from Siebel by CMG agent - Department contact</p>
-            <h3 class="govuk-heading-s">User screen flow</h3>
-            <p><a href="/public/pdfs/may-release-agent-migrates-department-contact-from-siebel.pdf"
-                    class="govuk-link">Screenflow (opens a pdf file)</a></p>
+                        <p>Employer registation - account migrated from Siebel by CMG agent - Department contact</p>
+                        <h3 class="govuk-heading-s">User screen flow</h3>
+                        <p><a href="/public/pdfs/may-release-agent-migrates-department-contact-from-siebel.pdf"
+                                        class="govuk-link">Screenflow (opens a pdf file)</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <p>Employer registation - account migrated from Siebel by CMG agent - Individual (Admin) contact</p>
-            <h3 class="govuk-heading-s">User screen flow</h3>
-            <p><a href="/public/pdfs/may-release-agent-migrates-admin-contact-from-siebel.pdf"
-                    class="govuk-link">Screenflow (opens a pdf file)</a></p>
+                        <p>Employer registation - account migrated from Siebel by CMG agent - Individual (Admin) contact
+                        </p>
+                        <h3 class="govuk-heading-s">User screen flow</h3>
+                        <p><a href="/public/pdfs/may-release-agent-migrates-admin-contact-from-siebel.pdf"
+                                        class="govuk-link">Screenflow (opens a pdf file)</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <p>Employer registation - agent edits and deletes Individual contacts details - resulting in OTP  sent and no OTP sent</p>
-            <h3 class="govuk-heading-s">User screen flow</h3>
-            <p><a href="/public/pdfs/may-release-agent-edits-and-deletes-indivdual-contact.pdf"
-                    class="govuk-link">Screenflow (opens a pdf file)</a></p>
+                        <p>Employer registation - agent edits and deletes Individual contacts details - resulting in OTP
+                                sent and no OTP sent</p>
+                        <h3 class="govuk-heading-s">User screen flow</h3>
+                        <p><a href="/public/pdfs/may-release-agent-edits-and-deletes-indivdual-contact.pdf"
+                                        class="govuk-link">Screenflow (opens a pdf file)</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-            <p>Employer registation - agent edits and deletes Department contacts details</p>
-            <h3 class="govuk-heading-s">User screen flow</h3>
-            <p><a href="/public/pdfs/may-release-agent-edits-and-deletes-department-contact.pdf"
-                    class="govuk-link">Screenflow (opens a pdf file)</a></p>
+                        <p>Employer registation - agent edits and deletes Department contacts details</p>
+                        <h3 class="govuk-heading-s">User screen flow</h3>
+                        <p><a href="/public/pdfs/may-release-agent-edits-and-deletes-department-contact.pdf"
+                                        class="govuk-link">Screenflow (opens a pdf file)</a></p>
 
-            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
+                </div>
         </div>
-    </div>
 
 </div>
 
