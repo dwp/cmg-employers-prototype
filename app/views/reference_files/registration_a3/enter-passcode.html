@@ -11,8 +11,38 @@ a
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds-from-desktop">
         <form action="/form-handler" method="post" novalidate>
+
+          <h1 class="govuk-heading-l">Enter your passcode</h1>
+          <div class="govuk-form-group">
+
+            <p class="govuk-body">We've sent a one-time passcode to:</p>
+
+            <p class="govuk-body"> <strong>example.email@company.email.co.uk</strong> </p>
+
+            <p class="govuk-body">This passcode will be valid for 10 minutes.</p>
+            <p><a href="passcode-not-received.html" class="govuk-link">I have not received a passcode</a></p>
+            <label class="govuk-label" for="login-passcode">One-time passcode</label>
+
+            <input class="govuk-input govuk-input--width-10" id="login-passcode" name="login-passcode" type="text"
+              spellcheck="false" aria-describedby="email-hint" autocomplete="text">
+          </div>
+
+          <div class="govuk-button-group">
+            <a href="create-password.html" role="button" draggable="false" class="govuk-button"
+              data-module="govuk-button">
+              Continue
+            </a>
+            <a href="enter-passcode.html" role="button" draggable="false" class="govuk-button govuk-button--secondary"
+              data-module="govuk-button">
+              Resend passcode
+            </a>
+            </div>
+
+
+
+
           
-          <h1 class="govuk-heading-l">Check your email</h1>
+          <!-- <h1 class="govuk-heading-l">Check your email</h1>
 
           <p class="govuk-body">We’ve sent an email to jblogs@abc.cars.com with a one-time passcode.</p>
 
@@ -45,7 +75,7 @@ a
               </ul>
               <p>Office hours are 8am to 5pm, Monday to Friday.
             </div>
-          </details>
+          </details> -->
 
         </form>
 
