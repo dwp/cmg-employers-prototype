@@ -12,19 +12,21 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds-from-desktop">
         <form action="enter-passcode.html" method="get" novalidate>
           <div class="govuk-form-group">
-            <h1 class="govuk-label-wrapper">
-              <label class="govuk-label govuk-label--l" for="event-name">
-                Enter your email address to register to use the Child Maintenance Employer Service 
-              </label>
+            <h1 class="govuk-heading-l">    
+                Enter your work email adddress
             </h1>
+            <p class="govuk-body">We'll send a one-time passcode to this email address. You'll need this to confirm your details.</p>
+            <label class="govuk-label govuk-label--s" for="event-name">
+              Work email address
+            </label>
             <div id="event-name-hint" class="govuk-hint">
-              You'll use your work email address to sign in to the service. This email should not be a shared inbox.
+              Do not use a shared inbox address.
             </div>
             <input class="govuk-input" id="event-name" name="eventName" type="text" aria-describedby="event-name-hint">
           </div>
 
       <button class="govuk-button" data-module="govuk-button">
-        Register
+        Continue
       </button>
       </form>
 
